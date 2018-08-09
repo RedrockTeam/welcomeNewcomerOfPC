@@ -1,29 +1,116 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <vheader></vheader>
+        <loading-bar
+            :onErrorDone="errorDone"
+            :onProgressDone="progressDone"
+            :progress="progress"
+            :error="error">
+        </loading-bar>
+        <transition 
+            name="fade"
+            mode="out-in"
+            enter-active-class="animated bounceIn fast"
+            leave-active-class="animated fadeOut faster">
+            <keep-alive>
+                <router-view @finish="loaded"></router-view>
+            </keep-alive>
+        </transition>
+        <!-- <tab :tabList="list"></tab> -->
+        <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
+        <!-- <wen-da></wen-da> -->
+        <go-top class="top"></go-top>
+        <vfooter></vfooter>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import Tab from './components/common/Tab'
+import TabTest1 from './components/test/TabTest1'
+import TabTest2 from './components/test/TabTest2'
+import TabTest3 from './components/test/TabTest3'
+import Carousel from './components/common/Carousel'
+import GoTop from './components/Layout/GoTop'
+import WenDa from './components/WenDa/WenDa'
+import Vheader from './components/Layout/Vheader'
+import loadingBar from 'vue2-loading-bar'
+import Vfooter from './components/Layout/Vfooter';
+
+export default {
+    components: {
+        Tab,
+        Carousel,
+        GoTop,
+        WenDa,
+        Vheader,
+        loadingBar,
+        Vfooter
+    },
+    data() {
+        return {
+            progress: 0,
+            error: false,
+            timer: null,
+            list: [
+                {
+                    title: '学生组织',
+                    component: TabTest1
+                },
+                {
+                    title: '宣传视频',
+                    component: TabTest2
+                },
+                {
+                    title: '学生代表',
+                    component: TabTest3
+                }
+            ],
+            carouselList: [
+                {src: require('./assets/dom1.jpg'), content: '第一张'},
+                {src: require('./assets/dom2.jpg'), content: '第二张'},
+                {src: require('./assets/dom3.jpg'), content: '第三张'}
+            ]
+        }
+    },
+    //清除body外边距
+    mounted() {
+        document.querySelector('body').style.margin = '0'
+    },
+    methods: {
+        errorDone () {
+            this.error = false
+        },
+        progressDone () {
+            this.progress = 0
+        },
+        loaded (status) {
+            clearInterval(this.timer)
+            if (status === 'error') {
+                this.error = true
+            } else {
+                this.progress = 100
+            }
+        }
+    },
+    watch: {
+        '$route' (to, from) {
+            this.progress = 1
+            this.timer = setInterval(() => {
+                if (this.progress >= 80) clearInterval(this.timer)
+                this.progress += 3
+            }, 200)
+        }
     }
-  }
 }
+</script>
+
+<style lang="less" scoped>
+    @import './assets/loading-bar.css';
+    @import './assets/animate.css';
+    #app {
+        min-height: 1000px;
+        background: #42b6ed;
+        font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+    }
 </style>
+

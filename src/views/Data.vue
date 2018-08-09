@@ -1,5 +1,5 @@
 <template>
-    <div class="home"></div>
+    
 </template>
 
 <script>
@@ -11,10 +11,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .home {
-        width: 1000px;
-        height: 1800px;
-        background: rgb(236, 221, 131);
-        margin: 0 auto;
-    }
+
 </style>

@@ -1,23 +1,54 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  //开启history模式需要后端配合
+  //mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'Home',
+      component: () => import('./views/Home.vue')
+    },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (about.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    // }
+    {
+      path: '/training',
+      name: 'Training',
+      component: () => import('./views/Training.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/activity',
+      name: 'Activity',
+      component: () => import('./views/Activity.vue')
+    },
+    {
+      path: '/data',
+      name: 'Data',
+      component: () => import('./views/Data.vue')
+    },
+    {
+      path: '/raiders',
+      name: 'Raiders',
+      component: () => import('./views/Raiders.vue')
+    },
+    {
+      path: '/style',
+      name: 'Style',
+      component: () => import('./views/Style.vue')
+    },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: () => import('./views/NotFound.vue')
     }
   ]
 })

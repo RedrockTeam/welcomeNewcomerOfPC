@@ -1,20 +1,22 @@
 <template>
-    <div class="home"></div>
+    <div id="test3"></div>
 </template>
 
 <script>
 export default {
-    activated() {
+    mounted() {
         this.$emit('finish', 'success')
     }
 }
 </script>
 
+
 <style lang="less" scoped>
-    .home {
-        width: 1000px;
-        height: 1800px;
-        background: rgb(236, 221, 131);
+    #test3 {
+        width: 500px;
         margin: 0 auto;
+        height: 1000px;
+        background: #000;
     }
 </style>
+

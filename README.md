@@ -14,8 +14,3 @@ npm run serve
 ```
 npm run build
 ```
-
-Todo
-- vue2-loading-bar
-- console
-- 

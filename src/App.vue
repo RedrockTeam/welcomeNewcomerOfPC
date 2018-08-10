@@ -29,9 +29,6 @@
 
 <script>
 import Tab from './components/common/Tab'
-import TabTest1 from './components/test/TabTest1'
-import TabTest2 from './components/test/TabTest2'
-import TabTest3 from './components/test/TabTest3'
 import Carousel from './components/common/Carousel'
 import GoTop from './components/Layout/GoTop'
 import WenDa from './components/WenDa/WenDa'

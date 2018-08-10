@@ -12,7 +12,7 @@ vue2-loading-bar   （路由跳转状态的进度条）
 
 
 
-### Vue  Prop
+### Vue Compoent Prop
 
 `ClickMe.vue`
 
@@ -24,7 +24,7 @@ props: {
             type: String,
             default: '/'
         }
-	}
+    }
 ```
 
 `HomeSquareFrame.vue`

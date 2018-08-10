@@ -7,6 +7,7 @@
             :progress="progress"
             :error="error">
         </loading-bar>
+        <banner></banner>
         <transition 
             name="fade"
             mode="out-in"
@@ -19,7 +20,9 @@
         <!-- <tab :tabList="list"></tab> -->
         <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
         <!-- <wen-da></wen-da> -->
-        <go-top class="top"></go-top>
+        <!-- <q-rcode></q-rcode>
+        <go-top></go-top> -->
+        <fixed></fixed>
         <vfooter></vfooter>
     </div>
 </template>
@@ -34,7 +37,10 @@ import GoTop from './components/Layout/GoTop'
 import WenDa from './components/WenDa/WenDa'
 import Vheader from './components/Layout/Vheader'
 import loadingBar from 'vue2-loading-bar'
-import Vfooter from './components/Layout/Vfooter';
+import Vfooter from './components/Layout/Vfooter'
+import QRcode from './components/Layout/QRcode'
+import Fixed from './components/Layout/Fixed'
+import Banner from './components/Layout/Banner'
 
 export default {
     components: {
@@ -44,7 +50,10 @@ export default {
         WenDa,
         Vheader,
         loadingBar,
-        Vfooter
+        Vfooter,
+        QRcode,
+        Fixed,
+        Banner
     },
     data() {
         return {
@@ -75,6 +84,7 @@ export default {
     //清除body外边距
     mounted() {
         document.querySelector('body').style.margin = '0'
+        document.querySelector('body').style.background = '#42b6ed'
     },
     methods: {
         errorDone () {
@@ -108,6 +118,8 @@ export default {
     @import './assets/loading-bar.css';
     @import './assets/animate.css';
     #app {
+        width: 1518px;
+        margin: 0 auto;
         min-height: 1000px;
         background: #42b6ed;
         font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;

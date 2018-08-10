@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="nav">
-            <div class="nav-in animated slideInDown faster">
+            <div class="nav-in animated bounceInDown">
                 <div class="logo"></div>
                 <div class="link">
                     <router-link
@@ -69,14 +69,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    @import '../../assets/animate.css';
     .header {
         width: 100%;
+        left: 0;
+        margin: 0 auto;
         height: 62px;
         background: #93ece6;
         border-bottom: #33157b 2.5px solid;
         position: fixed;
-        z-index: 3;
+        z-index: 8;
     }
     .nav {
         width: 100%;

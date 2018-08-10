@@ -11,13 +11,13 @@
 
 <script>
 export default {
+    props: ['screenWidth'],
     data() {
         return {
             timer: null,
             speed: 50,  //数值越小越快
             show: false,
             showHeight: 300, //显示的高度,
-            screenWidth: window.innerWidth
         }
     },
     methods: {
@@ -33,7 +33,6 @@ export default {
                         clearInterval(this.timer)
                     }
                 })
-                //document.querySelector('.go-top').classList.add('wobble')
             }
             else {
                 var length = document.body.scrollTop / this.speed
@@ -45,7 +44,6 @@ export default {
                         clearInterval(this.timer)
                     }
                 })
-                //document.querySelector('.go-top').classList.add('wobble')
             }
         },
         isShow() {
@@ -60,13 +58,6 @@ export default {
     created() {
         document.addEventListener('scroll', this.isShow)
     },
-    mounted() {
-        //全局监听 resize 事件
-        const that = this
-        window.onresize = function temp() {
-            that.screenWidth = window.innerWidth
-        }
-    },
     beforeDestroy() {
         removeEventListener('scroll', this.isShow)
     }
@@ -74,7 +65,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    @import '../../assets/animate.css';
     .go-top {
         width: 120px;
         height: 220px;
@@ -82,7 +72,8 @@ export default {
         background-size: 100% 100%;
         cursor: pointer;
         position: fixed;
-        bottom: 70px;
+        bottom: 40px;
+        z-index: 8;
     }
 </style>
 

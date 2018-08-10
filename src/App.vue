@@ -57,31 +57,26 @@ export default {
             progress: 0,
             error: false,
             timer: null,
-            list: [
-                {
-                    title: '学生组织',
-                    component: TabTest1
-                },
-                {
-                    title: '宣传视频',
-                    component: TabTest2
-                },
-                {
-                    title: '学生代表',
-                    component: TabTest3
-                }
-            ],
+            // list: [
+            //     {
+            //         title: '学生组织',
+            //         component: TabTest1
+            //     },
+            //     {
+            //         title: '宣传视频',
+            //         component: TabTest2
+            //     },
+            //     {
+            //         title: '学生代表',
+            //         component: TabTest3
+            //     }
+            // ],
             carouselList: [
                 {src: require('./assets/dom1.jpg'), content: '第一张'},
                 {src: require('./assets/dom2.jpg'), content: '第二张'},
                 {src: require('./assets/dom3.jpg'), content: '第三张'}
             ]
         }
-    },
-    //清除body外边距
-    mounted() {
-        document.querySelector('body').style.margin = '0'
-        document.querySelector('body').style.background = '#42b6ed'
     },
     methods: {
         errorDone () {

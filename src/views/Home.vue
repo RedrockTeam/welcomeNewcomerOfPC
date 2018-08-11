@@ -186,7 +186,7 @@
         background-size:  100% 100%;
         position: relative;
         top: -8340px;
-        left: -185px;
+        left: -210px;
     }
     .home-left-tube-logo {
         width: 160px;

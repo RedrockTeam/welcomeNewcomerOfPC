@@ -29,7 +29,7 @@ export default new Router({
       path: '/activity',
       name: 'Activity',
       component: () => import('./views/Activity.vue'),
-      //redirect: '/activity/smile',
+      redirect: '/activity/smile',
       children: [
         {
           path: 'smile',

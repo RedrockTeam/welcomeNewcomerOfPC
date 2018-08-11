@@ -23,7 +23,7 @@ export default {
     },
     activated() {
         this.$emit('finish', 'success')
-        this.$router.push({name: 'Smile'})
+        //this.$router.push({name: 'Smile'})
     },
     watch: {
         '$route' (to, from) {

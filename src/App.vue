@@ -17,11 +17,7 @@
                 <router-view @finish="loaded"></router-view>
             </keep-alive>
         </transition>
-        <!-- <tab :tabList="list"></tab> -->
         <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
-        <!-- <wen-da></wen-da> -->
-        <!-- <q-rcode></q-rcode>
-        <go-top></go-top> -->
         <fixed></fixed>
         <vfooter></vfooter>
     </div>
@@ -96,8 +92,6 @@ export default {
     },
     watch: {
         '$route' (to, from) {
-            //console.log(to)
-            //console.log(from)
             this.progress = 1
             this.timer = setInterval(() => {
                 if (this.progress >= 80) clearInterval(this.timer)

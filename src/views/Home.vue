@@ -78,30 +78,29 @@
             transform: rotate(360deg);
         }
     }
-    @keyframes rotate1 {
-        0% {
-            transform: rotateZ(0deg) rotateY(40deg);
-        }
-        50% {
-            transform: rotateZ(180deg) rotateY(40deg);
-        }
-        100% {
-            transform: rotateZ(360deg) rotateY(40deg);
-        }
-    }
-    @keyframes rotate2 {
-        0% {
-            transform: rotateZ(0deg) rotateY(40deg);
-        }
-        50% {
-            transform: rotateZ(-180deg) rotateY(40deg);
-        }
-        100% {
-            transform: rotateZ(-360deg) rotateY(40deg);
-        }
-    }
+    // @keyframes rotate1 {
+    //     0% {
+    //         transform: rotateZ(0deg) rotateY(40deg);
+    //     }
+    //     50% {
+    //         transform: rotateZ(180deg) rotateY(40deg);
+    //     }
+    //     100% {
+    //         transform: rotateZ(360deg) rotateY(40deg);
+    //     }
+    // }
+    // @keyframes rotate2 {
+    //     0% {
+    //         transform: rotateZ(0deg) rotateY(40deg);
+    //     }
+    //     50% {
+    //         transform: rotateZ(-180deg) rotateY(40deg);
+    //     }
+    //     100% {
+    //         transform: rotateZ(-360deg) rotateY(40deg);
+    //     }
+    // }
     .home {
-        //padding-top: 80px;
         width: 1000px;
         height: 2950px;
         margin: 0 auto;
@@ -186,7 +185,7 @@
         background: url('../assets/home-left-cqupt.png') no-repeat;
         background-size:  100% 100%;
         position: relative;
-        top: -8350px;
+        top: -8340px;
         left: -185px;
     }
     .home-left-tube-logo {
@@ -246,7 +245,7 @@
         position: relative;
         top: -8430px;
         left: -190px;
-        animation: rotate1  5s linear 0s infinite normal none running;
+        //animation: rotate1  5s linear 0s infinite normal none running;
     }
     .home-bottom-chilun2 {
         width: 100px;
@@ -256,6 +255,6 @@
         position: relative;
         top: -8520px;
         left: 1100px;
-        animation: rotate2  5s linear 0s infinite normal none running;
+        //animation: rotate2  5s linear 0s infinite normal none running;
     }
 </style>

@@ -67,7 +67,7 @@ export default {
         p {
             font-size: 13px;
             color: #666666;
-            padding-top: 10px;
+            padding-top: 20px;
             height: 60px;
             overflow: hidden;
         }
@@ -76,8 +76,8 @@ export default {
         display: flex;
         justify-content: center;
         img {
-            width: 130px;
-            height: 100px;
+            width: 140px;
+            height: 90px;
         }
     }
     .button {

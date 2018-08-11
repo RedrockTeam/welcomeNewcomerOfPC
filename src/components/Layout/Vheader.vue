@@ -115,8 +115,8 @@ export default {
                 //transform: rotate(-5deg) translate(2px, 2px) scale(0.8);
                 border-left: 3.5px solid #33157b;
                 border-right: 3.5px solid #33157b;
-                border-top: 2px solid #33157b;
-                border-bottom: 2px solid #33157b;
+                border-top: 3px solid #33157b;
+                border-bottom: 3px solid #33157b;
                 .link-box{
                     box-shadow: inset -9px 7px 18px 5px rgba(175, 175, 175, 0.5);
                     transition: all 5s;
@@ -148,7 +148,7 @@ export default {
         background: #ffc9e2;
         border-left: 3.5px solid #33157b;
         border-right: 3.5px solid #33157b;
-        border-top: 2px solid #33157b;
-        border-bottom: 2px solid #33157b;
+        border-top: 3px solid #33157b;
+        border-bottom: 3px solid #33157b;
     }
 </style>

@@ -130,6 +130,12 @@ export default {
     },
     watch: {
         place(value) {
+            if (value === '') {
+                document.querySelector(".window img").style.transition = 'all 1s'
+                this.size = 1
+                document.querySelector(".window img").style.left = '0'
+                document.querySelector(".window img").style.top = '0'
+            }
             this.isSearching = true
             for (let i = 0; i < this.list.length; i++) {
                 if (value === this.list[i].name) {

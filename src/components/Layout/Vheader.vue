@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <header>
         <div class="nav">
             <div class="nav-in animated bounceInDown">
                 <div class="logo"></div>
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .header {
+    header {
         width: 100%;
         left: 0;
         margin: 0 auto;

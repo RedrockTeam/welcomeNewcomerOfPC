@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <footer>
         <div class="content">
             <p>关于<a href="http://hongyan.cqupt.edu.cn/aboutus/" target="_blank">红岩网校</a> | <a href="" target="_blank">网站地图</a> | <a href="mailto:web@redrock.team" target="_blank">指出错误</a> | <a href="" target="_blank">管理入口</a></p>
             <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
@@ -11,7 +11,7 @@
                 <div class="mid-chilun"></div>
             </div>
         </div>
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .footer {
+    footer {
         width: 100%;
         height: 400px;
         //background: #000;

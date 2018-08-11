@@ -96,6 +96,8 @@ export default {
     },
     watch: {
         '$route' (to, from) {
+            //console.log(to)
+            //console.log(from)
             this.progress = 1
             this.timer = setInterval(() => {
                 if (this.progress >= 80) clearInterval(this.timer)
@@ -129,6 +131,7 @@ export default {
         margin: 0 auto;
         min-height: 1000px;
         background: #42b6ed;
+        overflow-x: hidden;
         font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
     }
 </style>

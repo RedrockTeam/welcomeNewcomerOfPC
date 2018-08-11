@@ -14,7 +14,11 @@
 
 <script>
 export default {
-    props: ['tabList'],
+    props: {
+        tabList: {
+            type: Array
+        }
+    },
     data() {
         return {
             currentTab: this.tabList[0]

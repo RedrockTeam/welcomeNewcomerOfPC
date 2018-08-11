@@ -39,7 +39,7 @@ export default {
        // 开学当日时间
 	    var x = new Date(),
 		    startDate = 13, //9月该日零时开学, 9月14:00:00开学
-		    list = [2.33, 11.7, 21.05, 30.4, 39.8, 49.2, 58.55, 68, 77.4, 87];
+		    list = [-1.9, 10.3, 21.45, 32.3, 43.5, 54.35, 65.5, 77.5, 90.3, 102.3];
 	    var seconds = 59 - x.getSeconds(),
 		    minutes = 59 - x.getMinutes(),
 		    hours = 23 - x.getHours(),
@@ -192,23 +192,25 @@ export default {
             justify-content: space-between;
         }
         .time-box {
-             width: 12%;
+            width: 9%;
             height: 60%;
             display: flex;
             flex-wrap: nowrap;
         }
         .day {
-            margin-left: 1%;
+            margin-left: 3%;
         }
         .hour {
             margin-left: 1%;
             margin-bottom: 5%;
+            width: 9%;
         }
         .minute {
             margin-bottom: 5%;
         }
         .second {
             margin-bottom: 2%;
+            padding-right: 2%;
         }
         .time-font {
             width: 50%;

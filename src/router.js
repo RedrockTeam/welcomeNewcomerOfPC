@@ -34,7 +34,7 @@ export default new Router({
         {
           path: 'smile',
           name: 'Smile',
-          component: () => import('./components/Vmap/Vmap.vue')
+          component: () => import('./components/Smile.vue')
         },
         {
           path: 'wenda/:class/:page',

@@ -30,7 +30,6 @@ export default {
     .tab-header {
         width: 60%;
         height: 160px;
-        //background: red;
         margin: 0 auto;
         padding-top: 45px;
         display: flex;

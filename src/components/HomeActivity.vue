@@ -46,7 +46,6 @@ export default {
         height: 800px;
         margin: 0 auto;
         z-index: 5;
-        //background: #000;
     }
     .title {
         margin: 0 auto;
@@ -68,8 +67,8 @@ export default {
             .controlbar1 {
                 transform: rotate(10deg);
                 transform-origin: 33px 0px;
-                top: 155px;
-                right: -53px;
+                top: 160px;
+                right: -54px;
             }
         }
     }

@@ -7,7 +7,7 @@
             v-show="show"
             :style="{left: screenWidth / 2 + 550 + 'px'}">
             <div class="gotop1"></div>
-            <div class="gotop2 animated  infinite"></div>
+            <div class="gotop2 animated infinite"></div>
         </div>
     </transition>
 </template>

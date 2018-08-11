@@ -3,7 +3,7 @@
         <div class="title"></div>
         <div class="frame1">
             <div class="frame-in">
-                <div class="left"><img src="../assets/activity-icon1.png"></div>
+                <div class="left"><img src="../assets/activity-icon1.png" @mouseover="mouseover1=true" @mouseout="mouseover1=false" :class="['animated', {swing: mouseover1}]"></div>
                 <div class="right">
                     <p>想知道重邮校园的秘密？想和学长学姐零距离接触？热心的学长学姐都在这里，他们是重邮小百 科，为你答疑解惑！</p>
                     <click-me class="button" path='/activity'></click-me>
@@ -13,7 +13,7 @@
         </div>
         <div class="frame2">
             <div class="frame-in">
-                <div class="left"><img src="../assets/activity-icon2.png"></div>
+                <div class="left"><img src="../assets/activity-icon2.png" @mouseover="mouseover2=true" @mouseout="mouseover2=false" :class="['animated', {swing: mouseover2}]"></div>
                 <div class="right">
                     <p>萌新你好，欢迎来鲜肉集中营报道！听说这里有好多萌新的照片，也许Ta就是你未来的小伙伴~ 让美好的大学生活从一个微笑开始吧~</p>
                     <click-me class="button" path='/activity'></click-me>
@@ -30,6 +30,12 @@ import ClickMe from './common/ClickMe'
 export default {
     components: {
         ClickMe
+    },
+    data() {
+        return {
+            mouseover1: false,
+            mouseover2: false
+        }
     }
 }
 </script>
@@ -61,9 +67,9 @@ export default {
         &:hover {
             .controlbar1 {
                 transform: rotate(10deg);
-                transform-origin: 55px 0;
-                top: 165px;
-                right: -50px;
+                transform-origin: 33px 0px;
+                top: 155px;
+                right: -53px;
             }
         }
     }
@@ -81,8 +87,8 @@ export default {
         background: url('../assets/controlbar1.png') no-repeat;
         background-size: 100% 100%;
         position: absolute;
-        top: 110px;
-        right: -33px;
+        top: 100px;
+        right: -40px;
         transform: rotate(-90deg);
         transition: all .3s;
     }
@@ -126,8 +132,8 @@ export default {
             .controlbar2 {
                 transform: rotate(10deg);
                 transform-origin: 55px 0;
-                top: 165px;
-                left: -45px;
+                top: 173px;
+                left: -50px;
             }
         }
     }
@@ -137,8 +143,8 @@ export default {
         background: url('../assets/controlbar2.png') no-repeat;
         background-size: 100% 100%;
         position: absolute;
-        top: 130px;
-        left: -30px;
+        top: 120px;
+        left: -39px;
         transform: rotate(90deg);
         transition: all .3s;
     }

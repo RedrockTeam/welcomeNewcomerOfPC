@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import WenDa from '../components/WenDa/WenDa'
+//import WenDa from '../components/WenDa/WenDa'
 import ActivityTab from '../components/ActivityTab'
 import Vmap from '../components/Vmap/Vmap'
 
 export default {
     components: {
-        WenDa,
+        //WenDa,
         Vmap,
         ActivityTab
     },
@@ -21,9 +21,8 @@ export default {
                 
         }
     },
-    activated() {
+    mounted() {
         this.$emit('finish', 'success')
-        //this.$router.push({name: 'Smile'})
     },
     watch: {
         '$route' (to, from) {

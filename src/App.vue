@@ -13,9 +13,9 @@
             mode="out-in"
             enter-active-class="animated bounceIn fast"
             leave-active-class="animated fadeOut faster">
-            <keep-alive>
+            <!-- <keep-alive> -->
                 <router-view @finish="loaded"></router-view>
-            </keep-alive>
+            <!-- </keep-alive> -->
         </transition>
         <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
         <fixed></fixed>

@@ -48,7 +48,7 @@ export default {
                     activeSrc: require('../../assets/ttraining-active.png'),
                 },
                 {
-                    path: '/activity',
+                    path: '/activity/smile',
                     src: require('../../assets/tactivity.png'),
                     activeSrc: require('../../assets/tactivity-active.png'),
                 },
@@ -112,7 +112,6 @@ export default {
             &:hover {
                 background: #ffc9e2;
                 transition: all .5s;
-                //transform: rotate(-5deg) translate(2px, 2px) scale(0.8);
                 border-left: 3.5px solid #33157b;
                 border-right: 3.5px solid #33157b;
                 border-top: 3px solid #33157b;

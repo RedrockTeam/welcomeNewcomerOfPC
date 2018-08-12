@@ -63,7 +63,7 @@
                 }
             }
         },
-        activated() {
+        mounted() {
             this.$emit('finish', 'success')
     }
 }

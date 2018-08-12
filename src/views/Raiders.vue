@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    activated() {
+    mounted() {
         this.$emit('finish', 'success')
     }
 }

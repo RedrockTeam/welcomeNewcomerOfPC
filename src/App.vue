@@ -121,7 +121,8 @@ export default {
     @import './assets/loading-bar.css';
     @import './assets/animate.css';
     #app {
-        width: 1518px;
+        min-width: 1080px;
+        max-width: 1518px;
         margin: 0 auto;
         min-height: 1000px;
         background: #42b6ed;

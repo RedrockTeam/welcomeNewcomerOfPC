@@ -87,7 +87,6 @@ export default {
             if (this.currentPage < this.totalPages) this.currentPage++
         },
         clickClass(className) {
-            //this.currentClass = className
             this.$router.push({name: 'WenDa', params: {class: className, page: 1}})
         },
         classActive(name) {

@@ -23,6 +23,8 @@ export default {
     },
     mounted() {
         this.$emit('finish', 'success')
+        document.body.scrollTop = 500
+        document.documentElement.scrollTop = 500
     },
     watch: {
         '$route' (to, from) {

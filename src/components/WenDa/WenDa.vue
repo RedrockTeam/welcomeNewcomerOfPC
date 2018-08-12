@@ -3,11 +3,11 @@
         <div class="logo"></div>
         <div class="wenda-frame">
             <div class="class">
-                <div class="all"></div>
-                <div class="life"></div>
-                <div class="study"></div>
-                <div class="organization"></div>
-                <div class="activity"></div>
+                <div :class="['all', {classactive: classActive('all')}]" @click="clickClass('all')"><img src="../../assets/all.png"></div>
+                <div :class="['life', {classactive: classActive('life')}]" @click="clickClass('life')"><img src="../../assets/life.png"></div>
+                <div :class="['study', {classactive: classActive('study')}]" @click="clickClass('study')"><img src="../../assets/study.png"></div>
+                <div :class="['organization', {classactive: classActive('organization')}]" @click="clickClass('organization')"><img src="../../assets/organization.png"></div>
+                <div :class="['activity', {classactive: classActive('activity')}]" @click="clickClass('activity')"><img src="../../assets/activity.png"></div>
             </div>
             <div class="container">
                 <div class="container-header">
@@ -58,7 +58,8 @@ export default {
     data() {
         return {
             currentPage: 1,
-            totalPages: 30
+            totalPages: 30,
+            currentClass: 'all'
         }
     },
     methods: {
@@ -84,17 +85,29 @@ export default {
         },
         nextPage() {
             if (this.currentPage < this.totalPages) this.currentPage++
+        },
+        clickClass(className) {
+            //this.currentClass = className
+            this.$router.push({name: 'WenDa', params: {class: className, page: 1}})
+        },
+        classActive(name) {
+            return this.$route.params.class === name ? true : false
         }
     },
     created() {
+        this.currentClass = this.$route.params.class
         this.goPage(parseInt(this.$route.params.page))
     },
     watch: {
-        currentPage (to, from) {
+        currentPage () {
             this.$router.push({name: 'WenDa', params: {page: this.currentPage}})
         },
         '$route' (to, from) {
             this.goPage(parseInt(this.$route.params.page))
+            this.currentClass = this.$route.params.class
+        },
+        currentClass () {
+            this.$router.push({name: 'WenDa', params: {class: this.currentClass}})
         }
     }
 }
@@ -139,6 +152,9 @@ export default {
             border: solid 4.5px #432a92;
             cursor: pointer;
             transition: transform .3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &:first-child {
                 border-top-left-radius: 18px;
             }
@@ -147,6 +163,7 @@ export default {
             }
             &:hover {
                 transform: scale(1.08);
+                background: #098ad8;
             }
         }
     }
@@ -232,6 +249,9 @@ export default {
 
             }
         }
+    }
+    .classactive {
+        background: #098ad8 !important;
     }
     //Pagination
     .pagination {

@@ -32,7 +32,8 @@
                         <div class="button prev" 
                             @click="prevPage"></div>
                         <div class="button-list">
-                            <div :class="['button', {active: page === currentPage}]"
+                            <div
+                            :class="['button', {active: page === currentPage}]"
                             v-for="page in currentPage+4"
                             :key="page"
                             @click="goPage(page)"
@@ -83,6 +84,17 @@ export default {
         },
         nextPage() {
             if (this.currentPage < this.totalPages) this.currentPage++
+        }
+    },
+    created() {
+        this.goPage(parseInt(this.$route.params.page))
+    },
+    watch: {
+        currentPage (to, from) {
+            this.$router.push({name: 'WenDa', params: {page: this.currentPage}})
+        },
+        '$route' (to, from) {
+            this.goPage(parseInt(this.$route.params.page))
         }
     }
 }

@@ -19,12 +19,12 @@
                 <div class="container-main">
                     <div
                         class="question"
-                        v-for="n in 7"
-                        :key="n">
-                        <div class="author">小熊猫</div>
-                        <div class="content"><p>小熊猫小熊猫小熊猫小熊猫小小熊猫小熊猫小熊猫小熊猫小熊猫好吃吗</p></div>
+                        v-for="list of showLists"
+                        :key="list.id">
+                        <div class="author">{{ list.name }}</div>
+                        <div class="content"><p>{{ list.content }}</p></div>
                         <div class="reply"></div>
-                        <div class="time"><p>2018-8-12</p></div>
+                        <div class="time"><p>{{ list.time }}</p></div>
                     </div>
                 </div>
                 <div class="container-footer">
@@ -50,6 +50,8 @@
 
 <script>
 //import Pagination from './Pagination'
+//import api from './apitest.js'
+import axios from 'axios'
 
 export default {
     components: {
@@ -58,8 +60,10 @@ export default {
     data() {
         return {
             currentPage: 1,
-            totalPages: 30,
-            currentClass: 'all'
+            totalPages: 1,
+            currentClass: 'all',
+            lists: [],
+            showLists: []
         }
     },
     methods: {
@@ -91,11 +95,24 @@ export default {
         },
         classActive(name) {
             return this.$route.params.class === name ? true : false
+        },
+        getTotalPages() {
+            return this.lists.length % 7 === 0 ? this.lists.length / 7 :  parseInt(this.lists.length / 7) + 1
+        },
+        getShowLists(page) {
+            this.showLists = this.lists.slice((page-1)*7, page*7)
         }
     },
     created() {
         this.currentClass = this.$route.params.class
         this.goPage(parseInt(this.$route.params.page))
+        //获取api
+        axios.get('http://hongyan.cqupt.edu.cn/XZBBM/index.php/api/search/tag/')
+            .then(res => {
+                this.lists = res.data
+                this.totalPages = this.getTotalPages()
+                this.getShowLists(this.$route.params.page)
+            })
     },
     watch: {
         currentPage () {
@@ -104,6 +121,7 @@ export default {
         '$route' (to, from) {
             this.goPage(parseInt(this.$route.params.page))
             this.currentClass = this.$route.params.class
+            this.getShowLists(this.$route.params.page)
         },
         currentClass () {
             this.$router.push({name: 'WenDa', params: {class: this.currentClass}})
@@ -201,6 +219,9 @@ export default {
         height: 420px;
         display: flex;
         flex-flow: column;
+        p {
+            font-size: 14px;
+        }
         .question {
             width: 100%;
             display: flex;
@@ -217,11 +238,12 @@ export default {
                 width: 155px;
                 height: 100%;
                 justify-content: center;
+                font-size: 14px;
             }
             .content {
-                width: 380px;
+                width: 400px;
                 height: 100%;
-                margin-left: 20px;
+                //margin-left: 20px;
                 margin-right: 21px;
                 p {
                     overflow: hidden;

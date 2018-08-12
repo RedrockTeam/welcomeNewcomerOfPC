@@ -40,6 +40,10 @@ export default new Router({
           path: 'wenda/:class/:page',
           name: 'WenDa',
           component: () => import('./components/WenDa/WenDa.vue')
+        },
+        {
+          path: 'wenda',
+          redirect: 'wenda/all/1'
         }
       ]
     },

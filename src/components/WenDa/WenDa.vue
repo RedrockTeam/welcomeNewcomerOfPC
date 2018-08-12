@@ -237,6 +237,12 @@ export default {
                 background: url('../../assets/reply.png') no-repeat;
                 background-size: 100% 100%;
                 cursor: pointer;
+                transition: transform .3s;
+                &:hover {
+                    background: url('../../assets/reply-active.png') no-repeat;
+                    background-size: 100% 100%;
+                    transform: scale(1.2);
+                }
             }
             .time {
                 width: 200px;

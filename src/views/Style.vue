@@ -1,5 +1,8 @@
 <template>
     <div class="style">
+        <div class="title">
+            <img src="../assets/ftstyle.png">
+        </div>
         <style-tab :componentList="componentList"></style-tab>
     </div>
 </template>
@@ -46,6 +49,8 @@ export default {
     },
     mounted() {
         this.$emit('finish', 'success')
+        document.body.scrollTop = 880
+        document.documentElement.scrollTop = 880
     }
 }
 </script>
@@ -55,5 +60,20 @@ export default {
         width: 1000px;
         margin: 0 auto;
         min-height: 2000px;
+    }
+    .title {
+        width: 245px;
+        height: 95px;
+        margin: 0 auto;
+        background: url('../assets/title-frame.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+            width: 140px;
+            height: 33px;
+        }
     }
 </style>

@@ -26,8 +26,9 @@ axios
 - [x] 迎新活动分页的loading bar的bug
 - [x] 分页器小组件
 - [x] 切换页面后改变滚动条高度
-- [ ] 改下组件目录结构,太乱
+- [x] 改下组件目录结构,太乱
 - [ ] 拿api渲染帮帮忙页面
+- [ ] 实现视觉的滚动条
 
 
 
@@ -138,6 +139,55 @@ props: {
         type: Number
     }
 }
+```
+
+`TopBar.vue`
+
+顶部栏动态切换组件
+
+```js
+props: {
+        barList: {
+            type: Array
+        }
+    }
+    
+示例:
+	<top-bar :barList="barList"></top-bar>
+	
+	barList: [
+            {
+                title: require('../../assets/xiaojizuzhi.png'),
+                components: null
+            },
+            {
+                title: require('../../assets/xueshengshetuan.png'),
+                components: null
+            },
+            {
+                title: require('../../assets/hongyanwangxiao.png'),
+                components: null
+            }]
+```
+
+`PhotoFrame.vue`
+
+照片相框
+
+```js
+props: {
+        obj: {
+            type: Object
+        }
+    }
+
+示例:
+	<photo-frame :obj=chenqiqi class="photo"></photo-frame>
+	
+	chenqiqi: {
+                photo: require('../../assets/chenqiqi.png'),
+                content: '陈琪琪'
+            }
 ```
 
 

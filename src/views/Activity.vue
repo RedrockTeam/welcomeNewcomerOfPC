@@ -25,8 +25,8 @@ export default {
     },
     mounted() {
         this.$emit('finish', 'success')
-        document.body.scrollTop = 800
-        document.documentElement.scrollTop = 800
+        document.body.scrollTop = 880
+        document.documentElement.scrollTop = 880
     },
     watch: {
         '$route' (to, from) {

@@ -13,9 +13,7 @@
             mode="out-in"
             enter-active-class="animated bounceIn fast"
             leave-active-class="animated fadeOut faster">
-            <!-- <keep-alive> -->
                 <router-view @finish="loaded"></router-view>
-            <!-- </keep-alive> -->
         </transition>
         <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
         <fixed></fixed>
@@ -26,12 +24,9 @@
 <script>
 import Tab from './components/common/Tab'
 import Carousel from './components/common/Carousel'
-import GoTop from './components/Layout/GoTop'
-import WenDa from './components/WenDa/WenDa'
 import Vheader from './components/Layout/Vheader'
 import loadingBar from 'vue2-loading-bar'
 import Vfooter from './components/Layout/Vfooter'
-import QRcode from './components/Layout/QRcode'
 import Fixed from './components/Layout/Fixed'
 import Banner from './components/Layout/Banner'
 
@@ -39,12 +34,9 @@ export default {
     components: {
         Tab,
         Carousel,
-        GoTop,
-        WenDa,
         Vheader,
         loadingBar,
         Vfooter,
-        QRcode,
         Fixed,
         Banner
     },

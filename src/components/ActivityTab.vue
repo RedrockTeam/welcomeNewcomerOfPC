@@ -8,7 +8,9 @@
                 :class="['button2', {active: $route.name === 'WenDa'}]"
                 @click="$router.push({name: 'WenDa', params: {class: 'all', page: 1}})"><img src="../assets/fwenda.png"></div>
         </div>
-        <router-view></router-view>
+        <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+            <router-view></router-view>
+        </transition>
     </div>
 </template>
 

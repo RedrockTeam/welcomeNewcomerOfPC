@@ -3,11 +3,11 @@
         <div class="logo"></div>
         <div class="wenda-frame">
             <div class="class">
-                <div :class="['all', {classactive: classActive('all')}]" @click="clickClass('all')"><img src="../../assets/all.png"></div>
-                <div :class="['life', {classactive: classActive('life')}]" @click="clickClass('life')"><img src="../../assets/life.png"></div>
-                <div :class="['study', {classactive: classActive('study')}]" @click="clickClass('study')"><img src="../../assets/study.png"></div>
-                <div :class="['organization', {classactive: classActive('organization')}]" @click="clickClass('organization')"><img src="../../assets/organization.png"></div>
-                <div :class="['activity', {classactive: classActive('activity')}]" @click="clickClass('activity')"><img src="../../assets/activity.png"></div>
+                <div :class="['all', {classactive: classActive('all')}]" @click="clickClass('all')"><img src="../assets/all.png"></div>
+                <div :class="['life', {classactive: classActive('life')}]" @click="clickClass('life')"><img src="../assets/life.png"></div>
+                <div :class="['study', {classactive: classActive('study')}]" @click="clickClass('study')"><img src="../assets/study.png"></div>
+                <div :class="['organization', {classactive: classActive('organization')}]" @click="clickClass('organization')"><img src="../assets/organization.png"></div>
+                <div :class="['activity', {classactive: classActive('activity')}]" @click="clickClass('activity')"><img src="../assets/activity.png"></div>
             </div>
             <div class="container">
                 <div class="container-header">
@@ -139,7 +139,7 @@ export default {
     .logo {
         width: 836px;
         height: 462px;
-        background: url('../../assets/wenda-logo.png') no-repeat;
+        background: url('../assets/wenda-logo.png') no-repeat;
         background-size: 100% 100%;
 
     }
@@ -255,12 +255,12 @@ export default {
             .reply {
                 width: 30px;
                 height: 30px;
-                background: url('../../assets/reply.png') no-repeat;
+                background: url('../assets/reply.png') no-repeat;
                 background-size: 100% 100%;
                 cursor: pointer;
                 transition: transform .3s;
                 &:hover {
-                    background: url('../../assets/reply-active.png') no-repeat;
+                    background: url('../assets/reply-active.png') no-repeat;
                     background-size: 100% 100%;
                     transform: scale(1.2);
                 }
@@ -304,7 +304,7 @@ export default {
     }
     .active {
         //background: rgba(60, 200, 255, 0.9);
-        background: url('../../assets/pinkcircle.png') no-repeat;;
+        background: url('../assets/pinkcircle.png') no-repeat;;
         //background-size: 100% 100%;
         background-position: 8px 5px;
         //color: #fff;
@@ -312,14 +312,14 @@ export default {
     .next {
         margin-left: 5px;
         height: 200%;
-        background: url('../../assets/next.png') no-repeat;
+        background: url('../assets/next.png') no-repeat;
         background-size: 100% 100%;
         width: 9%;
         height: 120%;
         margin-top: -3px;
         transition: all .3s;
         &:hover {
-            background: url('../../assets/next-active.png') no-repeat;
+            background: url('../assets/next-active.png') no-repeat;
             background-size: 100% 100%;
             transform: scale(1.08);
         }
@@ -328,13 +328,13 @@ export default {
         margin-top: -3px;
         margin-right: 10px;
         height: 200%;
-        background: url('../../assets/prev.png') no-repeat;
+        background: url('../assets/prev.png') no-repeat;
         background-size: 100% 100%;
         width: 9%;
         height: 120%;
         transition: all .3s;
         &:hover {
-            background: url('../../assets/prev-active.png') no-repeat;
+            background: url('../assets/prev-active.png') no-repeat;
             background-size: 100% 100%;
             transform: scale(1.08);
         }
@@ -345,7 +345,7 @@ export default {
         transform: scale(1.05);
     }
     .prev-active {
-        background: url('../../assets/prev-active.png') no-repeat;
+        background: url('../assets/prev-active.png') no-repeat;
         background-size: 100% 100%;
     }
 </style>

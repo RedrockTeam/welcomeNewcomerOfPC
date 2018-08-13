@@ -12,14 +12,6 @@ export default new Router({
       name: 'Home',
       component: () => import('./views/Home.vue')
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    // }
     {
       path: '/training',
       name: 'Training',
@@ -39,7 +31,7 @@ export default new Router({
         {
           path: 'wenda/:class/:page',
           name: 'WenDa',
-          component: () => import('./components/WenDa/WenDa.vue')
+          component: () => import('./components/WenDa.vue')
         },
         {
           path: 'wenda',

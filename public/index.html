@@ -11,6 +11,25 @@
         margin: 0;
         background: #42b6ed;
       }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(144, 181, 255)),
+									   color-stop(0.72, rgb(92, 160, 243)),
+                                       color-stop(0.86, rgb(26, 185, 212)));
+        border: solid 4px #33157b;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: rgb(151, 248, 235);
+        border-radius: 4px;
+        border: solid 4px #33157b;
+    }
+    ::-webkit-scrollbar {
+        width: 20px;
+        background-color: rgb(245, 245, 245);
+    }
     </style>
   </head>
   <body>

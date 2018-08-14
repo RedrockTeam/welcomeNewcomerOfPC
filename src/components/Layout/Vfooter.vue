@@ -42,6 +42,7 @@ export default {
         }
         p {
             height: 0px;
+            white-space: nowrap;
         }
     }
     .bottom {
@@ -59,8 +60,9 @@ export default {
     .chilun1 {
         background: url('../../assets/footer-chilun1.png') no-repeat;
         background-size: 100% 100%;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
+        //transform: scale(1.2)
     }
     .mid-chilun {
         background: url('../../assets/footer-mid.png') no-repeat;
@@ -72,7 +74,8 @@ export default {
     .chilun2 {
         background: url('../../assets/footer-chilun2.png') no-repeat;
         background-size: 100% 100%;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
+        //transform: scale(1.2)
     }
 </style>

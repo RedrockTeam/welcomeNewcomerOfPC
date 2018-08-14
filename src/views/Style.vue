@@ -66,7 +66,7 @@ export default {
         width: 1000px;
         margin: 0 auto;
         //min-height: 2000px;
-        max-height: 1400px;
+        max-height: 1350px;
     }
     .title {
         width: 245px;

@@ -5,6 +5,7 @@
 <script>
 import TopBar from '../common/TopBar'
 import JiaoShiDaiBiao from './JiaoShiDaiBiao'
+import XueShengDaiBiao from './XueShengDaiBiao'
 
 export default {
     components: {
@@ -19,7 +20,7 @@ export default {
             },
             {
                 title: require('../../assets/xueshengdaibiao.png'),
-                component: null
+                component: XueShengDaiBiao
             }]
         }
     }

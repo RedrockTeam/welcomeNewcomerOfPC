@@ -40,6 +40,8 @@ export default {
         height: 1100px;
         background: url('../../assets/style-tab-frame.png') no-repeat;
         background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
     }
     .style-tab-header {
         width: 855px;

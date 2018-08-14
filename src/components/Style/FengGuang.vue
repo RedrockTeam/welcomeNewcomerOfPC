@@ -36,13 +36,12 @@ export default {
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
-        //justify-content: space-between;
         max-height: 800px;
         overflow-y: scroll;
     }
     .photo {
         margin-bottom: 15px;
-        margin-right: 7px;
+        margin-right: 9px;
     }
     //
     ::-webkit-scrollbar {

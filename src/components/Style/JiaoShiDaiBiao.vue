@@ -43,7 +43,7 @@ export default {
     }
     .photo {
         margin-bottom: 15px;
-        margin-right: 7px
+        margin-right: 9px
     }
 
 //

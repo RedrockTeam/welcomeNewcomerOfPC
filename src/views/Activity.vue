@@ -40,7 +40,7 @@ export default {
     .activity {
         width: 1000px;
         min-height: 1500px;
-        max-height: 1850px;
+        max-height: 1825px;
         margin: 0 auto;
     }
     .title {

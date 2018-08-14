@@ -10,7 +10,7 @@
 <script>
 import StyleTab from '../components/Style/StyleTab'
 import Student from '../components/Style/Student'
-import SheTuan from '../components/Style/SheTuan'
+import ShiPin from '../components/Style/ShiPin'
 import DaiBiao from '../components/Style/DaiBiao'
 import FengGuang from '../components/Style/FengGuang'
 
@@ -18,7 +18,7 @@ export default {
     components: {
         StyleTab,
         Student,
-        SheTuan,
+        ShiPin,
         DaiBiao,
         FengGuang
     },
@@ -31,9 +31,9 @@ export default {
                     component: Student
                 },
                 {
-                    title: require('../assets/stshetuan.png'),
+                    title: require('../assets/stshipin.png'),
                     name: 'shetuan',
-                    component: SheTuan
+                    component: ShiPin
                 },
                 {
                     title: require('../assets/stdaibiao.png'),

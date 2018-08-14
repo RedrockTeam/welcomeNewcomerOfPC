@@ -37,15 +37,13 @@ export default {
     .teacher {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
         margin-top: 40px;
         max-height: 680px;
         overflow-y: scroll;
     }
     .photo {
-        //margin: 10px;
         margin-bottom: 15px;
-        margin-right: 5px
+        margin-right: 7px
     }
 
 //

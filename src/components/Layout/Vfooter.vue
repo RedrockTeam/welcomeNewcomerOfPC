@@ -7,8 +7,9 @@
         </div>
         <div class="bottom">
             <div class="bottom-in">
-                <!-- <div class="chilun1"></div> -->
+                <div class="chilun1"></div>
                 <div class="mid-chilun"></div>
+                <div class="chilun2"></div>
             </div>
         </div>
     </footer>
@@ -24,7 +25,6 @@ export default {
     footer {
         width: 100%;
         height: 400px;
-        //background: #000;
     }
     .content {
         width: 100%;
@@ -47,7 +47,6 @@ export default {
     .bottom {
         width: 100%;
         height: 270px;
-        // position: absolute
         display: flex;
         align-items: flex-end;
     }
@@ -55,7 +54,6 @@ export default {
         width: 1600px;
         display: flex;
         align-items: flex-end;
-        // position: absolute;
         margin: 0 auto;
     }
     .chilun1 {
@@ -70,7 +68,11 @@ export default {
         width: 1000px;
         height: 250px;
         margin: 0 auto;
-        // position: relative;
-        // bottom: 0px;
+    }
+    .chilun2 {
+        background: url('../../assets/footer-chilun2.png') no-repeat;
+        background-size: 100% 100%;
+        width: 200px;
+        height: 200px;
     }
 </style>

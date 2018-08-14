@@ -51,4 +51,17 @@ export default {
     ::-webkit-scrollbar {
         width: 30px;
     }
+    ::-webkit-scrollbar-thumb {
+        border: solid 4px #33157b;
+        background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #80fdf9),
+									   color-stop(0.72, #48ebe5),
+                                       color-stop(0.86, #06dfd7));
+    }
+    ::-webkit-scrollbar-track {
+        background: #c4f3f0;
+        border: solid 4px #33157b;
+    }
 </style>

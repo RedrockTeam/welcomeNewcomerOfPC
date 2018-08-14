@@ -38,7 +38,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px;
-        max-height: 680px;
+        max-height: 675px;
         overflow-y: scroll;
     }
     .photo {

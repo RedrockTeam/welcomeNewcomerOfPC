@@ -7,7 +7,9 @@
                 :key="index"
                 @click="currentComponent=list"><img :src="list.title"></div>
         </div>
-        <component :is="currentComponent.component"></component>
+        <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster" mode="out-in">
+            <component :is="currentComponent.component"></component>
+        </transition>
     </div>
 </template>
 

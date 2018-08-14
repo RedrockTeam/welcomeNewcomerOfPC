@@ -20,20 +20,20 @@ export default {
         width: 260px;
         height: 205px;
         background: #54c9f3;
-        border: solid 4px #33157b;
+        border: solid 3px #33157b;
         border-radius: 10px;
         img {
-            width: 242px;
-            height: 155px;
+            width: 244px;
+            height: 160px;
             margin: 5px 5px;
-            border: solid 4px #33157b;
+            border: solid 3px #33157b;
             border-radius: 6px;
         }
         div {
             text-align: center;
             color: #33157b;
             font-size: 18px;
-            line-height: 20px;
+            line-height: 16px;
         }
     }
 </style>

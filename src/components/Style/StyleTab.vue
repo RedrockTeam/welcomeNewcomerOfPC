@@ -10,7 +10,9 @@
             </div>
         </div>
         <div class="style-container">
-            <component :is="currentComponent.component"></component>
+            <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster" mode="out-in">
+                <component :is="currentComponent.component"></component>
+            </transition>
         </div>
     </div>
 </template>

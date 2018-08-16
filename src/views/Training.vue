@@ -1,6 +1,9 @@
 <template>
     <div class="training">
-        <tab :tabList="list"></tab>
+        <div class="title">
+            <img src="../assets/fttraining.png">
+        </div>
+        <tab :tabList="list" class="tabl"></tab>
     </div>
 </template>
 
@@ -43,7 +46,22 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .training {
+    .tabl {
         margin-left: 20%;
+    }
+     .title {
+        width: 245px;
+        height: 95px;
+        margin: 0 auto;
+        background: url('../assets/title-frame.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+            width: 140px;
+            height: 33px;
+        }
     }
 </style>

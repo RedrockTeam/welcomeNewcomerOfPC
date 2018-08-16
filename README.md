@@ -14,6 +14,8 @@ Animated.css
 
 axios
 
+Echarts
+
 
 
 ### Todo:

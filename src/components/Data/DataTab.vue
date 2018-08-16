@@ -44,6 +44,8 @@ export default {
         height: 900px;
         background: url('../../assets/data-frame.png') no-repeat;
         background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
     }
     .header {
         width: 615px;

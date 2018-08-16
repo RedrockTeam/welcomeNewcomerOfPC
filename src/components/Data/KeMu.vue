@@ -1,6 +1,8 @@
 <template>
     <div class="zuinankemu">
-        <div class="kemu-header"></div>
+        <div class="kemu-header">
+            <div class="left">重邮最难科目</div>
+        </div>
         <div id="kemu-container"></div>
     </div>
 </template>
@@ -110,8 +112,19 @@
     }
 
     #kemu-container {
-        width: 80%;
+        width: 85%;
         height: 480px;
         margin: 0 auto;
+    }
+
+    .left {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #432a92;
+        text-shadow: 1px 1px #452f8b;
     }
 </style>

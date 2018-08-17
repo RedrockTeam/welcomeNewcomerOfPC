@@ -15,6 +15,9 @@
 
 <script>
 import RaidersTab from '../components/Raiders/RaidersTab'
+import ShiTang from '../components/Raiders/ShiTang'
+import ShengHuo from '../components/Raiders/ShengHuo'
+import SuShe from '../components/Raiders/SuShe'
 
 export default {
     components: {
@@ -25,43 +28,43 @@ export default {
             componentList: [
                 {
                     title: require('../assets/xueshengsushe.png'),
-                    name: 'student',
-                    component: null
+                    name: 'xueshengsushe',
+                    component: SuShe
                 },
                 {
                     title: require('../assets/xinshengqingdan.png'),
-                    name: 'shetuan',
+                    name: 'xinshengqingdan',
                     component: null
                 },
                 {
                     title: require('../assets/xueshengshitang.png'),
-                    name: 'daibiao',
-                    component: null
+                    name: 'xueshengshitang',
+                    component: ShiTang
                 },
                 {
                     title: require('../assets/zhoubianfengjing.png'),
-                    name: 'fengguang',
+                    name: 'zhoubianfengjing',
                     component: null
                 },
                 {
                     title: require('../assets/qqqun.png'),
-                    name: 'fengguang',
+                    name: 'qqqun',
                     component: null
                 },
                 {
                     title: require('../assets/anquanshouze.png'),
-                    name: 'fengguang',
+                    name: 'anquanshouze',
                     component: null
                 },
                 {
                     title: require('../assets/chengcheluxian.png'),
-                    name: 'fengguang',
+                    name: 'chengcheluxian',
                     component: null
                 },
                 {
                     title: require('../assets/zhoubianshenghuo.png'),
-                    name: 'fengguang',
-                    component: null
+                    name: 'zhoubianshenghuo',
+                    component: ShengHuo
                 }
             ]
         }

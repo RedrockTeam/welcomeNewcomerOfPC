@@ -60,7 +60,7 @@ export default {
     }
     .text {
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         transition: height .3s;
     }
     a {
@@ -81,8 +81,8 @@ export default {
         background: url('../../assets/play.png') no-repeat;
         background-size: 100% 100%;
         position: relative;
-        top: -155px;
-        left: 155px;
+        top: -160px;
+        left: 145px;
         opacity: 0;
     }
 </style>

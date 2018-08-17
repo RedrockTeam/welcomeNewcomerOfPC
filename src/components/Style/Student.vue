@@ -14,15 +14,15 @@ export default {
             barList: [
             {
                 title: require('../../assets/xiaojizuzhi.png'),
-                components: null
+                component: null
             },
             {
                 title: require('../../assets/xueshengshetuan.png'),
-                components: null
+                component: null
             },
             {
                 title: require('../../assets/hongyanwangxiao.png'),
-                components: null
+                component: null
             }]
         }
     }

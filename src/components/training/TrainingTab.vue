@@ -13,16 +13,16 @@
 </template>
 
 <script>
-//import NanNv from './NanNv.vue'
-//import KeMu from './KeMu.vue'
+import TrainingContent from './TrainingContent'
+import ArmyDiscipline from './ArmyDiscipline'
 
 export default {
     props: {
 
     },
     components: {
-        //NanNv,
-        //KeMu
+        TrainingContent,
+        ArmyDiscipline
     },
     data() {
         return {
@@ -36,7 +36,7 @@ export default {
             },
             TrainingContent: {
                 name: 'TrainingContent',
-                component: null
+                component: TrainingContent
             },
             TrainingTips: {
                 name: 'TrainingTips',
@@ -44,7 +44,7 @@ export default {
             },
             ArmyDiscipline: {
                 name: 'ArmyDiscipline',
-                component: null
+                component: ArmyDiscipline
             }
 
         }

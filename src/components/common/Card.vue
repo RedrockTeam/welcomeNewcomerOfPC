@@ -23,15 +23,15 @@ export default {
 
 <style lang="less" scoped>
     .card {
-        width: 390px;
-        height: 230px;
+        width: 400px;
+        height: 240px;
         background: #54c9f3;
         border: solid 3.5px #33157b;
         border-radius: 10px;
         display: flex;
         >img {
-            width: 150px;
-            height: 204px;
+            width: 155px;
+            height: 214px;
             margin: 10px 10px;
             border: solid 3.5px #33157b;
             border-radius: 10px;
@@ -72,7 +72,7 @@ export default {
         height: 160px;
         margin-left: 45px;
         margin-top: -15px;
-        overflow: hidden;
+        //overflow: hidden;
         p {
             color: #076aa6;
             font-size: 12px;
@@ -80,7 +80,7 @@ export default {
             margin: 0;
             width: 150px;
             max-height: 160px;
-            overflow: hidden;
+            //overflow: hidden;
             white-space: wrap;
         }
     }

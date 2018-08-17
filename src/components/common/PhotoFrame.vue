@@ -31,7 +31,7 @@ export default {
         }
         div {
             text-align: center;
-            color: #33157b;
+            color: #000;
             font-size: 18px;
             line-height: 16px;
         }

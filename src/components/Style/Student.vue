@@ -4,6 +4,7 @@
 
 <script>
 import TopBar from '../common/TopBar'
+import ZuZhi from '../Style/ZuZhi'
 
 export default {
     components: {
@@ -14,7 +15,7 @@ export default {
             barList: [
             {
                 title: require('../../assets/xiaojizuzhi.png'),
-                component: null
+                component: ZuZhi
             },
             {
                 title: require('../../assets/xueshengshetuan.png'),

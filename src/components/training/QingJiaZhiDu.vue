@@ -43,13 +43,13 @@ export default {
         width: 730px;
         height: 390px;
         padding-left: 55px;
-        padding-top: 40px;
+        padding-top: 30px;
         font-size: 16px;
         color: #432a92;
         .content {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
         }
         .num {
             width: 25px;

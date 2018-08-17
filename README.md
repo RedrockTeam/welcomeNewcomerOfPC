@@ -31,6 +31,8 @@ Echarts
 - [x] 改下组件目录结构,太乱
 - [ ] 拿api渲染帮帮忙页面
 - [x] 实现视觉的滚动条
+- [ ] 给地图打点
+- [x] 解决路由导航栏active的bug
 
 
 
@@ -232,6 +234,34 @@ props: {
                 link: 'http://baidu.com',
                 content: '舌尖上的重邮'
             }
+```
+
+`SideBar.vue`
+
+侧边栏动态切换组件
+
+```js
+props: {
+        barList: {
+            type: Array
+        }
+    }
+    
+示例:
+	<top-bar :barList="barList"></top-bar>
+	barList: [
+            {
+                title: require('../../assets/xiaojizuzhi.png'),
+                component: ZuZhi
+            },
+            {
+                title: require('../../assets/xueshengshetuan.png'),
+                component: null
+            },
+            {
+                title: require('../../assets/hongyanwangxiao.png'),
+                component: null
+            }]
 ```
 
 

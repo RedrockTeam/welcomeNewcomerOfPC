@@ -1,0 +1,96 @@
+<template>
+    <div class="training-tab">
+        <div class="header">
+            <div :class="['button', {active: currentComponent.name==='YearVideo'}]" @click="currentComponent=YearVideo"><img src="../../assets/linianshipin.png"></div>
+            <div :class="['button', {active: currentComponent.name==='TrainingTips'}]" @click="currentComponent=TrainingTips"><img src="../../assets/junxuntieshi.png"></div>
+            <div :class="['button', {active: currentComponent.name==='TrainingContent'}]" @click="currentComponent=TrainingContent"><img src="../../assets/xunlianneirong.png"></div>
+            <div :class="['button', {active: currentComponent.name==='ArmyDiscipline'}]" @click="currentComponent=ArmyDiscipline"><img src="../../assets/junduijilv.png"></div>
+        </div>
+        <div class="container">
+            <component :is="currentComponent.component"></component>
+        </div>
+    </div>
+</template>
+
+<script>
+//import NanNv from './NanNv.vue'
+//import KeMu from './KeMu.vue'
+
+export default {
+    props: {
+
+    },
+    components: {
+        //NanNv,
+        //KeMu
+    },
+    data() {
+        return {
+            currentComponent: {
+                name: 'YearVideo',
+                component: null
+            },
+            YearVideo: {
+                name: 'YearVideo',
+                component: null
+            },
+            TrainingContent: {
+                name: 'TrainingContent',
+                component: null
+            },
+            TrainingTips: {
+                name: 'TrainingTips',
+                component: null
+            },
+            ArmyDiscipline: {
+                name: 'ArmyDiscipline',
+                component: null
+            }
+
+        }
+    }
+}
+</script>
+
+<style lang="less" scoped>
+    .training-tab {
+        width: 1000px;
+        height: 900px;
+        background: url('../../assets/training-frame.png') no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .header {
+        width: 865px;
+        height: 155px;
+        padding-top: 40px;
+        //padding-left: 190px;
+        //padding-right: 195px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .button {
+        width: 200px;
+        height: 80px;
+        background: url('../../assets/activity-button.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        img {
+            width: 120px;
+            padding: 23px 0 0 30px;
+        }
+    }
+    .container {
+        width: 850px;
+        height: 660px;
+        padding-left: 80px;
+        padding-right: 70px;
+    }
+    .active {
+        background: url('../../assets/activity-button-active.png') no-repeat;
+        background-size: 100% 100%;
+    }
+</style>

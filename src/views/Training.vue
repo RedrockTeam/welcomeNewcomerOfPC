@@ -1,5 +1,9 @@
 <template>
     <div class="training">
+        <div class="title">
+            <img src="../assets/fttraining.png">
+        </div>
+        <tab :tabList="list" class="tabl"></tab>
         <!-- <tab :tabList="list"></tab> -->
         <div class="title"></div>
         <training-tab></training-tab>
@@ -56,6 +60,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    .tabl {
+        margin-left: 20%;
     .training {
         width: 1000px;
         margin: 0 auto;
@@ -122,5 +128,20 @@ export default {
         position: relative;
         top: -4335px;
         left: 1065px;
+    }
+     .title {
+        width: 245px;
+        height: 95px;
+        margin: 0 auto;
+        background: url('../assets/title-frame.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+            width: 140px;
+            height: 33px;
+        }
     }
 </style>

@@ -20,6 +20,7 @@ import ShengHuo from '../components/Raiders/ShengHuo'
 import SuShe from '../components/Raiders/SuShe'
 import AnQuan from '../components/Raiders/AnQuan'
 import QingDan from '../components/Raiders/QingDan'
+import LuXian from '../components/Raiders/LuXian'
 
 export default {
     components: {
@@ -61,7 +62,7 @@ export default {
                 {
                     title: require('../assets/chengcheluxian.png'),
                     name: 'chengcheluxian',
-                    component: null
+                    component: LuXian
                 },
                 {
                     title: require('../assets/zhoubianshenghuo.png'),

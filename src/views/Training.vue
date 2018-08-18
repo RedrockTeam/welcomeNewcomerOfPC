@@ -27,24 +27,7 @@ export default {
     },
     data() {
         return {
-            list : [
-                {
-                    title: "历年视频",
-                    component: YearVideo
-                },
-                {
-                    title: "军训小贴士",
-                    component: TrainingTips
-                },
-                {
-                    title: "训练内容",
-                    component: TrainingContent
-                },
-                {
-                    title: "军队纪律",
-                    component: ArmyDiscipline
-                },
-            ]
+            
         }
     },
     mounted() {

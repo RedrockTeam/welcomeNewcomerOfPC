@@ -15,6 +15,7 @@
 <script>
 import TrainingContent from './TrainingContent'
 import ArmyDiscipline from './ArmyDiscipline'
+import TrainingTips from './TrainingTips'
 
 export default {
     props: {
@@ -40,7 +41,7 @@ export default {
             },
             TrainingTips: {
                 name: 'TrainingTips',
-                component: null
+                component: TrainingTips
             },
             ArmyDiscipline: {
                 name: 'ArmyDiscipline',

@@ -1,6 +1,6 @@
 <template>
     <div class="training">
-        <div class="title"></div>
+        <div class="title"><img src="../assets/fttraining.png"></div>
         <training-tab></training-tab>
         <div class="left-tube"></div>
         <div class="right-tube"></div>
@@ -41,9 +41,15 @@ export default {
         width: 245px;
         height: 95px;
         margin: 0 auto;
-        background: url('../assets/shujujiemi.png') no-repeat;
+        background: url('../assets/title-frame.png') no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-size: 100% 100%;
         margin-bottom: 20px;
+        img {
+            width: 140px;
+        }
     }
     .left-tube {
         width: 290px;

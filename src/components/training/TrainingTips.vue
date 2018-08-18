@@ -146,4 +146,18 @@
         padding-bottom: 20px;
         margin-top: 20px;
     }
+
+    //
+    ::-webkit-scrollbar {
+        width: 30px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border: solid 1.5px #33157b;
+        background: url('../../assets/scroll.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    ::-webkit-scrollbar-track {
+        background: #c4f3f0;
+        border: solid 3.5px #33157b;
+    }
 </style>

@@ -10,7 +10,7 @@
                         :key="index"
                         :class="{aactive: isActive(link)}">
                         <div class="link-box">
-                            <img v-if="$route.path===link.path" :src="link.activeSrc">
+                            <img v-if="isActive(link)" :src="link.activeSrc">
                             <img v-else :src="link.src">
                         </div>
                     </router-link>
@@ -48,7 +48,7 @@ export default {
                     activeSrc: require('../../assets/ttraining-active.png'),
                 },
                 {
-                    path: '/activity/smile',
+                    path: '/activity',
                     src: require('../../assets/tactivity.png'),
                     activeSrc: require('../../assets/tactivity-active.png'),
                 },
@@ -62,7 +62,12 @@ export default {
     },
     methods: {
         isActive(link) {
-            return this.$route.path === link.path ? true : false
+            if (this.$route.path.indexOf('activity')!=-1 && link.path === '/activity') {
+                return true
+            }
+            else {
+                return this.$route.path === link.path ? true : false
+            }
         }
     }
 }

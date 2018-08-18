@@ -1,12 +1,12 @@
 <template>
     <div class="yearvideo">
         <div class="videointrod">
-            <video-intro @click.native="openvideo"></video-intro>
-            <video-intro @click.native="openvideo"></video-intro>
-            <video-intro @click.native="openvideo"></video-intro>
-            <video-intro @click.native="openvideo"></video-intro>
-            <video-intro @click.native="openvideo"></video-intro>
-            <video-intro @click.native="openvideo"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[0]"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[1]"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[2]"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[3]"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[4]"></video-intro>
+            <video-intro @click.native="openvideo" :intromain="intromain[5]"></video-intro>
         </div>
         <div class="mask" ref="mask"></div>
         <div class="trainingvideo" v-if="cansee">
@@ -29,6 +29,14 @@ export default {
                     type: "video/mp4",
                     src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm",
                 }
+            ],
+            intromain: [
+                new this.Imgposter("", ""),
+                new this.Imgposter("", ""),
+                new this.Imgposter("", ""),
+                new this.Imgposter("", ""),
+                new this.Imgposter("", ""),
+                new this.Imgposter("", ""),
             ]
         }
     },
@@ -44,7 +52,11 @@ export default {
         openvideo() {
             this.cansee = true;
            this.$refs.mask.style.display = 'block';
-        }
+        },
+        Imgposter (imgsrc, introtext) {
+                this.imgsrc = imgsrc,
+                this.introtext = introtext
+        },
     }
 }
 </script>

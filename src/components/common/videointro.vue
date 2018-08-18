@@ -1,13 +1,26 @@
 <template>
     <div class="introduction">
         <div class="videoimg"></div>
-        <p class="introtext">介绍介绍介绍介绍介绍介绍介绍</p>
+        <p class="introtext">{{introductext}}</p>
     </div>
 </template>
 
 <script>
     export default {
-        
+        props: {
+            intromain: {
+                type: Object,
+                default: {
+                    imgsrc: "",
+                    introtext: ""
+                }
+            }
+        },
+         data() {
+            return {
+                introductext: this.intromain.introtext
+            }
+        }
     }
 </script>
 

@@ -8,7 +8,7 @@
                 @click="currentComponent=list"><img :src="list.title"></div>
         </div>
         <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster" mode="out-in">
-            <component :is="currentComponent.component"></component>
+            <keep-alive><component :is="currentComponent.component"></component></keep-alive>
         </transition>
     </div>
 </template>

@@ -18,6 +18,8 @@ import RaidersTab from '../components/Raiders/RaidersTab'
 import ShiTang from '../components/Raiders/ShiTang'
 import ShengHuo from '../components/Raiders/ShengHuo'
 import SuShe from '../components/Raiders/SuShe'
+import AnQuan from '../components/Raiders/AnQuan'
+import QingDan from '../components/Raiders/QingDan'
 
 export default {
     components: {
@@ -34,7 +36,7 @@ export default {
                 {
                     title: require('../assets/xinshengqingdan.png'),
                     name: 'xinshengqingdan',
-                    component: null
+                    component: QingDan
                 },
                 {
                     title: require('../assets/xueshengshitang.png'),
@@ -54,7 +56,7 @@ export default {
                 {
                     title: require('../assets/anquanshouze.png'),
                     name: 'anquanshouze',
-                    component: null
+                    component: AnQuan
                 },
                 {
                     title: require('../assets/chengcheluxian.png'),

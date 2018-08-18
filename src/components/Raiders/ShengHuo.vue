@@ -4,6 +4,7 @@
 
 <script>
 import TopBar from '../common/TopBar'
+import QuanBu from './QuanBu'
 
 export default {
     components: {
@@ -14,7 +15,7 @@ export default {
             barList: [
             {
                 title: require('../../assets/quanbu.png'),
-                component: null
+                component: QuanBu
             },
             {
                 title: require('../../assets/meishi.png'),

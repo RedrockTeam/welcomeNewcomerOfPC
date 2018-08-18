@@ -101,24 +101,42 @@ export default {
         },
         getShowLists(page) {
             this.showLists = this.lists.slice((page-1)*7, page*7)
+        },
+        getApi(c) {
+            axios.get(`https://wx.idsbllp.cn/game/xzbbm2018/index.php/api/search/tag/${c}`)
+            .then(res => {
+                this.lists = res.data
+                this.totalPages = this.getTotalPages()
+                this.getShowLists(this.$route.params.page)
+            })
         }
     },
     created() {
         this.currentClass = this.$route.params.class
         this.goPage(parseInt(this.$route.params.page))
         //获取api
-        axios.get('http://hongyan.cqupt.edu.cn/XZBBM/index.php/api/search/tag/')
-            .then(res => {
-                this.lists = res.data
-                this.totalPages = this.getTotalPages()
-                this.getShowLists(this.$route.params.page)
-            })
+        this.getApi('')
     },
     watch: {
         currentPage () {
             this.$router.push({name: 'WenDa', params: {page: this.currentPage}})
         },
         '$route' (to, from) {
+            if (to.params.class==='life') {
+                this.getApi('生活')
+            }
+            else if (to.params.class==='study') {
+                this.getApi('学习')
+            }
+            else if (to.params.class==='organization') {
+                this.getApi('组织')
+            }
+            else if (to.params.class==='activity') {
+                this.getApi('活动')
+            }
+            else if (to.params.class==='all') {
+                this.getApi('')
+            }
             this.goPage(parseInt(this.$route.params.page))
             this.currentClass = this.$route.params.class
             this.getShowLists(this.$route.params.page)

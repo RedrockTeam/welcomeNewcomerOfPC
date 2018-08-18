@@ -4,7 +4,10 @@
             <img src="../assets/ftraiders.png">
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
         <raiders-tab :componentList="componentList"></raiders-tab>
         <div class="left-tube"></div>
         <div class="right-tube"></div>
@@ -12,7 +15,10 @@
         <div class="right-bottom"></div>
         <div class="bottom-chilun1"></div>
         <div class="bottom-chilun2"></div>
+<<<<<<< HEAD
 >>>>>>> 60fdf42dcdb4b4e94955f2f1c318e089a04d3807
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     </div>
 </template>
 
@@ -82,13 +88,19 @@ export default {
 
 <style lang="less" scoped>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     .raiders {
         width: 1000px;
         margin: 0 auto;
         max-height: 1415px;
     }
+<<<<<<< HEAD
 >>>>>>> 60fdf42dcdb4b4e94955f2f1c318e089a04d3807
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     .title {
         width: 245px;
         height: 95px;
@@ -105,7 +117,10 @@ export default {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     .left-tube {
         width: 290px;
         height: 2450px;
@@ -160,5 +175,8 @@ export default {
         top: -4685px;
         left: 1075px;
     }
+<<<<<<< HEAD
 >>>>>>> 60fdf42dcdb4b4e94955f2f1c318e089a04d3807
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
 </style>

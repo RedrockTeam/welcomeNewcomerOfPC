@@ -1,11 +1,17 @@
 <template>
     <div class="training">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
         <div class="title">
             <img src="../assets/fttraining.png">
         </div>
         <tab :tabList="list" class="tabl"></tab>
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
         <!-- <tab :tabList="list"></tab> -->
         <div class="title"></div>
         <training-tab></training-tab>
@@ -15,7 +21,10 @@
         <div class="right-bottom"></div>
         <div class="bottom-chilun1"></div>
         <div class="bottom-chilun2"></div>
+<<<<<<< HEAD
 >>>>>>> 60fdf42dcdb4b4e94955f2f1c318e089a04d3807
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     </div>
 </template>
 
@@ -64,9 +73,14 @@ export default {
 
 <style lang="less" scoped>
 <<<<<<< HEAD
+<<<<<<< HEAD
     .tabl {
         margin-left: 20%;
 =======
+=======
+    .tabl {
+        margin-left: 20%;
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     .training {
         width: 1000px;
         margin: 0 auto;
@@ -133,7 +147,10 @@ export default {
         position: relative;
         top: -4335px;
         left: 1065px;
+<<<<<<< HEAD
 >>>>>>> 60fdf42dcdb4b4e94955f2f1c318e089a04d3807
+=======
+>>>>>>> 8586ee6cd48cb6b4cf53919b90caf3dc2dd135a0
     }
      .title {
         width: 245px;

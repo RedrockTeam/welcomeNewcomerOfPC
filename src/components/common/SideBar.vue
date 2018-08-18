@@ -40,13 +40,9 @@ export default {
         flex-flow: column;
     }
     .button {
-        width: 100%;
+        min-width: 100%;
         flex: 1;
         background: #baefff;
-        // border-right: solid 5px #432a92;
-        //border-left: none;
-        // border-bottom: solid 3px #432a92;
-        // border-top: solid 3px #432a92;
         margin: -4.5px;
         border: solid 4.5px #432a92;
         border-top-right-radius: 5px;
@@ -67,7 +63,7 @@ export default {
     }
     .active {
         background: #fff5a7;
-        width: 135%;
+        min-width: 135%;
         margin: 0 0 0 -4px;
     }
 </style>

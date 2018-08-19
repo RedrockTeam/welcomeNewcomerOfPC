@@ -17,6 +17,7 @@
 <script>
 import TrainingContent from './TrainingContent'
 import ArmyDiscipline from './ArmyDiscipline'
+import YearVideo from './YearVideo'
 import TrainingTips from './TrainingTips'
 
 export default {
@@ -25,17 +26,18 @@ export default {
     },
     components: {
         TrainingContent,
-        ArmyDiscipline
+        ArmyDiscipline,
+        YearVideo
     },
     data() {
         return {
             currentComponent: {
                 name: 'YearVideo',
-                component: null
+                component: YearVideo
             },
             YearVideo: {
                 name: 'YearVideo',
-                component: null
+                component: YearVideo
             },
             TrainingContent: {
                 name: 'TrainingContent',
@@ -63,6 +65,7 @@ export default {
         background-size: 100% 100%;
         position: relative;
         z-index: 1;
+        left: 15%;
     }
     .header {
         width: 865px;

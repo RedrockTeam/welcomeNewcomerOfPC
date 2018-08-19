@@ -1,15 +1,21 @@
 <template>
-        <video-player  class="video-player-box vjs-big-play-centered"
+    <div class="tvideo">
+        <div class="videobox">
+            <video-player  class="video-player vjs-default-skin vjs-big-play-centered"
                  ref="videoPlayer"
                  :options="playerOptions"
                  :playsinline="true"
                  customEventName="customstatechangedeventname"
-        ></video-player>
+            ></video-player>
+        </div>
+
+    </div>
 </template>
 
 <script>
 import "video.js/dist/video-js.css";
 import { videoPlayer } from "vue-video-player";
+import "../../assets/myvideo.css"
 export default {
     components: {
         videoPlayer
@@ -23,6 +29,8 @@ export default {
                 playbackRates: [0.7, 1.0, 1.5, 2.0],
                 sources: this.typepath,
                 poster: "",
+                width: 622,
+                height: 414
             }
         };
     },
@@ -33,6 +41,31 @@ export default {
     },
     methods: {
         
+    },
+    mounted () {
+        let a = document.querySelector('.vjs-big-play-button');
+        a.removeChild(a.firstChild);
     }
 };
 </script>
+<style lang="less" scoped>
+    .tvideo {
+        width: 642px;
+        height: 434px;
+        box-shadow: 0 0 0 4px #432a92;
+        border-radius: 2px;
+        margin: 0 auto;
+        background-color: #54c9f3;
+        display: flex;
+        .videobox {
+            width: 622px;
+            height: 414px;
+            margin: 10px;
+            box-shadow: 0 0 0 4px #432a92;
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+</style>
+

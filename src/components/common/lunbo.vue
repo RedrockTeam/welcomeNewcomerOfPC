@@ -4,15 +4,23 @@
         <div class="lunbo-main">
             <div class="lunbo-box" @mouseover="stop" @mouseout="go">
                 <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;">
-                    <img src="../../assets/lunbo-test3.png" width="520" height="345"  alt="3">
-                    <img src="../../assets/lunbo-test1.png" width="520" height="345"  alt="1">
-                    <img src="../../assets/lunbo-test2.png" width="520" height="345"  alt="2">
-                    <img src="../../assets/lunbo-test3.png" width="520" height="345"  alt="3">
-                    <img src="../../assets/lunbo-test1.png" width="520" height="345"  alt="1">
+                    <img :src="imglist[imglist.length - 1].imgsrc" width="520" height="345">
+                    <img 
+                            v-for="(imgobj, index) in imglist" 
+                            :key="index" 
+                            :src="imgobj.imgsrc" 
+                            width="520" 
+                            height="345">
+                    <img :src="imglist[0].imgsrc" width="520" height="345">
                 </div>
             </div>
             <div class="lunbo-button">
-                <div v-for="imgnum in imgnums" :key="imgnum" class="buttons" ref="buttons"></div>
+                <div v-for="(imgobj, index) in imglist" 
+                        :key="index" 
+                        class="buttons" 
+                        ref="buttons" 
+                        @click="buttonclick(index)"
+                        ></div>
             </div>
         </div>
         <img src="../../assets/lunbo-right.png" ref="next" id="next" @click="next">
@@ -21,12 +29,29 @@
 
 <script>
     export default {
+        props:{
+            imglist: {
+                type: Array,
+                default: function () {
+                    return [
+                        {
+                            imgsrc: require("../../assets/lunbo-test1.png"),
+                        },
+                        {
+                            imgsrc: require("../../assets/lunbo-test2.png"),
+                        },
+                        {
+                            imgsrc: require("../../assets/lunbo-test3.png"),
+                        }
+                    ]
+                }
+            }
+        },
         data () {
             return {
                 timer: null,
                 boolen: false,
                 lightedbutton: 0,
-                imgnums: [ '图1','图2','图3']
             }
         },
         methods: {
@@ -37,23 +62,27 @@
                 if (this.boolen) {
                     return;
                 }
+                this.stop();
                 this.lightedbutton--;
                 if (this.lightedbutton == -1) {
-                    this.lightedbutton = 2;
+                    this.lightedbutton = this.imglist.length - 1;
                 }
                 this.move(520);
                 this.lightbutton();
+                this.go();
             },
             next: function () {
                 if (this.boolen) {
                     return;
                 }
+                this.stop();
                 this.lightedbutton++;
-                if (this.lightedbutton == 3) {
+                if (this.lightedbutton == this.imglist.length) {
                 this.lightedbutton = 0;
                 }
                 this.move(-520);
                 this.lightbutton();
+                this.go();
             },      
             go:  function () {
                 this.timer = setInterval( ()=> {
@@ -79,7 +108,7 @@
                     }, 500);
             },
             lightbutton: function () {
-                for (var i = 0; i < this.$refs.buttons.length; i++) {
+                for (let i = 0; i < this.$refs.buttons.length; i++) {
                     if ( this.$refs.buttons[i].id == 'lightbutton') {
                         this.$refs.buttons[i].id = '';
                         break;
@@ -87,23 +116,20 @@
                 }
                 this.$refs.buttons[this.lightedbutton].id = 'lightbutton';
             },
+            buttonclick:function (i) {
+                if ( this.$refs.buttons[i].id == 'lightbutton' || this.boolen) {
+                    return;
+                }
+                this.stop();
+                this.$refs.lbcontent.style.transitionDuration = '0.5s';
+                this.$refs.lbcontent.style.left = -520 * (i + 1) + 'px';
+                this.lightedbutton = i;
+                this.lightbutton();
+                this.go();
+            }
         },
         mounted () {
-            let buttons = document.querySelectorAll('.buttons');
-            let lbcontent = document.querySelector('.lunbo-content');
-            buttons[0].id = 'lightbutton';
-            for (var i = 0;  i < buttons.length;  i++) {
-                    (function (i) {
-                        buttons[i].onclick = function () {
-                            if ( buttons[i].id == 'lightbutton') {
-                                return;
-                            }
-                            lbcontent.style.left = -520 * (i + 1) + 'px';
-                            this.lightedbutton = i;
-                            this.lightbutton();
-                        }
-                    })(i);
-            }     //给每个按钮加时间监听
+            this.$refs.buttons[0].id = 'lightbutton';
             this.go();
         },
         beforeDestroy() {
@@ -146,20 +172,20 @@
                 }
             }
             .lunbo-button {
-                width: 100px;
-                position: relative;
+                position: absolute;
                 left: 50%;
-                top: 6%;
+                bottom: -6%;
                 transform: translate(-50%);
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 .buttons {
                     width: 13px;
                     height: 13px;
                     border-radius: 50%;
                     box-shadow: 0 0 0 2px #371a7e;
                     background: white;
+                    margin-left: 10px;
+                    margin-right: 10px;
                     cursor: pointer;
                 }
                 #lightbutton {

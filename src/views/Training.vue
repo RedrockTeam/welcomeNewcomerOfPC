@@ -3,9 +3,9 @@
         <div class="title">
             <img src="../assets/fttraining.png">
         </div>
-        <tab :tabList="list" class="tabl"></tab>
+        <!-- <tab :tabList="list" class="tabl"></tab> -->
         <!-- <tab :tabList="list"></tab> -->
-        <div class="title"></div>
+        <!-- <div class="title"></div> -->
         <training-tab></training-tab>
         <div class="left-tube"></div>
         <div class="right-tube"></div>
@@ -67,14 +67,14 @@ export default {
         margin: 0 auto;
         max-height: 1220px;
     }
-    .title {
-        width: 245px;
-        height: 95px;
-        margin: 0 auto;
-        background: url('../assets/shujujiemi.png') no-repeat;
-        background-size: 100% 100%;
-        margin-bottom: 20px;
-    }
+    // .title {
+    //     width: 245px;
+    //     height: 95px;
+    //     margin: 0 auto;
+    //     background: url('../assets/title-frame.png') no-repeat;
+    //     background-size: 100% 100%;
+    //     margin-bottom: 20px;
+    // }
     .left-tube {
         width: 290px;
         height: 2450px;

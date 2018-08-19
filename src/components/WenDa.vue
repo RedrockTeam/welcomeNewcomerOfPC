@@ -49,14 +49,9 @@
 </template>
 
 <script>
-//import Pagination from './Pagination'
-//import api from './apitest.js'
 import axios from 'axios'
 
 export default {
-    components: {
-        //Pagination
-    },
     data() {
         return {
             currentPage: 1,

@@ -78,7 +78,7 @@
                         splitLine: {
                             show: false
                         },
-                        name: '挂科率',
+                        name: '60分以下频率',
                         nameTextStyle: {
                             fontSize: 14
                         }

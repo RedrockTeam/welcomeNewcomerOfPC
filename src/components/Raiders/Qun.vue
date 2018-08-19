@@ -99,14 +99,14 @@
                     <div class="text text3">宁静苑5舍：369823153</div>
                 </div>
                 <div class="mid">
-                    <div class="text text3">宁静苑6舍:328068771</div>
-                    <div class="text text3">兴业苑1舍:370634999</div>
-                    <div class="text text3">兴业苑2舍:179501244</div>
-                    <div class="text text3">兴业苑3舍:328819288</div>
-                    <div class="text text3">兴业苑4舍:319580292</div>
-                    <div class="text text3">兴业苑6舍:175502962</div>
-                    <div class="text text3">兴业苑7舍:483213823</div>
-                    <div class="text text3">兴业苑8舍:368076381</div>
+                    <div class="text text3">宁静苑6舍：328068771</div>
+                    <div class="text text3">兴业苑1舍：370634999</div>
+                    <div class="text text3">兴业苑2舍：179501244</div>
+                    <div class="text text3">兴业苑3舍：328819288</div>
+                    <div class="text text3">兴业苑4舍：319580292</div>
+                    <div class="text text3">兴业苑6舍：175502962</div>
+                    <div class="text text3">兴业苑7舍：483213823</div>
+                    <div class="text text3">兴业苑8舍：368076381</div>
                     <div class="text text3">明理苑1舍：369786189</div>
                 </div>
                 <div class="right">

@@ -52,7 +52,7 @@
                             }
                         },
                         axisLabel: {
-                            fontSize: 14,
+                            fontSize: 16,
                             fontFamily: 'Microsoft YaHei',
                             fontWeight: 350,
                             rotate: 8
@@ -93,7 +93,7 @@
                         barWidth: 100,
                         itemStyle: {
                             normal: {
-                                barBorderRadius: 10,
+                                barBorderRadius: [10, 10, 0, 0],
                                 barBorderColor: '#432a92',
                                 barBorderWidth: 4,
                             },

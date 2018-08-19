@@ -21,6 +21,7 @@ import SuShe from '../components/Raiders/SuShe'
 import AnQuan from '../components/Raiders/AnQuan'
 import QingDan from '../components/Raiders/QingDan'
 import LuXian from '../components/Raiders/LuXian'
+import Qun from '../components/Raiders/Qun'
 
 export default {
     components: {
@@ -52,7 +53,7 @@ export default {
                 {
                     title: require('../assets/qqqun.png'),
                     name: 'qqqun',
-                    component: null
+                    component: Qun
                 },
                 {
                     title: require('../assets/anquanshouze.png'),

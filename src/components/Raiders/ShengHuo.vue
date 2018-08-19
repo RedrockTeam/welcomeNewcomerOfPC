@@ -26,7 +26,7 @@ export default {
                 component: null
             },
             {
-                title: require('../../assets/xiaochi.png'),
+                title: require('../../assets/yinghang.png'),
                 component: null
             },
             {

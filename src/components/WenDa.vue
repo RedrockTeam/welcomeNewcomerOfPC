@@ -159,7 +159,6 @@ export default {
         height: 462px;
         background: url('../assets/wenda-logo.png') no-repeat;
         background-size: 100% 100%;
-
     }
     .wenda-frame {
         width: 828px;

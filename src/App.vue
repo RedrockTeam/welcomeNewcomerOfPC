@@ -23,7 +23,6 @@
 
 <script>
 import Tab from './components/common/Tab'
-import Carousel from './components/common/Carousel'
 import Vheader from './components/Layout/Vheader'
 import loadingBar from 'vue2-loading-bar'
 import Vfooter from './components/Layout/Vfooter'
@@ -33,7 +32,6 @@ import Banner from './components/Layout/Banner'
 export default {
     components: {
         Tab,
-        Carousel,
         Vheader,
         loadingBar,
         Vfooter,
@@ -45,20 +43,6 @@ export default {
             progress: 0,
             error: false,
             timer: null,
-            // list: [
-            //     {
-            //         title: '学生组织',
-            //         component: TabTest1
-            //     },
-            //     {
-            //         title: '宣传视频',
-            //         component: TabTest2
-            //     },
-            //     {
-            //         title: '学生代表',
-            //         component: TabTest3
-            //     }
-            // ],
             carouselList: [
                 {src: require('./assets/dom1.jpg'), content: '第一张'},
                 {src: require('./assets/dom2.jpg'), content: '第二张'},

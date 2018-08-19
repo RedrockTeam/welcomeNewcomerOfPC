@@ -5,10 +5,11 @@
 <script>
     import TopBar from '../common/TopBar.vue'
     import QingJiaZhiDu from './QingJiaZhiDu.vue'
+    import ZuoXi from './ZuoXi'
+
     export default {
         components: {
-            TopBar,
-            QingJiaZhiDu
+            TopBar
         },
         data() {
             return {
@@ -19,7 +20,7 @@
             },
             {
                 title: require('../../assets/zuoxishijian.png'),
-                component: null
+                component: ZuoXi
             }]
             }
         }

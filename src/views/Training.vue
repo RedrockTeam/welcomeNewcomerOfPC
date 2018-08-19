@@ -1,11 +1,9 @@
 <template>
     <div class="training">
-        <div class="title">
-            <img src="../assets/fttraining.png">
-        </div>
         <!-- <tab :tabList="list" class="tabl"></tab> -->
         <!-- <tab :tabList="list"></tab> -->
         <!-- <div class="title"></div> -->
+        <div class="title"><img src="../assets/fttraining.png"></div>
         <training-tab></training-tab>
         <div class="left-tube"></div>
         <div class="right-tube"></div>
@@ -17,38 +15,15 @@
 </template>
 
 <script>
-import Tab from '../components/common/Tab.vue'
-import YearVideo from '../components/training/YearVideo'
-import TrainingTips from '../components/training/TrainingTips.vue'
-import TrainingContent from '../components/training/TrainingContent.vue'
-import ArmyDiscipline from '../components/training/ArmyDiscipline.vue'
 import TrainingTab from '../components/training/TrainingTab'
 
 export default {
     components: {
-        Tab,
         TrainingTab
     },
     data() {
         return {
-            list : [
-                {
-                    title: "历年视频",
-                    component: YearVideo
-                },
-                {
-                    title: "军训小贴士",
-                    component: TrainingTips
-                },
-                {
-                    title: "训练内容",
-                    component: TrainingContent
-                },
-                {
-                    title: "军队纪律",
-                    component: ArmyDiscipline
-                },
-            ]
+            
         }
     },
     mounted() {
@@ -60,21 +35,25 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    .tabl {
-        margin-left: 20%;
     .training {
         width: 1000px;
         margin: 0 auto;
         max-height: 1220px;
     }
-    // .title {
-    //     width: 245px;
-    //     height: 95px;
-    //     margin: 0 auto;
-    //     background: url('../assets/title-frame.png') no-repeat;
-    //     background-size: 100% 100%;
-    //     margin-bottom: 20px;
-    // }
+    .title {
+        width: 245px;
+        height: 95px;
+        margin: 0 auto;
+        background: url('../assets/title-frame.png') no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% 100%;
+        margin-bottom: 20px;
+        img {
+            width: 140px;
+        }
+    }
     .left-tube {
         width: 290px;
         height: 2450px;
@@ -129,20 +108,4 @@ export default {
         top: -4335px;
         left: 1065px;
     }
-     .title {
-        width: 245px;
-        height: 95px;
-        margin: 0 auto;
-        background: url('../assets/title-frame.png') no-repeat;
-        background-size: 100% 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        img {
-            width: 140px;
-            height: 33px;
-        }
-     }
-     }
 </style>

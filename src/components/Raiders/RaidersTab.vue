@@ -4,7 +4,7 @@
             <div
                 v-for="list of componentList"
                 :key="list.name"
-                :class="['title', {active: currentComponent===list}]"
+                :class="['title', {active: currentComponent===list}, {four: list===componentList[3]}]"
                 @click="currentComponent=list">
                 <img :src=list.title>
             </div>
@@ -70,5 +70,11 @@ export default {
     .active {
         background: url('../../assets/activity-button-active.png') no-repeat;
         background-size: 100% 100%;
+    }
+    .four {
+        img {
+            width: 152px;
+            padding: 22px 0 0 20px;
+        }
     }
 </style>

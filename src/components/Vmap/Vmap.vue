@@ -37,12 +37,456 @@ export default {
             maybePlace: '',
             list: [
                 {
+                    name: '外国语学院',
+                    position: [991, 217]
+                },
+                {
+                    name: '国际学院',
+                    position: [991, 217]
+                },
+                {
+                    name: '八教',
+                    position: [730, 321]
+                },
+                {
+                    name: '传媒艺术学院',
+                    position: [730, 321]
+                },
+                {
+                    name: '经济管理学院',
+                    position: [488, 261]
+                },
+                {
+                    name: '现代邮政学院',
+                    position: [488, 261]
+                },
+                {
+                    name: '23A栋',
+                    position: [312, 406]
+                },
+                {
+                    name: '23B栋',
+                    position: [312, 406]
+                },
+                {
+                    name: '22栋',
+                    position: [91, 392]
+                },
+                {
+                    name: '21栋',
+                    position: [-42, 393]
+                },
+                {
+                    name: '留学生楼',
+                    position: [524, 167]
+                },
+                {
+                    name: '三教',
+                    position: [793, 58]
+                },
+                {
+                    name: '研究生院',
+                    position: [793, 58]
+                },
+                {
+                    name: '四教',
+                    position: [981, 11]
+                },
+                {
+                    name: '教务处',
+                    position: [981, 11]
+                },
+                {
+                    name: '通信学院',
+                    position: [987, -105]
+                },
+                {
+                    name: '逸夫科技楼',
+                    position: [927, -175]
+                },
+                {
+                    name: '档案室',
+                    position: [927, -175]
+                },
+                {
+                    name: '校史馆',
+                    position: [927, -175]
+                },
+                {
+                    name: '中心网球场',
+                    position: [866, -295]
+                },
+                {
+                    name: '新校门',
+                    position: [782, -418]
+                },
+                {
+                    name: '紫薇篮球场',
+                    position: [692, -117]
+                },
+                {
+                    name: '体育学院',
+                    position: [452, -5]
+                },
+                {
+                    name: '风雨操场',
+                    position: [452, -5]
+                },
+                {
+                    name: '数字图书馆',
+                    position: [579, -210]
+                },
+                {
+                    name: '信息中心',
+                    position: [579, -210]
+                },
+                {
+                    name: '新行政楼',
+                    position: [592, -323]
+                },
+                {
+                    name: '招生就业处',
+                    position: [592, -323]
+                },
+                {
+                    name: '20栋',
+                    position: [345, 232]
+                },
+                {
+                    name: '19栋',
+                    position: [293, 232]
+                },
+                {
+                    name: '18栋',
+                    position: [178, 232]
+                },
+                {
+                    name: '17栋',
+                    position: [110, 232]
+                },
+                {
+                    name: '太极运动场',
+                    position: [179, 136]
+                },
+                {
+                    name: '新运动场',
+                    position: [179, 136]
+                },
+                {
                     name: '太极操场',
-                    position: [238, 175]
+                    position: [179, 136]
+                },
+                {
+                    name: '游泳池',
+                    position: [224, 9]
+                },
+                {
+                    name: '灯光篮球场',
+                    position: [105, -1]
+                },
+                {
+                    name: '风华运动场',
+                    position: [170, -104]
                 },
                 {
                     name: '老操场',
-                    position: [215, -142]
+                    position: [170, -104]
+                },
+                {
+                    name: '马克思主义学院',
+                    position: [218, -228]
+                },
+                {
+                    name: '自动化学院',
+                    position: [157, -267]
+                },
+                {
+                    name: '先进制造学院',
+                    position: [119, -309]
+                },
+                {
+                    name: '二教',
+                    position: [129, -224]
+                },
+                {
+                    name: '计算机学院',
+                    position: [129, -224]
+                },
+                {
+                    name: '软件学院',
+                    position: [129, -224]
+                },
+                {
+                    name: '老校门',
+                    position: [14, -472]
+                },
+                {
+                    name: '崇文门',
+                    position: [14, -472]
+                },
+                {
+                    name: '科技会堂',
+                    position: [-119, -470]
+                },
+                {
+                    name: '创新创业教育学院',
+                    position: [-48, -433]
+                },
+                {
+                    name: '八十万',
+                    position: [-18, -309]
+                },
+                {
+                    name: '安法学院',
+                    position: [-109, -321]
+                },
+                {
+                    name: '七教',
+                    position: [-109, -321]
+                },
+                {
+                    name: 'EMS',
+                    position: [-109, -321]
+                },
+                {
+                    name: '重邮医院',
+                    position: [-252, -456]
+                },
+                {
+                    name: '重邮宾馆',
+                    position: [-358, -456]
+                },
+                {
+                    name: '老图书馆',
+                    position: [-114, -212]
+                },
+                {
+                    name: '中心食堂',
+                    position: [-112, -100]
+                },
+                {
+                    name: '大西北食堂',
+                    position: [-112, -100]
+                },
+                {
+                    name: '红房子',
+                    position: [-112, -100]
+                },
+                {
+                    name: '红高粱食堂',
+                    position: [-26, 267]
+                },
+                {
+                    name: '兴业苑食堂',
+                    position: [-26, 267]
+                },
+                {
+                    name: '4栋',
+                    position: [-19, 31]
+                },
+                {
+                    name: '5栋',
+                    position: [-19, 31]
+                },
+                {
+                    name: '15栋',
+                    position: [-27, 125]
+                },
+                {
+                    name: 'cwt',
+                    position: [-27, 125]
+                },
+                {
+                    name: '1栋',
+                    position: [-120, 53]
+                },
+                {
+                    name: '2栋',
+                    position: [-120, 53]
+                },
+                {
+                    name: '3栋',
+                    position: [-120, 53]
+                },
+                {
+                    name: '6栋',
+                    position: [-120, 53]
+                },
+                {
+                    name: '16栋',
+                    position: [-93, 158]
+                },
+                {
+                    name: '雨红莲',
+                    position: [-22, -107]
+                },
+                {
+                    name: '信科楼',
+                    position: [-350, -373]
+                },
+                {
+                    name: '信科大厦',
+                    position: [-350, -373]
+                },
+                {
+                    name: '财务处/一卡通中心',
+                    position: [-350, -373]
+                },
+                {
+                    name: '一教',
+                    position: [-314, -312]
+                },
+                {
+                    name: '光电工程学院',
+                    position: [-314, -312]
+                },
+                {
+                    name: '国际半导体学院',
+                    position: [-314, -312]
+                },
+                {
+                    name: '情人坡',
+                    position: [-308, -208]
+                },
+                {
+                    name: '理学院',
+                    position: [-408, -255]
+                },
+                {
+                    name: '保卫处/武装部',
+                    position: [-486, -227]
+                },
+                {
+                    name: '11栋',
+                    position: [-273, -106]
+                },
+                {
+                    name: '12栋',
+                    position: [-273, -106]
+                },
+                {
+                    name: '桂花篮球场',
+                    position: [-380, -124]
+                },
+                {
+                    name: '延生食堂',
+                    position: [170, -104]
+                },
+                {
+                    name: '千喜鹤食堂',
+                    position: [170, -104]
+                },
+                {
+                    name: '学工部/学生处',
+                    position: [170, -104]
+                },
+                {
+                    name: '24栋',
+                    position: [-282, 133]
+                },
+                {
+                    name: '25栋',
+                    position: [-282, 133]
+                },
+                {
+                    name: '26栋',
+                    position: [-282, 133]
+                },
+                {
+                    name: '27栋',
+                    position: [-490, 133]
+                },
+                {
+                    name: '28栋',
+                    position: [-490, 133]
+                },
+                {
+                    name: '29栋',
+                    position: [-490, 133]
+                },
+                {
+                    name: '30栋',
+                    position: [-673, 133]
+                },
+                {
+                    name: '39栋',
+                    position: [-673, 133]
+                },
+                {
+                    name: '31栋',
+                    position: [-570, 24]
+                },
+                {
+                    name: '32栋',
+                    position: [-570, 24]
+                },
+                {
+                    name: '35栋',
+                    position: [-570, 24]
+                },
+                {
+                    name: '8栋',
+                    position: [-575, -108]
+                },
+                {
+                    name: '9栋',
+                    position: [-575, -108]
+                },
+                {
+                    name: '10栋',
+                    position: [-575, -108]
+                },
+                {
+                    name: '33栋',
+                    position: [-575, -108]
+                },
+                {
+                    name: '34栋',
+                    position: [-575, -108]
+                },
+                {
+                    name: '36栋',
+                    position: [-705, -103]
+                },
+                {
+                    name: '37栋',
+                    position: [-705, -103]
+                },
+                {
+                    name: '南部校区',
+                    position: [-1049, -224]
+                },
+                {
+                    name: '通鼎实验大楼',
+                    position: [-1018, -227]
+                },
+                {
+                    name: '综合实验楼',
+                    position: [-1018, -227]
+                },
+                {
+                    name: '生物信息学院',
+                    position: [-1018, -227]
+                },
+                {
+                    name: '兴业苑',
+                    position: [218, 316]
+                },
+                {
+                    name: '知行苑',
+                    position: [14, 182]
+                },
+                {
+                    name: '明理苑',
+                    position: [-453, 142]
+                },
+                {
+                    name: '宁静苑',
+                    position: [-612, -17]
+                },
+                {
+                    name: '四海苑',
+                    position: [-757, -67]
                 }
             ],
             index: 0

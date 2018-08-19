@@ -1,13 +1,17 @@
 <template>
-    <top-bar :barList="barList"></top-bar>
+    <div class="sushe">
+        <top-bar :barList="barList"></top-bar>
+        <lunbo class="lun-bo"></lunbo>
+    </div>
 </template>
 
 <script>
 import TopBar from '../common/TopBar'
-
+import lunbo from '../common/lunbo'
 export default {
     components: {
-        TopBar
+        TopBar,
+        lunbo
     },
     data() {
         return {
@@ -34,5 +38,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+    .sushe {
+        .lun-bo {
+            position: absolute;
+            left: 50%;
+            margin-top: 55px;
+            transform: translate(-50%)
+        }
+    }
 </style>

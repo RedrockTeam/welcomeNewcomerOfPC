@@ -14,7 +14,9 @@ Animated.css
 
 axios
 
-Echarts
+ECharts
+
+Vue-Video-Player
 
 
 

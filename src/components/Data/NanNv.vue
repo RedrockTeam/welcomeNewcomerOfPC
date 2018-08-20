@@ -8,7 +8,7 @@
                 <option>经济管理学院/现代邮政学院</option>
                 <option>软件工程学院</option>
                 <option>自动化学院</option>
-                <option>光电学院/国际半导体学院</option>
+                <option>光电工程学院/重庆国际半导体学院</option>
                 <option>计算机科学与技术学院</option>
                 <option>生物信息学院</option>
                 <option>理学院</option>
@@ -125,7 +125,7 @@
                     this.female = 296
                     this.male = 1379
                 }
-                else if (this.selected === '光电学院/国际半导体学院') {
+                else if (this.selected === '光电工程学院/重庆国际半导体学院') {
                     this.female = 290
                     this.male = 1230
                 }

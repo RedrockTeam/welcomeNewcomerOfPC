@@ -22,40 +22,40 @@ export default {
     data() {
         return {
             t1: {
-                photo: require('../../assets/training/汇报表演.jpg'),
-                content: '汇报表演'
+                photo: require('../../assets/training/1.png'),
+                content: '军训汇演'
             },
             t2: {
-                photo: require('../../assets/training/军体拳.jpg'),
-                content: '军体拳'
+                photo: require('../../assets/training/2.png'),
+                content: '敬礼'
             },
             t3: {
-                photo: require('../../assets/training/拳头.jpg'),
-                content: '拳头'
+                photo: require('../../assets/training/3.png'),
+                content: '正步'
             },
             t4: {
-                photo: require('../../assets/training/手语操.jpg'),
-                content: '手语操'
+                photo: require('../../assets/training/4.png'),
+                content: '齐步'
             },
             t5: {
-                photo: require('../../assets/training/网.jpg'),
-                content: '网'
+                photo: require('../../assets/training/5.png'),
+                content: '手语操'
             },
             t6: {
-                photo: require('../../assets/training/小马哥.jpg'),
-                content: '小马哥'
+                photo: require('../../assets/training/6.png'),
+                content: '军体拳'
             },
             t7: {
-                photo: require('../../assets/training/训练.jpg'),
-                content: '训练'
+                photo: require('../../assets/training/7.png'),
+                content: '格斗术'
             },
             t8: {
-                photo: require('../../assets/training/站军姿.jpg'),
+                photo: require('../../assets/training/8.png'),
                 content: '站军姿'
             },
             t9: {
-                photo: require('../../assets/training/正步.jpg'),
-                content: '正步'
+                photo: require('../../assets/training/9.png'),
+                content: '防空演练'
             }
         }
     }

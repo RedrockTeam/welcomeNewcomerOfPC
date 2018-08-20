@@ -18,11 +18,11 @@ export default {
                 component: ZuZhi
             },
             {
-                title: require('../../assets/xueshengshetuan.png'),
+                title: require('../../assets/hongyanwangxiao.png'),
                 component: null
             },
             {
-                title: require('../../assets/hongyanwangxiao.png'),
+                title: require('../../assets/xueshengshetuan.png'),
                 component: null
             }]
         }

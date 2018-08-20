@@ -15,7 +15,7 @@
             <div class="frame-in">
                 <div class="left"><img src="../assets/activity-icon2.png" @mouseover="mouseover2=true" @mouseout="mouseover2=false" :class="['animated', {swing: mouseover2}]"></div>
                 <div class="right">
-                    <p>萌新你好，欢迎来鲜肉集中营报道！听说这里有好多萌新的照片，也许Ta就是你未来的小伙伴~ 让美好的大学生活从一个微笑开始吧~</p>
+                    <p>萌新你好，欢迎来鲜肉集中营报道！听说这里有好多萌新的照片，快来为你的班级注入萌新能量，美好的大学生活从认识新同学开始~</p>
                     <click-me class="button" path='/activity'></click-me>
                 </div>
             </div>

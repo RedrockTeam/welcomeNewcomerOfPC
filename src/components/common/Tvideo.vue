@@ -8,7 +8,6 @@
                  customEventName="customstatechangedeventname"
             ></video-player>
         </div>
-
     </div>
 </template>
 
@@ -38,13 +37,6 @@ export default {
         player() {
             return this.$refs.videoPlayer.player;
         }
-    },
-    methods: {
-        
-    },
-    mounted () {
-        let a = document.querySelector('.vjs-big-play-button');
-        a.removeChild(a.firstChild);
     }
 };
 </script>

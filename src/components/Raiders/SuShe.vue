@@ -1,36 +1,38 @@
 <template>
     <div class="sushe">
         <top-bar :barList="barList"></top-bar>
-        <lunbo class="lun-bo"></lunbo>
     </div>
 </template>
 
 <script>
 import TopBar from '../common/TopBar'
-import lunbo from '../common/lunbo'
+import XingYeYuan from './XingYeYuan'
+import ZhiXingYuan from './ZhiXingYuan'
+import MingLiYuan from './MingLiYuan'
+import NingJingYuan from './NingJingYuan'
+
 export default {
     components: {
         TopBar,
-        lunbo
     },
     data() {
         return {
             barList: [
             {
                 title: require('../../assets/xingyeyuan.png'),
-                component: null
+                component: XingYeYuan
             },
             {
                 title: require('../../assets/zhixingyuan.png'),
-                component: null
+                component: ZhiXingYuan
             },
             {
                 title: require('../../assets/mingliyuan.png'),
-                component: null
+                component: MingLiYuan
             },
             {
                 title: require('../../assets/ningjingyuan.png'),
-                component: null
+                component: NingJingYuan
             }]
         }
     }

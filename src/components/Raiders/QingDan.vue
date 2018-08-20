@@ -48,6 +48,7 @@
         &-header {
             font-size: 18px;
             margin-bottom: 10px;
+            font-weight: 600;
         }
         &-container {
             padding-left: 8px;

@@ -2,7 +2,7 @@
     height: 3.4em;
     width: 3.4em;
     border-radius: 50%;
-    transform: translate(0,-40%);
+    transform: translate(-11%,-31%);
     border: 4px solid white;
     background-image: url(../assets/videoplay.png);
     background-repeat: no-repeat;
@@ -22,4 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    content: none;
 }

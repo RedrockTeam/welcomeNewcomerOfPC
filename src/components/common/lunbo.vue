@@ -1,6 +1,7 @@
 <template>
     <div class="lunbo">
-        <img src="../../assets/lunbo-left.png" ref="prev" id="prev" @click="prev">
+        <img src="../../assets/lunbo-left.png" ref="prev" id="prev" @click="prev" v-show="!leftMouseover" @mouseover="leftMouseover=true">
+        <img src="../../assets/lunbo-left-active.png" ref="prev" id="prev" @click="prev" v-show="leftMouseover" @mouseout="leftMouseover=false">
         <div class="lunbo-main">
             <div class="lunbo-box" @mouseover="stop" @mouseout="go">
                 <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;" :style="{width:(imglist.length+2)*520+'px'}">
@@ -23,7 +24,8 @@
                         ></div>
             </div>
         </div>
-        <img src="../../assets/lunbo-right.png" ref="next" id="next" @click="next">
+        <img src="../../assets/lunbo-right.png" ref="next" id="next" @click="next" v-show="!rightMouseover" @mouseover="rightMouseover=true">
+        <img src="../../assets/lunbo-right-active.png" ref="next" id="next" @click="next" v-show="rightMouseover" @mouseout="rightMouseover=false">
     </div>
 </template>
 
@@ -55,6 +57,9 @@
                 timer: null,
                 boolen: false,
                 lightedbutton: 0,
+                rightMouseover: false,
+                leftMouseover: false,
+                timer2: null
             }
         },
         methods: {
@@ -98,12 +103,12 @@
                         this.$refs.lbcontent.style.transitionDuration = "0.5s";
                     }
                     this.$refs.lbcontent.style.left = parseInt(this.$refs.lbcontent.style.left) + distance + 'px';
-                    setTimeout( () =>{
+                    this.timer2 = setTimeout( () =>{
                         if (parseInt(this.$refs.lbcontent.style.left) > -520) {
                             this.$refs.lbcontent.style.transitionDuration = "0s"
                             this.$refs.lbcontent.style.left = -520 * this.imglist.length + 'px';
                         }
-                        if (parseInt(this.$refs.lbcontent.style.left) < -2080) {
+                        if (parseInt(this.$refs.lbcontent.style.left) < -520 * this.imglist.length) {
                             this.$refs.lbcontent.style.transitionDuration = "0s";
                             this.$refs.lbcontent.style.left = -520 + 'px';
                         }
@@ -137,6 +142,7 @@
         },
         beforeDestroy() {
             this.stop();
+            clearInterval(this.timer2)
         }
     }
 </script>
@@ -169,7 +175,6 @@
                 box-shadow: 0 0 0 4px #432a92;
                 overflow: hidden;
                 .lunbo-content {
-                    //width: 500%;
                     height: 100%;
                     position: relative;
                 }
@@ -177,7 +182,7 @@
             .lunbo-button {
                 position: absolute;
                 left: 50%;
-                bottom: -6%;
+                top: 69.5%;
                 transform: translate(-50%);
                 display: flex;
                 align-items: center;

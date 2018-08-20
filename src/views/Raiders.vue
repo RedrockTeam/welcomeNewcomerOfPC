@@ -46,8 +46,8 @@ export default {
                     component: ShiTang
                 },
                 {
-                    title: require('../assets/xinmeitidaquan.png'),
-                    name: 'zhoubianfengjing',
+                    title: require('../assets/changyonggongzhonghao.png'),
+                    name: 'changyonggongzhonghao',
                     component: null
                 },
                 {

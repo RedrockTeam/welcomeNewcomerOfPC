@@ -4,6 +4,12 @@
 
 <script>
 import TopBar from '../common/TopBar'
+import XingYeYuan2 from './XingYeYuan2'
+import HongGaoLiang from './HongGaoLiang'
+import QianXiHe from './QianXiHe'
+import DaXiBei from './DaXiBei'
+import ZhongXin from './ZhongXin'
+import YanSheng from './YanSheng'
 
 export default {
     components: {
@@ -14,27 +20,27 @@ export default {
             barList: [
             {
                 title: require('../../assets/xingyeyuan.png'),
-                component: null
+                component: XingYeYuan2
             },
             {
                 title: require('../../assets/honggaoliang.png'),
-                component: null
+                component: HongGaoLiang
             },
             {
                 title: require('../../assets/qianxihe.png'),
-                component: null
+                component: QianXiHe
             },
             {
                 title: require('../../assets/daxibei.png'),
-                component: null
+                component: DaXiBei
             },
             {
                 title: require('../../assets/zhongxin.png'),
-                component: null
+                component: ZhongXin
             },
             {
                 title: require('../../assets/yansheng.png'),
-                component: null
+                component: YanSheng
             }]
         }
     }

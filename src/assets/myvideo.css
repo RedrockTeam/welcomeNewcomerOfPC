@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: 60%;
+    outline: none;
 }
 .vjs-paused .vjs-big-play-button {
     display: block;

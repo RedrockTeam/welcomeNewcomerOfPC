@@ -19,6 +19,12 @@ export default {
             imglist: [
                 {
                     imgsrc: require("../../assets/shitang/y1.jpg")
+                },
+                {
+                    imgsrc: require("../../assets/shitang/y2.jpg")
+                },
+                {
+                    imgsrc: require("../../assets/shitang/y3.jpg")
                 }
             ]
         }

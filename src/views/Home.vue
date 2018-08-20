@@ -52,7 +52,7 @@
                 style: {
                     title: require('../assets/ftstyle.png'),
                     icon: require('../assets/style-icon.png'),
-                    content: '优秀教师和优秀学长学姐都在你身边，你会成为他们吗？ 各大校级学生组织  精彩原创视频等你来戳！',
+                    content: '优秀教师和优秀学长学姐都在你身边，你会成为他们吗？重邮精彩原创视频等你来戳！',
                     path: '/style'
                 },
                 about: {
@@ -78,28 +78,6 @@
             transform: rotate(360deg);
         }
     }
-    // @keyframes rotate1 {
-    //     0% {
-    //         transform: rotateZ(0deg) rotateY(40deg);
-    //     }
-    //     50% {
-    //         transform: rotateZ(180deg) rotateY(40deg);
-    //     }
-    //     100% {
-    //         transform: rotateZ(360deg) rotateY(40deg);
-    //     }
-    // }
-    // @keyframes rotate2 {
-    //     0% {
-    //         transform: rotateZ(0deg) rotateY(40deg);
-    //     }
-    //     50% {
-    //         transform: rotateZ(-180deg) rotateY(40deg);
-    //     }
-    //     100% {
-    //         transform: rotateZ(-360deg) rotateY(40deg);
-    //     }
-    // }
     .home {
         width: 1000px;
         height: 2950px;
@@ -255,6 +233,5 @@
         position: relative;
         top: -8520px;
         left: 1100px;
-        //animation: rotate2  5s linear 0s infinite normal none running;
     }
 </style>

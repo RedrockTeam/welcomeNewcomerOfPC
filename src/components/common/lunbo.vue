@@ -58,7 +58,8 @@
                 boolen: false,
                 lightedbutton: 0,
                 rightMouseover: false,
-                leftMouseover: false
+                leftMouseover: false,
+                timer2: null
             }
         },
         methods: {
@@ -102,7 +103,7 @@
                         this.$refs.lbcontent.style.transitionDuration = "0.5s";
                     }
                     this.$refs.lbcontent.style.left = parseInt(this.$refs.lbcontent.style.left) + distance + 'px';
-                    setTimeout( () =>{
+                    this.timer2 = setTimeout( () =>{
                         if (parseInt(this.$refs.lbcontent.style.left) > -520) {
                             this.$refs.lbcontent.style.transitionDuration = "0s"
                             this.$refs.lbcontent.style.left = -520 * this.imglist.length + 'px';
@@ -141,6 +142,7 @@
         },
         beforeDestroy() {
             this.stop();
+            clearInterval(this.timer2)
         }
     }
 </script>

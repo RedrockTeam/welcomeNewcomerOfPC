@@ -49,7 +49,7 @@ export default {
     }
     .button1 img {
         transform: scale(0.8);
-        padding: 20px 40px;
+        padding: 20px 15px;
     }
     .button2 img {
         transform: scale(0.8);

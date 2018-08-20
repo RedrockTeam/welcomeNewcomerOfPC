@@ -42,6 +42,9 @@
                         },
                         {
                             imgsrc: require("../../assets/lunbo-test3.png"),
+                        },
+                        {
+                            imgsrc: require("../../assets/lunbo-test2.png"),
                         }
                     ]
                 }
@@ -91,16 +94,16 @@
             },
             move: function (distance) {
                     this.boolen = true;
-                    if (parseInt(this.$refs.lbcontent.style.left) >= -1560 && parseInt(this.$refs.lbcontent.style.left) <= -520) {
+                    if (parseInt(this.$refs.lbcontent.style.left) >= (-520 * this.imglist.length) && parseInt(this.$refs.lbcontent.style.left) <= -520) {
                         this.$refs.lbcontent.style.transitionDuration = "0.5s";
                     }
                     this.$refs.lbcontent.style.left = parseInt(this.$refs.lbcontent.style.left) + distance + 'px';
                     setTimeout( () =>{
                         if (parseInt(this.$refs.lbcontent.style.left) > -520) {
                             this.$refs.lbcontent.style.transitionDuration = "0s"
-                            this.$refs.lbcontent.style.left = -1560 + 'px';
+                            this.$refs.lbcontent.style.left = -520 * this.imglist.length + 'px';
                         }
-                        if (parseInt(this.$refs.lbcontent.style.left) < -1560) {
+                        if (parseInt(this.$refs.lbcontent.style.left) < -2080) {
                             this.$refs.lbcontent.style.transitionDuration = "0s";
                             this.$refs.lbcontent.style.left = -520 + 'px';
                         }

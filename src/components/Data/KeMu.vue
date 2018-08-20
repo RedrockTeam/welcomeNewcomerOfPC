@@ -216,7 +216,7 @@
         background-size: 100% 100%;
     }
     #select {
-        width: 230px;
+        width: 270px;
         height: 40px;
         border: solid 3px #432a92;
         outline: none;

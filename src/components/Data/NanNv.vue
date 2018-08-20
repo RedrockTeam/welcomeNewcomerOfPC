@@ -51,7 +51,7 @@
                         bottom: '20px',
                         data: ['女', '男'],
                         textStyle: {
-                            fontSize: 20
+                            fontSize: 22
                         },
                     },
                     series: [{
@@ -88,8 +88,8 @@
                                     align: 'center',
                                     baseline: 'middle',
                                     fontSize: 30,
-                                    fontWeight: 300,
-                                    color: '#000',
+                                    fontWeight: 500,
+                                    color: '#432a92',
                                     fontFamily: 'Microsoft YaHei'
                                 }
                             }
@@ -200,7 +200,7 @@
         background-size: 100% 100%;
     }
     #select {
-        width: 230px;
+        width: 270px;
         height: 40px;
         border: solid 3px #432a92;
         outline: none;

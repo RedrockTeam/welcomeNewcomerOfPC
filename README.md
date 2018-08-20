@@ -36,7 +36,7 @@ Vue-Video-Player
 - [x] 给地图打点
 - [x] 解决路由导航栏active的bug
 - [ ] 404页面
-
+- [x] 更改player样式
 
 
 

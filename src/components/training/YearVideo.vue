@@ -5,7 +5,6 @@
 </template>
 <script>
 import TrVideo from "../common/Tvideo"
-import VideoIntro from "../common/videointro"
 export default {
     data() {
         return {

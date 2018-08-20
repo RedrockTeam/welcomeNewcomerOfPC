@@ -3,7 +3,7 @@
         <img src="../../assets/lunbo-left.png" ref="prev" id="prev" @click="prev">
         <div class="lunbo-main">
             <div class="lunbo-box" @mouseover="stop" @mouseout="go">
-                <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;">
+                <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;" :style="{width:(imglist.length+2)*520+'px'}">
                     <img :src="imglist[imglist.length - 1].imgsrc" width="520" height="345">
                     <img 
                             v-for="(imgobj, index) in imglist" 
@@ -169,7 +169,7 @@
                 box-shadow: 0 0 0 4px #432a92;
                 overflow: hidden;
                 .lunbo-content {
-                    width: 500%;
+                    //width: 500%;
                     height: 100%;
                     position: relative;
                 }

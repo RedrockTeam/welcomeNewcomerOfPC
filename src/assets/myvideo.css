@@ -7,8 +7,18 @@
     background-image: url(../assets/videoplay.png);
     background-repeat: no-repeat;
     background-size: 45%;
-    background-position: 30px;
+    background-position: 60%;
 }
 .vjs-paused .vjs-big-play-button {
     display: block;
+}
+.vjs-icon-placeholder::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vjs-playback-rate > .vjs-menu-button, .vjs-playback-rate .vjs-playback-rate-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

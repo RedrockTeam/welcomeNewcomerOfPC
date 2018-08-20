@@ -10,7 +10,7 @@
                 <option>经济管理学院/现代邮政学院</option>
                 <option>软件工程学院</option>
                 <option>理学院</option>
-                <option>光电工程学院/国际半导体学院</option>
+                <option>光电工程学院/重庆国际半导体学院</option>
                 <option>生物信息学院</option>
                 <option>体育学院</option>
                 <option>先进制造工程学院</option>
@@ -154,7 +154,7 @@
                     this.subject = ['高等代数', '普通物理学B1', '数学分析A2']
                     this.data = [0.44, 0.31, 0.24]
                 }
-                else if (this.selected === '光电工程学院/国际半导体学院') {
+                else if (this.selected === '光电工程学院/重庆国际半导体学院') {
                     this.subject = ['C语言程序设计', '大学物理A', '高等数学A']
                     this.data = [0.40, 0.36, 0.23]
                 }
@@ -216,7 +216,7 @@
         background-size: 100% 100%;
     }
     #select {
-        width: 230px;
+        width: 270px;
         height: 40px;
         border: solid 3px #432a92;
         outline: none;

@@ -29,8 +29,8 @@ export default {
                 playbackRates: [0.7, 1.0, 1.5, 2.0],
                 sources: this.typepath,
                 poster: "",
-                width: 622,
-                height: 414
+                width: 690,
+                height: 390
             }
         };
     },
@@ -50,16 +50,16 @@ export default {
 </script>
 <style lang="less" scoped>
     .tvideo {
-        width: 642px;
-        height: 434px;
+        width: 710px;
+        height: 410px;
         box-shadow: 0 0 0 4px #432a92;
         border-radius: 2px;
         margin: 0 auto;
         background-color: #54c9f3;
         display: flex;
         .videobox {
-            width: 622px;
-            height: 414px;
+            width:690px;
+            height: 390px;
             margin: 10px;
             box-shadow: 0 0 0 4px #432a92;
             border-radius: 2px;

@@ -8,7 +8,7 @@
                 <option>经济管理学院/现代邮政学院</option>
                 <option>软件工程学院</option>
                 <option>自动化学院</option>
-                <option>光电学院/国际半导体学院</option>
+                <option>光电工程学院/重庆国际半导体学院</option>
                 <option>计算机科学与技术学院</option>
                 <option>生物信息学院</option>
                 <option>理学院</option>
@@ -51,7 +51,7 @@
                         bottom: '20px',
                         data: ['女', '男'],
                         textStyle: {
-                            fontSize: 20
+                            fontSize: 22
                         },
                     },
                     series: [{
@@ -88,8 +88,8 @@
                                     align: 'center',
                                     baseline: 'middle',
                                     fontSize: 30,
-                                    fontWeight: 300,
-                                    color: '#000',
+                                    fontWeight: 500,
+                                    color: '#432a92',
                                     fontFamily: 'Microsoft YaHei'
                                 }
                             }
@@ -125,7 +125,7 @@
                     this.female = 296
                     this.male = 1379
                 }
-                else if (this.selected === '光电学院/国际半导体学院') {
+                else if (this.selected === '光电工程学院/重庆国际半导体学院') {
                     this.female = 290
                     this.male = 1230
                 }
@@ -200,7 +200,7 @@
         background-size: 100% 100%;
     }
     #select {
-        width: 230px;
+        width: 270px;
         height: 40px;
         border: solid 3px #432a92;
         outline: none;

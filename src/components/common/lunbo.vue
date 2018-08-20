@@ -3,7 +3,7 @@
         <img src="../../assets/lunbo-left.png" ref="prev" id="prev" @click="prev">
         <div class="lunbo-main">
             <div class="lunbo-box" @mouseover="stop" @mouseout="go">
-                <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;">
+                <div class="lunbo-content" ref="lbcontent" style="left: -520px;transition-duration: 0.5s;" :style="{width:(imglist.length+2)*520+'px'}">
                     <img :src="imglist[imglist.length - 1].imgsrc" width="520" height="345">
                     <img 
                             v-for="(imgobj, index) in imglist" 
@@ -42,6 +42,9 @@
                         },
                         {
                             imgsrc: require("../../assets/lunbo-test3.png"),
+                        },
+                        {
+                            imgsrc: require("../../assets/lunbo-test2.png"),
                         }
                     ]
                 }
@@ -91,16 +94,16 @@
             },
             move: function (distance) {
                     this.boolen = true;
-                    if (parseInt(this.$refs.lbcontent.style.left) >= -1560 && parseInt(this.$refs.lbcontent.style.left) <= -520) {
+                    if (parseInt(this.$refs.lbcontent.style.left) >= (-520 * this.imglist.length) && parseInt(this.$refs.lbcontent.style.left) <= -520) {
                         this.$refs.lbcontent.style.transitionDuration = "0.5s";
                     }
                     this.$refs.lbcontent.style.left = parseInt(this.$refs.lbcontent.style.left) + distance + 'px';
                     setTimeout( () =>{
                         if (parseInt(this.$refs.lbcontent.style.left) > -520) {
                             this.$refs.lbcontent.style.transitionDuration = "0s"
-                            this.$refs.lbcontent.style.left = -1560 + 'px';
+                            this.$refs.lbcontent.style.left = -520 * this.imglist.length + 'px';
                         }
-                        if (parseInt(this.$refs.lbcontent.style.left) < -1560) {
+                        if (parseInt(this.$refs.lbcontent.style.left) < -2080) {
                             this.$refs.lbcontent.style.transitionDuration = "0s";
                             this.$refs.lbcontent.style.left = -520 + 'px';
                         }
@@ -166,7 +169,7 @@
                 box-shadow: 0 0 0 4px #432a92;
                 overflow: hidden;
                 .lunbo-content {
-                    width: 500%;
+                    //width: 500%;
                     height: 100%;
                     position: relative;
                 }

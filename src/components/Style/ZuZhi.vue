@@ -15,7 +15,23 @@ export default {
         return {
             barList: [
                 {
-                    title: '科技联合会',
+                    title: '团委办公室',
+                    component: null
+                },
+                {
+                    title: '团委组织部',
+                    component: null
+                },
+                {
+                    title: '团委宣传部',
+                    component: null
+                },
+                {
+                    title: '学生社团联合会',
+                    component: null
+                },
+                {
+                    title: '学生科技联合会',
                     component: null
                 },
                 {
@@ -23,15 +39,7 @@ export default {
                     component: null
                 },
                 {
-                    title: '团委各部室',
-                    component: null
-                },
-                {
-                    title: '社团联合部',
-                    component: null
-                },
-                {
-                    title: '校学生会',
+                    title: '学生会',
                     component: null
                 },
                 {

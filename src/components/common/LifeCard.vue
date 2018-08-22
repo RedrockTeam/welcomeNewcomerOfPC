@@ -41,11 +41,12 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;
+        overflow: hidden;
         .lifeimg {
-            width: 370px;
+            width: 364px;
             height: 172px;
-            margin-bottom: 17px; 
-            margin-bottom: 5px;
+            //margin-bottom: 0px;
+            border: solid 3px #432a92;
         }
         p {
             margin-top: 5px;

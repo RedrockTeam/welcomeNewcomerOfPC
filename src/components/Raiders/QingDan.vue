@@ -2,7 +2,7 @@
     <div class="qingdan">
         <div class="content">
             <div class="content-header">【报道时间】</div>
-            <div class="content-container">本科新生2017年9月14、15日报道</div>
+            <div class="content-container">本科新生2018年9月14、15日报道</div>
         </div>
         <div class="content">
             <div class="content-header">【报道地点】</div>

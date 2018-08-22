@@ -34,7 +34,7 @@ export default {
         height: 100%;
     }
     .side-bar {
-        width: 60px;
+        width: 120px;
         height: 100%;
         display: flex;
         flex-flow: column;
@@ -47,7 +47,6 @@ export default {
         border: solid 4.5px #432a92;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        writing-mode: vertical-lr;
         cursor: pointer;
         color: #432a92;
         display: flex;
@@ -63,7 +62,7 @@ export default {
     }
     .active {
         background: #fff5a7;
-        min-width: 135%;
+        min-width: 120%;
         margin: 0 0 0 -4px;
     }
 </style>

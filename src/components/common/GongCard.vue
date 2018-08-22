@@ -43,9 +43,10 @@
         }
     }
     .gongimg {
-        width: 180px;
-        height: 180px;
+        width: 174px;
+        height: 174px;
         margin-top: 15px;
+        border: solid 3px #432a92;
     }
     .gongname {
         transform: translate(-50%) scale(0.8);

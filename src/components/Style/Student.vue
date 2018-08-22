@@ -4,7 +4,9 @@
 
 <script>
 import TopBar from '../common/TopBar'
-import ZuZhi from '../Style/ZuZhi'
+import ZuZhi from './ZuZhi'
+import HongYan from './HongYan'
+import XueShengSheTuan from './XueShengSheTuan'
 
 export default {
     components: {
@@ -19,11 +21,11 @@ export default {
             },
             {
                 title: require('../../assets/hongyanwangxiao.png'),
-                component: null
+                component: HongYan
             },
             {
                 title: require('../../assets/xueshengshetuan.png'),
-                component: null
+                component: XueShengSheTuan
             }]
         }
     }

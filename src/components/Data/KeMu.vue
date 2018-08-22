@@ -52,10 +52,10 @@
                             }
                         },
                         axisLabel: {
-                            fontSize: 16,
+                            fontSize: 14,
                             fontFamily: 'Microsoft YaHei',
                             fontWeight: 350,
-                            rotate: 8
+                            rotate: 12
                         },
                         name: '课程名称',
                         nameTextStyle: {

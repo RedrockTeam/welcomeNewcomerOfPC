@@ -15,7 +15,6 @@
             leave-active-class="animated fadeOut faster">
                 <router-view @finish="loaded"></router-view>
         </transition>
-        <!-- <carousel :carouselList="carouselList" autoplay></carousel> -->
         <fixed></fixed>
         <vfooter></vfooter>
     </div>

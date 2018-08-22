@@ -2,8 +2,8 @@
     <div class="lifecard">
         <img :src="lifelist.mainimg" class="lifeimg">
         <img :src="lifelist.textimg">
-        <p>{{lifelist.message}}</p>
-        <p>{{lifelist.money}}</p>
+        <p>{{lifelist.message1}}</p>
+        <p>{{lifelist.message2}}</p>
     </div>
 </template>
 
@@ -16,8 +16,8 @@
                     return {
                         mainimg:require("../../assets/lunbo-test1.png"),
                         textimg: require("../../assets/fengjingtu.png"),
-                        message:"简介：重庆南山一棵树观景台位于南岸区王家山脉临江半山腰处，与重庆主城区隔江相望，是重庆都市旅游的必到之地。在这里可以看见重庆城这座山水之城的起伏面貌。",
-                        money: "人均消费：10元"
+                        message1:"简介：重庆南山一棵树观景台位于南岸区王家山脉临江半山腰处，与重庆主城区隔江相望，是重庆都市旅游的必到之地。在这里可以看见重庆城这座山水之城的起伏面貌。",
+                        message2: "人均消费：10元"
                     }
                 }
             }

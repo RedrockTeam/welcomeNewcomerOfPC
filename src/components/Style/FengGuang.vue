@@ -12,7 +12,6 @@
         <photo-frame :obj="f10" class="photo"></photo-frame>
         <photo-frame :obj="f11" class="photo"></photo-frame>
         <photo-frame :obj="f12" class="photo"></photo-frame>
-        <photo-frame :obj="f13" class="photo"></photo-frame>
     </div>
 </template>
 
@@ -71,10 +70,6 @@ export default {
             f12: {
                 photo: require('../../assets/fengguang/逸夫楼.png'),
                 content: '逸夫楼'
-            },
-            f13: {
-                photo: require('../../assets/fengguang/雨红莲.png'),
-                content: '雨红莲'
             }
         }
     }

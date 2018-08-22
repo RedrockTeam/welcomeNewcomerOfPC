@@ -22,10 +22,11 @@ import AnQuan from '../components/Raiders/AnQuan'
 import QingDan from '../components/Raiders/QingDan'
 import LuXian from '../components/Raiders/LuXian'
 import Qun from '../components/Raiders/Qun'
-
+import GongZhong from "../components/Raiders/GongZhong";
 export default {
     components: {
-        RaidersTab
+        RaidersTab,
+        GongZhong
     },
     data() {
         return {
@@ -48,7 +49,7 @@ export default {
                 {
                     title: require('../assets/changyonggongzhonghao.png'),
                     name: 'changyonggongzhonghao',
-                    component: null
+                    component: GongZhong
                 },
                 {
                     title: require('../assets/zhuyedaquan.png'),
@@ -86,6 +87,7 @@ export default {
         width: 1000px;
         margin: 0 auto;
         max-height: 1415px;
+        overflow: hidden;
     }
     .title {
         width: 245px;

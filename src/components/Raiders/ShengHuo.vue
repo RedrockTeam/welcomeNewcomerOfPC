@@ -1,40 +1,47 @@
 <template>
     <div>
         <top-bar :barList="barList"></top-bar>
-        <life-card></life-card>
     </div>
 </template>
 
 <script>
 import TopBar from '../common/TopBar'
-import LifeCard from '../common/LifeCard'
+import MeiShi from './MeiShi'
+import JingSe from './JingSe'
+import YinHang from './YinHang'
+import KuaiDi from "./KuaiDi"
+import ChaoShi from "./ChaoShi";
 export default {
     components: {
         TopBar,
-        LifeCard
+        MeiShi,
+        JingSe,
+        YinHang,
+        KuaiDi,
+        ChaoShi
     },
     data() {
         return {
             barList: [
             {
                 title: require('../../assets/meishi.png'),
-                component: null
+                component: MeiShi
             },
             {
                 title: require('../../assets/jingse.png'),
-                component: null
+                component: JingSe
             },
             {
                 title: require('../../assets/yinghang.png'),
-                component: null
+                component: YinHang
             },
             {
                 title: require('../../assets/kuaidi.png'),
-                component: null
+                component: KuaiDi
             },
             {
                 title: require('../../assets/chaoshi.png'),
-                component: null
+                component: ChaoShi
             }]
         }
     }

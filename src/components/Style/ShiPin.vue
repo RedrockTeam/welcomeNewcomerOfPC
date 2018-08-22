@@ -7,7 +7,6 @@
         <cqupt-video :obj="v5" class="obj"></cqupt-video>
         <cqupt-video :obj="v6" class="obj"></cqupt-video>
         <cqupt-video :obj="v7" class="obj"></cqupt-video>
-        <cqupt-video :obj="v8" class="obj"></cqupt-video>
         <cqupt-video :obj="v9" class="obj"></cqupt-video>
     </div>
 </template>
@@ -55,11 +54,6 @@ export default {
                 photo: require('../../assets/cquptvideo/7.png'),
                 link: 'https://v.qq.com/x/page/u061866c94o.html',
                 content: '[樱繁·春日斜] 重庆邮电大学 2018樱花季'
-            },
-            v8: {
-                photo: require('../../assets/cquptvideo/8.png'),
-                link: 'https://v.qq.com/x/page/h0392p55io7.html',
-                content: '《春风十里》重庆邮电大学版'
             },
             v9: {
                 photo: require('../../assets/cquptvideo/9.png'),

@@ -6,6 +6,7 @@
 
 <script>
 import SideBar from '../common/SideBar'
+import BanGongShi from './BanGongShi'
 
 export default {
     components: {
@@ -16,7 +17,7 @@ export default {
             barList: [
                 {
                     title: '团委办公室',
-                    component: null
+                    component: BanGongShi
                 },
                 {
                     title: '团委组织部',

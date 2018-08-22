@@ -52,7 +52,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 14px;
-            color: #6256a3;
+            color: #503b90;
         }
         .lifefont {
             font-size: 18px;

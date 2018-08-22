@@ -87,7 +87,6 @@ export default {
         width: 1000px;
         margin: 0 auto;
         max-height: 1415px;
-        overflow: hidden;
     }
     .title {
         width: 245px;

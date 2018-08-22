@@ -32,19 +32,22 @@
         margin-top: 30px;
         padding-left: 7%;
         padding-right: 7%;
-        padding-top: 20px;
         h2 {
             color: #39247d;
             text-decoration:none; 
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
-        a:link,a:visited {
+        a {
+            font-size: 18px;
+        }
+        a:link, a:visited {
             text-decoration:none; 
             color: blue;
         }
         a:hover {
-            color:blueviolet;
+            color:red;
             text-decoration:underline; 
-            transform: scale(1.2);
         }
     }
 </style>

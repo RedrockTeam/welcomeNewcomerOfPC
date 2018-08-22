@@ -7,7 +7,6 @@
 
 <script>
 import TopBar from '../common/TopBar'
-import QuanBu from './QuanBu'
 import LifeCard from '../common/LifeCard'
 export default {
     components: {
@@ -17,10 +16,6 @@ export default {
     data() {
         return {
             barList: [
-            {
-                title: require('../../assets/quanbu.png'),
-                component: QuanBu
-            },
             {
                 title: require('../../assets/meishi.png'),
                 component: null

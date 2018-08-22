@@ -1,8 +1,5 @@
 <template>
     <div class="training">
-        <!-- <tab :tabList="list" class="tabl"></tab> -->
-        <!-- <tab :tabList="list"></tab> -->
-        <!-- <div class="title"></div> -->
         <div class="title"><img src="../assets/fttraining.png"></div>
         <training-tab></training-tab>
         <div class="left-tube"></div>

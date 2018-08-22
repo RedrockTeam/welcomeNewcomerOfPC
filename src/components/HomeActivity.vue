@@ -5,7 +5,7 @@
             <div class="frame-in">
                 <div class="left"><img src="../assets/activity-icon1.png" @mouseover="mouseover1=true" @mouseout="mouseover1=false" :class="['animated', {swing: mouseover1}]"></div>
                 <div class="right">
-                    <p>想知道重邮校园的秘密？想和学长学姐零距离接触？热心的学长学姐都在这里，他们是重邮小百 科，为你答疑解惑！</p>
+                    <p>想知道重邮校园的秘密？想和学长学姐零距离接触？热心的学长学姐都在这里，他们是重邮小百科，为你答疑解惑！</p>
                     <click-me class="button" path='/activity/wenda'></click-me>
                 </div>
             </div>

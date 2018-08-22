@@ -11,6 +11,7 @@
                 <component :is="currentComponent.component"></component>
             </transition>
         </div>
+        <div class="source">资料来源于重邮小卫士</div>
     </div>
 </template>
 
@@ -97,5 +98,12 @@ export default {
     .active {
         background: url('../../assets/activity-button-active.png') no-repeat;
         background-size: 100% 100%;
+    }
+    .source {
+        color: #032d47;
+        font-size: 22px;
+        position: absolute;
+        bottom: 10px;
+        right: 55px;
     }
 </style>

@@ -24,7 +24,7 @@ Vue-Video-Player
 
 - [x] Layout悬浮div放缩时的水平位置不变
 - [x] 重邮地图模糊搜索(TODO:列出所有符合输入的地点的菜单)
-- [ ] 优化垃圾代码(特别是Vmap.vue)
+- [ ] 优化垃圾代码(特别是Vmap.vue、YearVideo.vue)
 - [x] 返回顶部的云震动效果
 - [x] 迎新活动分页的动态路由
 - [x] 迎新活动分页的loading bar的bug
@@ -37,6 +37,7 @@ Vue-Video-Player
 - [x] 解决路由导航栏active的bug
 - [ ] 404页面
 - [x] 更改player样式
+- [ ] select小组件
 
 
 

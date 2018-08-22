@@ -51,9 +51,9 @@ export default {
                     component: null
                 },
                 {
-                    title: require('../assets/qqqun.png'),
-                    name: 'qqqun',
-                    component: Qun
+                    title: require('../assets/zhuyedaquan.png'),
+                    name: 'zhuyedaquan',
+                    component: null
                 },
                 {
                     title: require('../assets/anquanshouze.png'),

@@ -23,6 +23,7 @@ import QingDan from '../components/Raiders/QingDan'
 import LuXian from '../components/Raiders/LuXian'
 import Qun from '../components/Raiders/Qun'
 import GongZhong from "../components/Raiders/GongZhong";
+import ZhuYe from "../components/Raiders/ZhuYe"
 export default {
     components: {
         RaidersTab,
@@ -54,7 +55,7 @@ export default {
                 {
                     title: require('../assets/zhuyedaquan.png'),
                     name: 'zhuyedaquan',
-                    component: null
+                    component: ZhuYe
                 },
                 {
                     title: require('../assets/anquanshouze.png'),
@@ -87,7 +88,6 @@ export default {
         width: 1000px;
         margin: 0 auto;
         max-height: 1415px;
-        overflow: hidden;
     }
     .title {
         width: 245px;

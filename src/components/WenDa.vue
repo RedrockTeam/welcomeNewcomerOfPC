@@ -1,5 +1,6 @@
 <template>
     <div class="wenda">
+        <div class="mengban"  v-show="divShow"></div>
         <div class="logo"></div>
         <div class="wenda-frame">
             <div class="class">
@@ -452,6 +453,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 15;
     }
 
     .popup-container {
@@ -582,5 +584,15 @@
     ::-webkit-scrollbar-track {
         background: #c4f3f0;
         border: solid 3.5px #33157b;
+    }
+    .mengban {
+        width: 1522px;
+        height: 3170px;
+        background-color: #000;
+        opacity: 0.5;
+        position: absolute;
+        left: -260px;
+        top: -1060px;
+        z-index: 10;
     }
 </style>

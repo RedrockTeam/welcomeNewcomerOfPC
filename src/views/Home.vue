@@ -40,7 +40,7 @@
                 training: {
                     title: require('../assets/fttraining.png'),
                     icon: require('../assets/training-icon.png'),
-                    content: '迈着矫健的步伐，挺拔身姿，跑道上留下他们坚定的足迹，重邮学子，他们像 东方升起的旭日,续写着一段奋力拼搏的历史。',
+                    content: '迈着矫健的步伐，挺拔身姿，跑道上留下他们坚定的足迹，重邮学子，他们像东方升起的旭日,续写着一段奋力拼搏的历史。',
                     path: '/training'
                 },
                 raiders: {

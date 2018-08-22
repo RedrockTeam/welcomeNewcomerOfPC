@@ -12,7 +12,7 @@
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/huodongshijian.png"></div>
-                <p>2018年8月26日——2018年9月14日24:00</p>
+                <p>即日起至2018年9月14日</p>
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/cangyufangshi.png"></div>

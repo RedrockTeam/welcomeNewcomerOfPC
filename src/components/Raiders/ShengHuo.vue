@@ -1,14 +1,18 @@
 <template>
-    <top-bar :barList="barList"></top-bar>
+    <div>
+        <top-bar :barList="barList"></top-bar>
+        <life-card></life-card>
+    </div>
 </template>
 
 <script>
 import TopBar from '../common/TopBar'
 import QuanBu from './QuanBu'
-
+import LifeCard from '../common/LifeCard'
 export default {
     components: {
-        TopBar
+        TopBar,
+        LifeCard
     },
     data() {
         return {

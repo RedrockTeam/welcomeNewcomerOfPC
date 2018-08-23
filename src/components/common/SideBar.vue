@@ -32,6 +32,7 @@ export default {
     .bar {
         width: 100%;
         height: 100%;
+        display: flex;
     }
     .side-bar {
         width: 120px;

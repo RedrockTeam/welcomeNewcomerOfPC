@@ -17,7 +17,7 @@
         </div>
         <div class="content">
             <div class="content-header">【洗护用品方面】</div>
-            <div class="content-container">男生的剃须刀，女生的护肤品（男生也可以适当准备一些），日常洗漱需要的物品（诸如牙膏牙刷，毛巾，沐浴露，盆桶一以及洗衣物所需要的洗衣液，刷子等等。</div>
+            <div class="content-container">男生的剃须刀，女生的护肤品（男生也可以适当准备一些），日常洗漱需要的物品（诸如牙膏牙刷，毛巾，沐浴露，盆、桶以及洗衣物所需要的洗衣液，刷子等等。</div>
         </div>
         <div class="content">
             <div class="content-header">【衣服方面】</div>

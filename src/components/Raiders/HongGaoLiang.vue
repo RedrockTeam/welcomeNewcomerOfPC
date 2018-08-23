@@ -3,7 +3,7 @@
         <lunbo :imglist="imglist" class="lunbo"></lunbo>
         <div class="container">
             <div class="title"><img src="../../assets/shonggaoliang.png"></div>
-            <div class="text">红高粱食堂伫立于兴业苑食堂上方，红高粱食堂总具有自己的风格，不断推陈出新，在这里你可以品尝到新的变化！<br>推荐菜品：冒菜，花溪米线，土耳其烤肉饭<br>人均消费：12元</div>
+            <div class="text">红高粱食堂伫立于兴业苑食堂上方，红高粱食堂总具有自己的风格，不断推陈出新，在这里你可以品尝到新的变化！<br>推荐菜品：冒菜，花溪米线，土耳其烤肉饭</div>
         </div>
     </div>
 </template>

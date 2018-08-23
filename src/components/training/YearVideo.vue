@@ -38,14 +38,14 @@ export default {
         width: 710px;
         height: 100px;
         margin: 0 auto;
-        padding-top: 25px;
+        padding-top: 35px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .button {
-        width: 220px;
-        height: 70px;
+        width: 140px;
+        height: 80px;
         background: #d5fbff;
         border: solid 3px #5249a4;
         border-radius: 6px;
@@ -57,6 +57,7 @@ export default {
         text-align: center;
         cursor: pointer;
         transition: all .3s;
+        padding: 0 25px;
 
         &:hover {
             background: #559bde;

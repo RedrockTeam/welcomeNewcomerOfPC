@@ -26,6 +26,7 @@
                             <div class="time-font"></div>
                         </div>
                 </div>
+            <div class="xiaomen"></div>
             </div>
         </div>
 </template>
@@ -219,6 +220,16 @@ export default {
             background: url(../../assets/daojishi.png) no-repeat;
             background-position: 40% 21%;
             transition: all .2s;       
+        }
+        .xiaomen {
+            width: 180px;
+            height: 130px;
+            background: url('../../assets/home-left-cqupt.png') no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            left: -152px;
+            top: -430px;
+            z-index: 3;
         }
 </style>
 

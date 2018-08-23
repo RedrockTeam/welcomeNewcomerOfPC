@@ -48,10 +48,12 @@
                     },
                     legend: {
                         orient: 'horizontal',
-                        bottom: '20px',
+                        bottom: '30px',
+                        right: '80px',
                         data: ['女', '男'],
                         textStyle: {
-                            fontSize: 22
+                            fontSize: 22,
+                            color: '#432a92'
                         },
                     },
                     series: [{

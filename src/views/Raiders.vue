@@ -87,7 +87,7 @@ export default {
     .raiders {
         width: 1000px;
         margin: 0 auto;
-        max-height: 1415px;
+        max-height: 1315px;
     }
     .title {
         width: 245px;

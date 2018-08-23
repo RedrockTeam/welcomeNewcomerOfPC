@@ -39,8 +39,7 @@ export default {
 <style lang="less" scoped>
     .activity {
         width: 1000px;
-        min-height: 1500px;
-        max-height: 1825px;
+        max-height: 1725px;
         margin: 0 auto;
     }
     .title {

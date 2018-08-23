@@ -1,19 +1,19 @@
 <template>
     <div class="zhuye">
-        <h2>【重庆邮电大学官网】</h2>
-        <a href="http://www.cqupt.edu.cn/cqupt/index.shtml">http://www.cqupt.edu.cn/cqupt/index.shtml</a>
-        <h2>【红岩网校】</h2>
-        <a href="http://hongyan.cqupt.edu.cn/">http://hongyan.cqupt.edu.cn/</a>
-         <h2>【教务在线】</h2>
-        <a href="http://jwzx.cqupt.edu.cn/">http://jwzx.cqupt.edu.cn/</a>
-         <h2>【校务信息网】</h2>
-        <a href="http://oa.cqupt.edu.cn/">http://oa.cqupt.edu.cn/</a>
-         <h2>【重庆邮电大学学工在线 】</h2>
-        <a href="http://222.177.140.105/index.shtml">http://222.177.140.105/index.shtml</a>
-         <h2>【重庆邮电大学招生信息网】</h2>
-        <a href="http://zs.cqupt.edu.cn/">http://zs.cqupt.edu.cn/</a>
-         <h2>【保卫处/武装部】</h2>
-        <a href="http://bwc.cqupt.edu.cn/">http://bwc.cqupt.edu.cn/</a>
+        <img src="../../assets/zhuye/重庆邮电大学官网.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://www.cqupt.edu.cn/cqupt/index.shtml" target="_blank">http://www.cqupt.edu.cn/cqupt/index.shtml</a></div>
+        <img src="../../assets/zhuye/红岩网校.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://hongyan.cqupt.edu.cn/" target="_blank">http://hongyan.cqupt.edu.cn/</a></div>
+         <img src="../../assets/zhuye/教务在线.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://jwzx.cqupt.edu.cn/" target="_blank">http://jwzx.cqupt.edu.cn/</a></div>
+         <img src="../../assets/zhuye/校务信息网.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://oa.cqupt.edu.cn/" target="_blank">http://oa.cqupt.edu.cn/</a></div>
+         <img src="../../assets/zhuye/重庆邮电大学学工在线.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://222.177.140.105/index.shtml" target="_blank">http://222.177.140.105/index.shtml</a></div>
+        <img src="../../assets/zhuye/重庆邮电大学招生信息网.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://zs.cqupt.edu.cn/" target="_blank">http://zs.cqupt.edu.cn/</a></div>
+         <img src="../../assets/zhuye/保卫处_武装部.png" alt="你猜我去哪了" class="zhuyetitle">
+        <div><a href="http://zs.cqupt.edu.cn/" target="_blank">http://zs.cqupt.edu.cn/</a></div>
     </div>
 </template>
 
@@ -32,9 +32,7 @@
         margin-top: 30px;
         padding-left: 7%;
         padding-right: 7%;
-        h2 {
-            color: #39247d;
-            text-decoration:none; 
+        .zhuyetitle {
             margin-top: 30px;
             margin-bottom: 10px;
         }
@@ -43,10 +41,10 @@
         }
         a:link, a:visited {
             text-decoration:none; 
-            color: blue;
+            color: #432a92 ;
         }
         a:hover {
-            color:red;
+            color:#110242;
             text-decoration:underline; 
         }
     }

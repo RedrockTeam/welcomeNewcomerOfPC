@@ -3,8 +3,6 @@
         <cqupt-video :obj="v1" class="obj"></cqupt-video>
         <cqupt-video :obj="v2" class="obj"></cqupt-video>
         <cqupt-video :obj="v3" class="obj"></cqupt-video>
-        <cqupt-video :obj="v4" class="obj"></cqupt-video>
-        <cqupt-video :obj="v5" class="obj"></cqupt-video>
         <cqupt-video :obj="v6" class="obj"></cqupt-video>
         <cqupt-video :obj="v7" class="obj"></cqupt-video>
         <cqupt-video :obj="v9" class="obj"></cqupt-video>
@@ -34,16 +32,6 @@ export default {
                 photo: require('../../assets/cquptvideo/3.png'),
                 link: 'https://v.qq.com/x/page/o05597e7vw2.html',
                 content: '2017红岩网校工作站招新视频'
-            },
-            v4: {
-                photo: require('../../assets/cquptvideo/4.png'),
-                link: 'https://v.qq.com/x/page/cquptvideo/4.png',
-                content: '2016红岩网校工作站招新视频'
-            },
-            v5: {
-                photo: require('../../assets/cquptvideo/5.png'),
-                link: 'https://v.qq.com/x/page/d0165beyv3p.html',
-                content: '2015红岩网校工作站招新视频'
             },
             v6: {
                 photo: require('../../assets/cquptvideo/6.png'),

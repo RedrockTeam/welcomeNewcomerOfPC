@@ -1,7 +1,7 @@
 <template>
     <div class="lifecard">
         <img :src="lifelist.mainimg" class="lifeimg" alt="图片跑丢了">
-        <img :src="lifelist.textimg" alt="图片走丢了">
+        <img :src="lifelist.textimg" alt="图片走丢了" class="lifefont">
         <p>{{lifelist.message1}}</p>
         <p>{{lifelist.message2}}</p>
     </div>
@@ -45,7 +45,6 @@
         .lifeimg {
             width: 364px;
             height: 172px;
-            //margin-bottom: 0px;
             border: solid 3px #432a92;
         }
         p {
@@ -55,8 +54,7 @@
             color: #503b90;
         }
         .lifefont {
-            font-size: 18px;
-            margin: 0;
+            margin-top: 10px;
         }
     }
 </style>

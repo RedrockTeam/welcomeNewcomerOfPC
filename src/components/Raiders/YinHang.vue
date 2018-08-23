@@ -13,13 +13,13 @@
                     {
                         mainimg:require("../../assets/yinhang/农行.jpg"),
                         textimg: require("../../assets/yinhang/中国农业银行.png"),
-                        message1: "地址：新校门出门右转，新世纪超市旁边",
+                        message1: "地址：新校门出门右转，新世纪超市旁边。",
                         message2: ""
                     },
                     {
                         mainimg:require("../../assets/yinhang/邮政.jpg"),
                         textimg: require("../../assets/yinhang/中国邮政储蓄银行(黄桷垭支行).png"),
-                        message1: "地址：老校门出门右转，绝味鸭脖旁边",
+                        message1: "地址：老校门出门右转，绝味鸭脖旁边。",
                         message2: ""
                     },
                     {

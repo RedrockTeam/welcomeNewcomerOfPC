@@ -35,7 +35,7 @@ export default {
         margin-top: 30px;
     }
     .video-tab {
-        width: 500px;
+        width: 710px;
         height: 100px;
         margin: 0 auto;
         padding-top: 25px;
@@ -44,7 +44,7 @@ export default {
         justify-content: space-between;
     }
     .button {
-        width: 150px;
+        width: 220px;
         height: 70px;
         background: #d5fbff;
         border: solid 3px #5249a4;

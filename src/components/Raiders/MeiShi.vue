@@ -14,13 +14,13 @@
                         mainimg:require("../../assets/meishi/城门老火锅.jpg"),
                         textimg: require("../../assets/meishi/城门老火锅.png"),
                         message1: "地址： 新校门出门，过马路右转下山的路边",
-                        message2: "简介： 辣而不燥，回味悠长"
+                        message2: "简介： 辣而不燥，回味悠长。"
                     },
                     {
                         mainimg:require("../../assets/meishi/大茶杯.jpg"),
                         textimg: require("../../assets/meishi/大茶杯.png"),
                         message1: "地址： 老校门过马路左转一个斜坡旁",
-                        message2: "简介： 这里的招牌奶茶如丝般顺滑，奶香味十足"
+                        message2: "简介： 这里的招牌奶茶如丝般顺滑，奶香味十足。"
                     },
                     {
                         mainimg:require("../../assets/meishi/果然.jpg"),
@@ -33,13 +33,13 @@
                         mainimg:require("../../assets/meishi/华莱士.jpg"),
                         textimg: require("../../assets/meishi/华莱士.png"),
                         message1: "地址： 老校门对面",
-                        message2: "简介： 物美价廉，种类繁多，美味可口"
+                        message2: "简介： 物美价廉，种类繁多，美味可口。"
                     },
                     {
                         mainimg:require("../../assets/meishi/黄焖鸡米饭.jpg"),
                         textimg: require("../../assets/meishi/黄焖鸡米饭.png"),
                         message1: "地址： 老校门对面",
-                        message2: "简介： 好吃，又实惠，配上米饭一吃，那就一个字 ，绝"
+                        message2: "简介： 好吃，又实惠，配上米饭一吃，那就一个字 ，绝！"
                     },
                     {
                         mainimg:require("../../assets/meishi/蜜雪冰城.jpg"),
@@ -57,19 +57,19 @@
                         mainimg:require("../../assets/meishi/万州巴斗香烤鱼.jpg"),
                         textimg: require("../../assets/meishi/万州巴斗香烤鱼.png"),
                         message1: "地址： 新校门出门右转，农业银行旁买水果的巷子里面",
-                        message2: "简介： 口味奇绝、营养丰富"
+                        message2: "简介： 口味奇绝、营养丰富。"
                     },
                     {
                         mainimg:require("../../assets/meishi/无届.jpg"),
                         textimg: require("../../assets/meishi/无届青年餐馆.png"),
                         message1: "地址： 老校门出门过马路左转，斜坡旁边巷子进去，柒露营串串旁边",
-                        message2: "简介： 一个聚集大批文青谈人生聊梦想，以酒会友的地方"
+                        message2: "简介： 一个聚集大批文青谈人生聊梦想，以酒会友的地方。"
                     },
                     {
                         mainimg:require("../../assets/meishi/古茗.jpg"),
                         textimg: require("../../assets/meishi/古茗.png"),
                         message1: "地址：老校门对面",
-                        message2: "简介：延续了古茗一贯的好味道，每一口细啜都能品味到一两分独属于茶叶的清香。结合了中国传统茶的精髓与现代拼配制茶的理念，不断地推陈出新，为各位学子带来季度好味。"
+                        message2: "简介：延续了古茗一贯的好味道，每一口都能品味到茶叶的清香。将现代与传统结合，不断地推陈出新，为各位学子带来季度好味。"
                     },
                 ]
             }

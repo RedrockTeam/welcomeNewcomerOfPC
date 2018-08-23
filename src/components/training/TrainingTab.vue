@@ -18,8 +18,8 @@
             <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster" mode="out-in">
                 <component :is="currentComponent.component"></component>
             </transition>
+            <div class="source">资料来源于重邮小卫士</div>
         </div>
-        <div class="source">资料来源于重邮小卫士</div>
     </div>
 </template>
 
@@ -100,7 +100,7 @@
 
     .container {
         width: 850px;
-        height: 660px;
+        height: 680px;
         padding-left: 80px;
         padding-right: 70px;
     }
@@ -111,11 +111,14 @@
     }
 
     .source {
-        color: #032d47;
-        font-size: 22px;
-        position: absolute;
-        bottom: 10px;
-        right: 55px;
+        color: #6550a7;
+        font-size: 16px;
+        width: 100%;
+        text-align:center;
+        position: relative;
+        bottom: -105px;
+        margin: 0 auto;
         user-select: none;
+        opacity: 0.8;
     }
 </style>

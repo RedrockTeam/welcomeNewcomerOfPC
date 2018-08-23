@@ -46,7 +46,7 @@
                 raiders: {
                     title: require('../assets/ftraiders.png'),
                     icon: require('../assets/raiders-icon.png'),
-                    content: '让你提前认识学长学姐； 最完整的火车站、 机场到学校的交通路线； 最推荐的寝室神器和学校周边美食地图。',
+                    content: '最常用的官方网页和微信公众号，了解学校最新动态；最完整的火车站、 机场到学校的交通路线； 最推荐的寝室神器和学校周边美食地图。',
                     path: '/raiders'
                 },
                 style: {

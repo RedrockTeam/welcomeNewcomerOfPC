@@ -69,7 +69,17 @@
 				transform: translateY(0px);
 			}
 		}
-
+		@keyframes loadingfade {
+			0% {
+				opacity: 1;
+			}
+			85% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
 		.loading1 {
 			width: 800px;
 			height: 20px;
@@ -110,6 +120,8 @@
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
+			animation: loadingfade 5s;
+			animation-fill-mode: forwards;
 		}
 
 		.plane {

@@ -39,8 +39,9 @@ Vue-Video-Player
 - [x] 更改player样式
 - [ ] select小组件
 - [x] 压缩图片
-- [x] 首页加载动画
+- [x] 初始加载动画
 - [x] 活动分页tab高度变换
+- [x] 预加载clickme-active
 
 
 

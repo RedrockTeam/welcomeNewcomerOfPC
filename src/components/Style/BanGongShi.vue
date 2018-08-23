@@ -8,10 +8,10 @@
 <style lang="less" scoped>
     .bumen {
         width: 570px;
-        height: 590px;
+        height: 740px;
         padding-left: 100px;
         padding-right: 60px;
-        padding-top: 180px;
+        padding-top: 30px;
         overflow: hidden;
     }
     .title {

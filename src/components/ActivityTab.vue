@@ -30,6 +30,7 @@ export default {
         background-size: 100% 100%;
         position: relative;
         z-index: 1;
+        transition: all .3s;
     }
     .tab-header {
         width: 60%;

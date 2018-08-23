@@ -22,6 +22,18 @@
     </div>
 </template>
 
+<script>
+export default {
+    mounted() {
+        document.querySelector('.tab').style.height = '1100px'
+    },
+    beforeDestroy() {
+        document.querySelector('.tab').style.height = '1500px'
+    }
+}
+</script>
+
+
 <style lang="less" scoped>
     .smile {
         width: 832px;
@@ -37,7 +49,7 @@
     }
     .main {
         width: 90%;
-        height: 260px;
+        height: 190px;
         background: #d5fbff;
         margin-top: 40px;
         border: solid 4.5px #432a92;
@@ -45,7 +57,7 @@
     }
     .tips {
         width: 100%;
-        height: 60px;
+        height: 45px;
         display: flex;
         align-items: center;
         //margin-bottom: 20px;

@@ -1,42 +1,184 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>走，到重邮追梦去！</title>
-    <style>
-      body {
-        margin: 0;
-        background: #42b6ed;
-      }
-      ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-image: -webkit-gradient(linear,
-									   left bottom,
-									   left top,
-									   color-stop(0.44, rgb(144, 181, 255)),
-									   color-stop(0.72, rgb(92, 160, 243)),
-                                       color-stop(0.86, rgb(26, 185, 212)));
-        border: solid 3px #33157b;
-    }
-    ::-webkit-scrollbar-track {
-        background-color: rgb(244, 236, 242);
-        border-radius: 4px;
-        
-    }
-    ::-webkit-scrollbar {
-        width: 15px;
-        background-color: rgb(245, 245, 245);
-    }
-    </style>
-  </head>
-  <body>
-    <noscript>
-      <strong>请更换浏览器或启动浏览器的JavaScript再访问本网站，否则组件将无法正常工作。</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<title>走，到重邮追梦去！</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-image: -webkit-gradient(linear,
+			left bottom,
+			left top,
+			color-stop(0.44, rgb(144, 181, 255)),
+			color-stop(0.72, rgb(92, 160, 243)),
+			color-stop(0.86, rgb(26, 185, 212)));
+			border: solid 3px #33157b;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: rgb(244, 236, 242);
+			border-radius: 4px;
+
+		}
+
+		::-webkit-scrollbar {
+			width: 15px;
+			background-color: rgb(245, 245, 245);
+		}
+
+		@keyframes loadingmove {
+			0% {
+				transform: translate(0, 0)
+			}
+			100% {
+				transform: translate(-127px, 0)
+			}
+		}
+
+		@keyframes increalength {
+			0% {
+				width: 0;
+			}
+			100% {
+				width: 800px;
+			}
+		}
+
+		@keyframes planefly {
+			0% {
+				transform: translate(-50px, -50px);
+			}
+			100% {
+				transform: translate(770px, -50px);
+			}
+		}
+
+		@keyframes cloudfly {
+			0% {
+				transform: translateY(20px);
+			}
+			100% {
+				transform: translateY(0px);
+			}
+		}
+
+		.loading1 {
+			width: 800px;
+			height: 20px;
+			background: #c4e2ff;
+			border-radius: 16px;
+			border: #155bb0 solid 3px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		.loading2 {
+			width: 1000px;
+			height: 20px;
+			background: repeating-linear-gradient(135deg, #1fdbf5, #1fdbf5 45px, #c4feff 45px, #c4feff 90px);
+			border-radius: 16px;
+			position: relative;
+			animation: loadingmove 1s infinite;
+			animation-timing-function: linear;
+		}
+
+		.loading3 {
+			width: 800px;
+			height: 20px;
+			background: #c4e2ff;
+			border-radius: 16px;
+			position: absolute;
+			overflow: hidden;
+			animation: increalength 5s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.loadinganimation {
+			width: 900px;
+			height: 200px;
+			/* margin: 100px auto; */
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.plane {
+			width: 160px;
+			height: 85px;
+			background: url('./plane.png') no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			animation: planefly 5s;
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+		}
+
+		.hongyanfont {
+			width: 511px;
+			height: 63px;
+			background: url('./hongyanfont.png') no-repeat;
+			background-size: 100% 100%;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
+		.loadingcloud1 {
+			width: 420px;
+			height: 140px;
+			background: url('./loadingcloud1.png') no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 25%;
+			top: 20%;
+			animation: cloudfly 2s infinite;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+		}
+
+		.loadingcloud2 {
+			width: 420px;
+			height: 200px;
+			background: url('./loadingcloud2.png') no-repeat;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 8%;
+			top: -25%;
+		}
+
+		#app {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		<strong>请更换浏览器或启动浏览器的JavaScript再访问本网站，否则组件将无法正常工作。</strong>
+	</noscript>
+	<div class="loadinganimation">
+		<div class="hongyanfont"></div>
+		<div class="loading1">
+			<div class="loading3">
+				<div class="loading2"></div>
+			</div>
+		</div>
+		<div class="plane"></div>
+		<div class="loadingcloud1"></div>
+		<div class="loadingcloud2"></div>
+	</div>
+
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+</body>
+
 </html>

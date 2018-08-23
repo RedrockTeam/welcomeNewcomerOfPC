@@ -75,6 +75,11 @@ export default {
         }
     },
     created() {
+        setTimeout(() => {
+            document.body.removeChild(document.querySelector('.loadinganimation'))
+            document.getElementById('app').style.display = 'block'
+            document.querySelector('body').style.background = '#42b6ed'
+        }, 5000)
         console.log(`
    ▄████████    ▄████████ ████████▄     ▄████████  ▄██████▄   ▄████████    ▄█   ▄█▄ 
   ███    ███   ███    ███ ███   ▀███   ███    ███ ███    ███ ███    ███   ███ ▄███▀ 

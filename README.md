@@ -39,7 +39,7 @@ Vue-Video-Player
 - [x] 更改player样式
 - [ ] select小组件
 - [x] 压缩图片
-- [ ] 首页加载动画
+- [x] 首页加载动画
 
 
 

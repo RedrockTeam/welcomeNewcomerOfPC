@@ -100,7 +100,7 @@
 
     .container {
         width: 850px;
-        height: 680px;
+        height: 700px;
         padding-left: 80px;
         padding-right: 70px;
     }
@@ -113,12 +113,13 @@
     .source {
         color: #6550a7;
         font-size: 16px;
-        width: 100%;
+        width: 850px;
         text-align:center;
-        position: relative;
-        bottom: -105px;
+        position: absolute;
+        bottom: 13px;
         margin: 0 auto;
         user-select: none;
         opacity: 0.8;
+        text-indent: -15px
     }
 </style>

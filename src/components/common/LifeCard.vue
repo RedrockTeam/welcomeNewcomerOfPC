@@ -1,7 +1,7 @@
 <template>
     <div class="lifecard">
-        <img :src="lifelist.mainimg" class="lifeimg">
-        <p class="lifefont">{{lifelist.textimg}}</p>
+        <img :src="lifelist.mainimg" class="lifeimg" alt="图片跑丢了">
+        <img :src="lifelist.textimg" alt="图片走丢了">
         <p>{{lifelist.message1}}</p>
         <p>{{lifelist.message2}}</p>
     </div>
@@ -15,7 +15,7 @@
                 default: function (){
                     return {
                         mainimg:require("../../assets/lunbo-test1.png"),
-                        textimg: "南山一棵树风景区",
+                        textimg: "",
                         message1:"简介：重庆南山一棵树观景台位于南岸区王家山脉临江半山腰处，与重庆主城区隔江相望，是重庆都市旅游的必到之地。在这里可以看见重庆城这座山水之城的起伏面貌。",
                         message2: "人均消费：10元"
                     }

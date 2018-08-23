@@ -12,19 +12,19 @@
                 lifelist: [
                     {
                         mainimg:require("../../assets/chaoshi/永辉超市.jpg"),
-                        textimg: "永辉超市",
+                        textimg: require("../../assets/chaoshi/永辉超市.png"),
                         message1: "相对地址： 黄桷小学对面",
                         message2: "脚程简介： 新校门出门过马路，右转直走约10分钟"
                     },
                     {
                         mainimg:require("../../assets/chaoshi/新世纪超市.jpg"),
-                        textimg: "新世纪超市",
+                        textimg: require("../../assets/chaoshi/新世纪超市.png"),
                         message1: "相对地址： 重庆邮电大学旁",
                         message2: "脚程简介： 新校门出门，右转"
                     },
                     {
                         mainimg:require("../../assets/chaoshi/渝芳百货商场.jpg"),
-                        textimg: " 渝芳百货商场",
+                        textimg: require("../../assets/chaoshi/渝芳百货商场.png"),
                         message1: "相对地址： 重庆邮电大学旁",
                         message2: "脚程简介： 新校门出门，左转直走。老校门出门，右转直走。"
                     },

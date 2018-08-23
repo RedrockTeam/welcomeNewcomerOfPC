@@ -1,0 +1,70 @@
+<template>
+    <div class="bumen">
+        <div class="title"><img src="../../assets/xkeji.png"></div>
+        <div class="tuan">
+            <div class="name">【综合部】</div>
+            <div class="content">综合部是学生科联的枢纽中心。它是连接团委、主席团和科联各个部门、干事之间的纽带，起到上传下达的作用，并以办公室的日常管理为工作重点。其主要负责制定、完善、推广科联制度；负责科联对外联络和洽谈；负责科联各部门内部协调；负责组织科联干部干事成立大会、素质拓展、科联交享悦、科联杯、干部干事培训和考核、人才互荐交流、总结晚会等活动；负责与各学院的学生科创组织保持紧密联系，开展交流活动；负责与兄弟高校的学生科创组织进行交流合作。</div>
+        </div>
+        <div class="tuan">
+            <div class="name">【科创竞赛部】</div>
+            <div class="content">科创竞赛部是学生科技联合会的竞技中心。以“科创点亮未来，竞赛成就梦想”为理念，主要负责开展和推广校内外科技竞赛活动，如“科普先锋秀”、“无线电猎狐大赛”等；组织“挑战杯”（大挑）大学生课外学术科技作品竞赛、“创青春”（小挑）全国大学生创业大赛的申报和立项工作。致力于为全校提供一个校内外公平竞技的平台，营造良好的校园竞技氛围。</div>
+        </div>
+        <div class="tuan">
+            <div class="name">【项目管理部】</div>
+            <div class="content">项目管理部是学生科联的科创中心，主要负责学生科联的创新、创业工作。负责协调开展“学生科技节”等系列大型科技活动，包括组织开展“学生课外学术科技作品竞赛”、“创新创业训练营”、“学生创新创业成果展”等系列活动。同时致力于“创新高端论坛”校内外创新创业沙龙活动、运用网络媒体发布校内外科创赛事资讯等，构建学校创新创业项目交流以及推广的平台，营造浓厚的科技创新创业氛围。</div>
+        </div>
+        <div class="tuan">
+            <div class="name">【科技人文部】</div>
+            <div class="content">科技人文部作为学生科技联合会的文化活动中心，秉承着“科技点缀生活，人文融入梦想”的理念，以“文峰青年大讲堂”、“重邮青年说”、“学长演播厅”为主打品牌活动。文峰青年大讲堂诚邀知名专家学者和文化名人，旨在浓厚校园科技文化氛围的同时，强化人文环境，打造属于重邮的专属讲堂。重邮青年说旨在寻找和培养一批敢于发声，说出自己对生活的感悟的重邮人，传播年轻正能量。学长演播厅邀请优秀学长学姐，为新生答疑解惑，力求将最新最热最有用的大学资讯和成功经验分享给重邮学子。</div>
+        </div>
+        <div class="tuan">
+            <div class="name">【信息部】</div>
+            <div class="content">信息部是学生科联的技术中心。其主要负责科技创新实践活动的培训与开展。Web组主要负责Html5的开发及Web前端的基础培训，静态网页与动态网页的制作；UI组负责对网页整体界面美观、人机交互、操作逻辑的设计；运营组主要负责利用PowerPoint和Premiere等软件来进行产品运营以及宣传。致力于“培养精英团队”，打造科联信息化平台，丰富科联的创新创意活动。</div>
+        </div>
+        <div class="tuan">
+            <div class="name">【媒体运营部】</div>
+            <div class="content">媒体运营部是学生科联的创意中心。其主要负责学生科联创意设计及校内外宣传工作。设计海报、条漫及展板，活动现场布置等；制作活动视频、微电影和动画以及活动现场摄影摄像及新闻稿的撰写。同时也负责学生科联线上的运营工作，管理科联公众号的推广，通过海报、视频、网络等形式在校内外宣传科联活动，打响科联品牌，展示科联成果。</div>
+        </div>
+    </div>
+</template>
+
+<style lang="less" scoped>
+    .bumen {
+        width: 620px;
+        height: 710px;
+        padding-left: 50px;
+        padding-right: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        overflow-y: scroll;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    .content {
+        color: #432a92;
+        line-height: 25px;
+    }
+    .name {
+        font-weight: 600;
+        color: #432a92;
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+
+    //
+    ::-webkit-scrollbar {
+        width: 30px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border: solid 1.5px #33157b;
+        background: url('../../assets/scroll.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    ::-webkit-scrollbar-track {
+        background: #c4f3f0;
+        border: solid 3.5px #33157b;
+    }
+</style>

@@ -7,6 +7,13 @@
 <script>
 import SideBar from '../common/SideBar'
 import BanGongShi from './BanGongShi'
+import ZuZhiBu from './ZuZhiBu'
+import XuanChuangBu from './XuanChuangBu'
+import SheLian from './SheLian'
+import KeLian from './KeLian'
+import QingXie from './QingXie'
+import XueShengHui from './XueShengHui'
+import YiShuTuan from './YiShuTuan'
 
 export default {
     components: {
@@ -21,31 +28,31 @@ export default {
                 },
                 {
                     title: '团委组织部',
-                    component: null
+                    component: ZuZhiBu
                 },
                 {
                     title: '团委宣传部',
-                    component: null
+                    component: XuanChuangBu
                 },
                 {
                     title: '学生社团联合会',
-                    component: null
+                    component: SheLian
                 },
                 {
                     title: '学生科技联合会',
-                    component: null
+                    component: KeLian
                 },
                 {
                     title: '青年志愿者协会',
-                    component: null
+                    component: QingXie
                 },
                 {
                     title: '学生会',
-                    component: null
+                    component: XueShengHui
                 },
                 {
                     title: '大学生艺术团',
-                    component: null
+                    component: YiShuTuan
                 }
             ]
         }

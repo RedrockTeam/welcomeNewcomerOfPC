@@ -117,10 +117,11 @@ export default {
             overflow: hidden;
         }
         .cloud {
-            width: 100%;
+            width: 110%;
             height: 44.8%;
             position: absolute;
             top: 5px;
+            left: -5%;
             animation-iteration-count: infinite;
             animation-duration: 10s;
             animation-timing-function:linear;

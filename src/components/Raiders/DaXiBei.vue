@@ -22,6 +22,9 @@ export default {
                 },
                 {
                     imgsrc: require("../../assets/shitang/d2.jpg")
+                },
+                {
+                    imgsrc: require("../../assets/shitang/d3.jpg")
                 }
             ]
         }

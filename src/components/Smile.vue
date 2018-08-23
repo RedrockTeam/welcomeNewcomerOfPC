@@ -8,7 +8,7 @@
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/cangyuduixiang.png"></div>
-                <p>2018级所有小鲜肉可上传照片，全体在校学生参与点赞</p>
+                <p>2018级新生</p>
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/huodongshijian.png"></div>
@@ -16,7 +16,7 @@
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/cangyufangshi.png"></div>
-                <p>关注微信公众号重邮小帮手，进入“线上互动”,点击“最美班级墙”，即可上传照片。</p>
+                <p class="pppx">关注微信公众号重邮小帮手，进入“线上互动”，点击“最美班级墙”，即可上传照片或进行点赞。</p>
             </div>
         </div>
     </div>
@@ -62,12 +62,15 @@ export default {
         height: 45px;
         display: flex;
         align-items: center;
-        //margin-bottom: 20px;
         p {
+            line-height: 20px;
             padding: 0 30px;
             font-size: 16px;
             color: #4c7ac3;
         }
+    }
+    .pppx {
+        margin-top: 30px;
     }
     .title {
         img {

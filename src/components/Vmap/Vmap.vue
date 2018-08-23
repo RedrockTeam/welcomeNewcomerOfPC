@@ -4,7 +4,7 @@
         <div class="frame">
             <div class="top">
                 <div class="search">
-                    <input type="search" id="input" placeholder="请输入查找地..." v-model.trim="place" @keyup.enter="goPlace">
+                    <input type="search" id="input" placeholder="请输入查找地点" v-model.trim="place" @keyup.enter="goPlace">
                     <div class="sbutton" @click="goPlace"></div>
                 </div>
                 <div class="size">

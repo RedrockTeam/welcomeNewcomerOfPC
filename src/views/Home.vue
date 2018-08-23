@@ -165,6 +165,7 @@
         position: relative;
         top: -8340px;
         left: -210px;
+        visibility: hidden;
     }
     .home-left-tube-logo {
         width: 160px;

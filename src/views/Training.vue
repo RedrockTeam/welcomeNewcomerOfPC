@@ -35,7 +35,7 @@ export default {
     .training {
         width: 1000px;
         margin: 0 auto;
-        max-height: 1220px;
+        max-height: 1120px;
     }
     .title {
         width: 245px;

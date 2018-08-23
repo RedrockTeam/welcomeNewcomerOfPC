@@ -7,7 +7,7 @@
             @mouseout="isMouseOver1=false"></div>
         <div
             :class="['animated', 'infinite', 'qrcode2', {pulse: !isMouseOver2}, {fixed: fixed}]"
-            :style="{left: screenWidth / 2 + 539 + 'px'}"
+            :style="{left: screenWidth / 2 + 541.5 + 'px'}"
             @mouseover="isMouseOver2=true"
             @mouseout="isMouseOver2=false"></div>
     </div>

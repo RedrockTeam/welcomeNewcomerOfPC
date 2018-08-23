@@ -26,9 +26,11 @@
 export default {
     mounted() {
         document.querySelector('.tab').style.height = '1100px'
+        document.querySelector('.activity').style.maxHeight = '1350px'
     },
     beforeDestroy() {
         document.querySelector('.tab').style.height = '1500px'
+        document.querySelector('.activity').style.maxHeight = '1725px'
     }
 }
 </script>

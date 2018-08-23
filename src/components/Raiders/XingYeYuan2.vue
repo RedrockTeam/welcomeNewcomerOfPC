@@ -3,7 +3,7 @@
         <lunbo :imglist="imglist" class="lunbo"></lunbo>
         <div class="container">
             <div class="title"><img src="../../assets/lxingyeyuan.png"></div>
-            <div class="text">兴业苑食堂作为老一派的食堂，与中心食堂一样，不断沉淀自己的重庆味道，色香味俱全的家烧菜肴，总有一款美味属于家的味道。<br>推荐菜品：青椒炒肉丝，回锅肉，辣子鸡丁<br>人均消费：9元</div>
+            <div class="text">兴业苑食堂作为老一派的食堂，与中心食堂一样，不断沉淀自己的重庆味道，色香味俱全的家烧菜肴，总有一款美味属于家的味道。<br>推荐菜品：青椒炒肉丝，回锅肉，辣子鸡丁</div>
         </div>
     </div>
 </template>

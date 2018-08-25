@@ -83,6 +83,7 @@
                 </div>
             </transition>
         </div>
+        <div class="source">关注重邮小帮手微信公众号，即可参与提问。</div>
     </div>
 </template>
 
@@ -221,8 +222,8 @@
 <style lang="less" scoped>
     .wenda {
         width: 832px;
-        height: 1227px;
-        padding: 8px 75px 60px 91px;
+        height: 1287px;
+        padding: 8px 75px 0px 91px;
     }
 
     .logo {
@@ -594,5 +595,15 @@
         left: -260px;
         top: -1060px;
         z-index: 10;
+    }
+    .source {
+        color: #6550a7;
+        font-size: 16px;
+        width: 850px;
+        text-align: center;
+        position: absolute;
+        bottom: 13px;
+        text-indent: -10px;
+        user-select: none;
     }
 </style>

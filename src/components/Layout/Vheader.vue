@@ -33,9 +33,9 @@ export default {
                     activeSrc: require('../../assets/thome-active.png'),
                 },
                 {
-                    path: '/training',
-                    src: require('../../assets/ttraining.png'),
-                    activeSrc: require('../../assets/ttraining-active.png'),
+                    path: '/activity',
+                    src: require('../../assets/tactivity.png'),
+                    activeSrc: require('../../assets/tactivity-active.png'),
                 },
                 {
                     path: '/raiders',
@@ -43,19 +43,19 @@ export default {
                     activeSrc: require('../../assets/traiders-active.png'),
                 },
                 {
-                    path: '/style',
-                    src: require('../../assets/tstyle.png'),
-                    activeSrc: require('../../assets/tstyle-active.png'),
-                },
-                {
-                    path: '/activity',
-                    src: require('../../assets/tactivity.png'),
-                    activeSrc: require('../../assets/tactivity-active.png'),
+                    path: '/training',
+                    src: require('../../assets/ttraining.png'),
+                    activeSrc: require('../../assets/ttraining-active.png'),
                 },
                 {
                     path: '/data',
                     src: require('../../assets/tdata.png'),
                     activeSrc: require('../../assets/tdata-active.png'),
+                },
+                {
+                    path: '/style',
+                    src: require('../../assets/tstyle.png'),
+                    activeSrc: require('../../assets/tstyle-active.png'),
                 }
             ]
         }

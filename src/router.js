@@ -21,7 +21,7 @@ export default new Router({
       path: '/activity',
       name: 'Activity',
       component: () => import('./views/Activity.vue'),
-      redirect: {name: 'Smile'},
+      redirect: {name: 'WenDa', params:{class:'all',page:1}},
       children: [
         {
           path: 'smile',

@@ -32,16 +32,16 @@ export default {
                 component: JingSe
             },
             {
+                title: require('../../assets/chaoshi.png'),
+                component: ChaoShi
+            },
+            {
                 title: require('../../assets/yinghang.png'),
                 component: YinHang
             },
             {
                 title: require('../../assets/kuaidi.png'),
                 component: KuaiDi
-            },
-            {
-                title: require('../../assets/chaoshi.png'),
-                component: ChaoShi
             }]
         }
     }

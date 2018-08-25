@@ -36,6 +36,10 @@ export default new Router({
         {
           path: 'wenda',
           redirect: 'wenda/all/1'
+        },
+        {
+          path: '*',
+          redirect: 'wenda/all/1'
         }
       ]
     },
@@ -58,6 +62,22 @@ export default new Router({
       path: '*',
       name: 'NotFound',
       component: () => import('./views/NotFound.vue')
+    },
+    {
+      path: '/index',
+      redirect: '/'
+    },
+    {
+      path: '/tips',
+      redirect: '/raiders'
+    },
+    {
+      path: '/analyze',
+      redirect: '/data'
+    },
+    {
+      path: '/mien',
+      redirect: '/style'
     }
   ]
 })

@@ -14,7 +14,7 @@ export default {
             video3: [
                 {
                     type: "video/mp4",
-                    src: '/nodejs/welcome2018/video/3.mp4',
+                    src: require('../../assets/xiaoshipin.mp4'),
                 }
             ]
         }

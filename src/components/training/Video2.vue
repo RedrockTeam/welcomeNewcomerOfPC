@@ -14,7 +14,7 @@ export default {
             video2: [
                 {
                     type: "video/mp4",
-                    src: '/nodejs/welcome2018/video/2.mp4',
+                    src: require('../../assets/chongyoujunhun.mp4'),
                 }
             ]
         }

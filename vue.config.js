@@ -2,7 +2,6 @@ module.exports = {
     devServer: {
         port: 80
     },
-    // baseUrl: '//redrock.team/nodejs/welcome2018/pc/',
     baseUrl: './',
     chainWebpack: config => {
         config.module

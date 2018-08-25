@@ -35,13 +35,14 @@ Vue-Video-Player
 - [x] 实现视觉的滚动条
 - [x] 给地图打点
 - [x] 解决路由导航栏active的bug
-- [ ] 404页面
+- [x] 404页面
 - [x] 更改player样式
 - [ ] select小组件
 - [x] 压缩图片
 - [x] 初始加载动画
 - [x] 活动分页tab高度变换
 - [x] 预加载clickme-active
+- [x] 适配移动端路由跳转
 
 
 

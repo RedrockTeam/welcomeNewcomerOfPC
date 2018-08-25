@@ -19,28 +19,28 @@ export default {
         return {
             barList: [
             {
-                title: require('../../assets/xingyeyuan.png'),
-                component: XingYeYuan2
-            },
-            {
-                title: require('../../assets/honggaoliang.png'),
-                component: HongGaoLiang
-            },
-            {
                 title: require('../../assets/qianxihe.png'),
                 component: QianXiHe
+            },
+            {
+                title: require('../../assets/xingyeyuan.png'),
+                component: XingYeYuan2
             },
             {
                 title: require('../../assets/daxibei.png'),
                 component: DaXiBei
             },
             {
-                title: require('../../assets/zhongxin.png'),
-                component: ZhongXin
+                title: require('../../assets/honggaoliang.png'),
+                component: HongGaoLiang
             },
             {
                 title: require('../../assets/yansheng.png'),
                 component: YanSheng
+            },
+            {
+                title: require('../../assets/zhongxin.png'),
+                component: ZhongXin
             }]
         }
     }

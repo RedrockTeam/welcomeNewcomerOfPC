@@ -7,6 +7,15 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
 	<title>走，到重邮追梦去！</title>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?9219f9bf9cdbbab110c59cbaf1a7c331";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 	<style>
 		body {
 			margin: 0;
@@ -127,7 +136,7 @@
 		.plane {
 			width: 160px;
 			height: 85px;
-			background: url('./plane.png') no-repeat;
+			background: url('<%= BASE_URL %>plane.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			animation: planefly 5s;
@@ -138,7 +147,7 @@
 		.hongyanfont {
 			width: 511px;
 			height: 63px;
-			background: url('./hongyanfont.png') no-repeat;
+			background: url('<%= BASE_URL %>hongyanfont.png') no-repeat;
 			background-size: 100% 100%;
 			margin: 0 auto;
 			margin-bottom: 50px;
@@ -147,7 +156,7 @@
 		.loadingcloud1 {
 			width: 420px;
 			height: 140px;
-			background: url('./loadingcloud1.png') no-repeat;
+			background: url('<%= BASE_URL %>loadingcloud1.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			left: 25%;
@@ -160,7 +169,7 @@
 		.loadingcloud2 {
 			width: 420px;
 			height: 200px;
-			background: url('./loadingcloud2.png') no-repeat;
+			background: url('<%= BASE_URL %>loadingcloud2.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			left: 8%;

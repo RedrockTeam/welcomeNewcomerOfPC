@@ -14,7 +14,7 @@
                             <img v-else :src="link.src">
                         </div>
                     </router-link>
-                    <a href="http://hongyan.cqupt.edu.cn/aboutus/" target="_blank"><div class="link-box"><img src="../../assets/tabout.png"></div></a>
+                    <a href="https://redrock.team/aboutus/" target="_blank"><div class="link-box"><img src="../../assets/tabout.png"></div></a>
                 </div>
             </div>
         </div>
@@ -33,6 +33,11 @@ export default {
                     activeSrc: require('../../assets/thome-active.png'),
                 },
                 {
+                    path: '/training',
+                    src: require('../../assets/ttraining.png'),
+                    activeSrc: require('../../assets/ttraining-active.png'),
+                },
+                {
                     path: '/raiders',
                     src: require('../../assets/traiders.png'),
                     activeSrc: require('../../assets/traiders-active.png'),
@@ -41,11 +46,6 @@ export default {
                     path: '/style',
                     src: require('../../assets/tstyle.png'),
                     activeSrc: require('../../assets/tstyle-active.png'),
-                },
-                {
-                    path: '/training',
-                    src: require('../../assets/ttraining.png'),
-                    activeSrc: require('../../assets/ttraining-active.png'),
                 },
                 {
                     path: '/activity',

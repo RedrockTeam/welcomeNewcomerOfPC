@@ -24,51 +24,51 @@ export default {
     data() {
         return {
             f1: {
-                photo: require('../../assets/fengguang/八十万.png'),
+                photo: require('../../assets/fengguang/1.png'),
                 content: '八十万'
             },
             f2: {
-                photo: require('../../assets/fengguang/别有洞天.png'),
+                photo: require('../../assets/fengguang/2.png'),
                 content: '别有洞天'
             },
             f3: {
-                photo: require('../../assets/fengguang/春华秋实.png'),
+                photo: require('../../assets/fengguang/3.png'),
                 content: '春华秋实'
             },
             f4: {
-                photo: require('../../assets/fengguang/二教夕阳.png'),
+                photo: require('../../assets/fengguang/4.png'),
                 content: '二教夕阳'
             },
             f5: {
-                photo: require('../../assets/fengguang/高山流水.png'),
+                photo: require('../../assets/fengguang/5.png'),
                 content: '高山流水'
             },
             f6: {
-                photo: require('../../assets/fengguang/林荫大道.png'),
+                photo: require('../../assets/fengguang/6.png'),
                 content: '林荫大道'
             },
             f7: {
-                photo: require('../../assets/fengguang/落英缤纷.png'),
+                photo: require('../../assets/fengguang/7.png'),
                 content: '落英缤纷'
             },
             f8: {
-                photo: require('../../assets/fengguang/鸟瞰重邮.png'),
+                photo: require('../../assets/fengguang/8.png'),
                 content: '鸟瞰重邮'
             },
             f9: {
-                photo: require('../../assets/fengguang/情人坡.png'),
+                photo: require('../../assets/fengguang/9.png'),
                 content: '情人坡'
             },
             f10: {
-                photo: require('../../assets/fengguang/数字图书馆.png'),
+                photo: require('../../assets/fengguang/10.png'),
                 content: '数字图书馆'
             },
             f11: {
-                photo: require('../../assets/fengguang/仰望八教.png'),
+                photo: require('../../assets/fengguang/11.png'),
                 content: '仰望八教'
             },
             f12: {
-                photo: require('../../assets/fengguang/逸夫楼.png'),
+                photo: require('../../assets/fengguang/12.png'),
                 content: '逸夫楼'
             }
         }

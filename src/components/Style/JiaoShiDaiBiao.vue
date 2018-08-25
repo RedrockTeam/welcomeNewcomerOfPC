@@ -32,79 +32,79 @@ export default {
     data() {
         return {
             t1: {
-                photo: require('../../assets/teacher/陈褀褀.jpg'),
+                photo: require('../../assets/teacher/1.jpg'),
                 content: '陈褀褀'
             },
             t2: {
-                photo: require('../../assets/teacher/付蔚.jpg'),
+                photo: require('../../assets/teacher/2.jpg'),
                 content: '付蔚'
             },
             t3: {
-                photo: require('../../assets/teacher/高冬.jpg'),
+                photo: require('../../assets/teacher/3.jpg'),
                 content: '高冬'
             },
             t4: {
-                photo: require('../../assets/teacher/高非.jpg'),
+                photo: require('../../assets/teacher/4.jpg'),
                 content: '高非'
             },
             t5: {
-                photo: require('../../assets/teacher/胡庆.jpg'),
+                photo: require('../../assets/teacher/5.jpg'),
                 content: '胡庆'
             },
             t6: {
-                photo: require('../../assets/teacher/蒋青.jpg'),
+                photo: require('../../assets/teacher/6.jpg'),
                 content: '蒋青'
             },
             t7: {
-                photo: require('../../assets/teacher/罗元.jpg'),
+                photo: require('../../assets/teacher/7.jpg'),
                 content: '罗元'
             },
             t8: {
-                photo: require('../../assets/teacher/闵绪国.jpg'),
+                photo: require('../../assets/teacher/8.jpg'),
                 content: '闵绪国'
             },
             t9: {
-                photo: require('../../assets/teacher/彭语良.jpg'),
+                photo: require('../../assets/teacher/9.jpg'),
                 content: '彭语良'
             },
             t10: {
-                photo: require('../../assets/teacher/漆晶.jpg'),
+                photo: require('../../assets/teacher/10.jpg'),
                 content: '漆晶'
             },
             t11: {
-                photo: require('../../assets/teacher/王睿.jpg'),
+                photo: require('../../assets/teacher/11.jpg'),
                 content: '王睿'
             },
             t12: {
-                photo: require('../../assets/teacher/王樱桃.jpg'),
+                photo: require('../../assets/teacher/12.jpg'),
                 content: '王樱桃'
             },
             t13: {
-                photo: require('../../assets/teacher/熊安萍.jpg'),
+                photo: require('../../assets/teacher/13.jpg'),
                 content: '熊安萍'
             },
             t14: {
-                photo: require('../../assets/teacher/袁帅.jpg'),
+                photo: require('../../assets/teacher/14.jpg'),
                 content: '袁帅'
             },
             t15: {
-                photo: require('../../assets/teacher/张清华.jpg'),
+                photo: require('../../assets/teacher/15.jpg'),
                 content: '张清华'
             },
             t16: {
-                photo: require('../../assets/teacher/张琬悦.jpg'),
+                photo: require('../../assets/teacher/16.jpg'),
                 content: '张琬悦'
             },
             t17: {
-                photo: require('../../assets/teacher/郑继明.jpg'),
+                photo: require('../../assets/teacher/17.jpg'),
                 content: '郑继明'
             },
             t18: {
-                photo: require('../../assets/teacher/周兴茂.jpg'),
+                photo: require('../../assets/teacher/18.jpg'),
                 content: '周兴茂'
             },
             t19: {
-                photo: require('../../assets/teacher/朱伟.jpg'),
+                photo: require('../../assets/teacher/19.jpg'),
                 content: '朱伟'
             }
         }

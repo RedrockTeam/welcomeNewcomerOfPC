@@ -52,10 +52,12 @@ export default {
         align-items: flex-end;
     }
     .bottom-in {
-        width: 1600px;
+        width: 100%;
         display: flex;
         align-items: flex-end;
         margin: 0 auto;
+        //max-width: 1600px;
+    	min-width: 1080px;
     }
     .chilun1 {
         background: url('../../assets/footer-chilun1.png') no-repeat;

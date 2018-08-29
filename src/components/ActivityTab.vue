@@ -2,11 +2,11 @@
     <div class="tab">
         <div class="tab-header">
             <div
-                :class="['button1', {active: $route.name === 'Smile'}]"
-                @click="$router.push({name: 'Smile'})"><img src="../assets/fsmile.png"></div>
-            <div
                 :class="['button2', {active: $route.name === 'WenDa'}]"
                 @click="$router.push({name: 'WenDa', params: {class: 'all', page: 1}})"><img src="../assets/fwenda.png"></div>
+            <div
+                :class="['button1', {active: $route.name === 'Smile'}]"
+                @click="$router.push({name: 'Smile'})"><img src="../assets/fsmile.png"></div>
         </div>
         <transition enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster" mode="out-in">
             <router-view></router-view>

@@ -21,7 +21,7 @@ export default new Router({
       path: '/activity',
       name: 'Activity',
       component: () => import('./views/Activity.vue'),
-      redirect: {name: 'Smile'},
+      redirect: {name: 'WenDa', params:{class:'all',page:1}},
       children: [
         {
           path: 'smile',
@@ -35,6 +35,10 @@ export default new Router({
         },
         {
           path: 'wenda',
+          redirect: 'wenda/all/1'
+        },
+        {
+          path: '*',
           redirect: 'wenda/all/1'
         }
       ]
@@ -58,6 +62,22 @@ export default new Router({
       path: '*',
       name: 'NotFound',
       component: () => import('./views/NotFound.vue')
+    },
+    {
+      path: '/index',
+      redirect: '/'
+    },
+    {
+      path: '/tips',
+      redirect: '/raiders'
+    },
+    {
+      path: '/analyze',
+      redirect: '/data'
+    },
+    {
+      path: '/mien',
+      redirect: '/style'
     }
   ]
 })

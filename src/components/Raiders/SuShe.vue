@@ -23,16 +23,16 @@ export default {
                 component: XingYeYuan
             },
             {
-                title: require('../../assets/zhixingyuan.png'),
-                component: ZhiXingYuan
-            },
-            {
                 title: require('../../assets/mingliyuan.png'),
                 component: MingLiYuan
             },
             {
                 title: require('../../assets/ningjingyuan.png'),
                 component: NingJingYuan
+            },
+            {
+                title: require('../../assets/zhixingyuan.png'),
+                component: ZhiXingYuan
             }]
         }
     }

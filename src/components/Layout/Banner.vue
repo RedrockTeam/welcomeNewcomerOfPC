@@ -45,7 +45,7 @@ export default {
 		    minutes = 59 - x.getMinutes(),
 		    hours = 23 - x.getHours(),
 		    days = x.getMonth()==7 ? (startDate + 30)-x.getDate() : (startDate - 1)-x.getDate();
-	    if(days < 0) {
+	    if(days < 0 || x.getFullYear() > 2018 || x.getMonth() > 8) {
 		    seconds = 0;
 		    minutes = 0;
 		    hours = 0;

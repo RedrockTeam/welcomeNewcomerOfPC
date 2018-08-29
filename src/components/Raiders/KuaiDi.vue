@@ -11,61 +11,61 @@
             return {
                 lifelist: [
                     {
-                        mainimg:require("../../assets/kuaidi/韵达，圆通，顺丰.jpg"),
+                        mainimg:require("../../assets/kuaidi/1.jpg"),
                         textimg: require("../../assets/kuaidi/韵达、圆通、顺丰.png"),
                         message1: "地址：位于15栋，靠近兴业苑食堂",
                         message2: ""
                     },
                    {
-                        mainimg:require("../../assets/kuaidi/京东.jpg"),
+                        mainimg:require("../../assets/kuaidi/2.jpg"),
                         textimg: require("../../assets/kuaidi/京东.png"),
                         message1: "地址：在两个快递点中段",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/申通.jpg"),
+                        mainimg:require("../../assets/kuaidi/3.jpg"),
                         textimg: require("../../assets/kuaidi/申通快递.png"),
                         message1: "地址：靠近楼梯",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/中通.jpg"),
+                        mainimg:require("../../assets/kuaidi/4.jpg"),
                         textimg: require("../../assets/kuaidi/中通快递.png"),
                         message1: "地址：位于5栋商店旁边",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/邮政.jpg"),
+                        mainimg:require("../../assets/kuaidi/5.jpg"),
                         textimg: require("../../assets/kuaidi/邮政.png"),
                         message1: "地址：老校门楼梯上公共厕所旁边的自动取货机器",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/百世.jpg"),
+                        mainimg:require("../../assets/kuaidi/6.jpg"),
                         textimg: require("../../assets/kuaidi/百世快递.png"),
                         message1: "地址：阳光图文巷子向前走50米",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/快捷快递.jpg"),
+                        mainimg:require("../../assets/kuaidi/7.jpg"),
                         textimg: require("../../assets/kuaidi/快捷快递、天猫超市.png"),
                         message1: "地址：阳光图文巷子向前走100米",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/天天.jpg"),
+                        mainimg:require("../../assets/kuaidi/8.jpg"),
                         textimg: require("../../assets/kuaidi/天天快递.png"),
                         message1: "地址：新校门出门右拐，新世纪负一楼",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/优速.jpg"),
+                        mainimg:require("../../assets/kuaidi/9.jpg"),
                         textimg: require("../../assets/kuaidi/优速快递.png"),
                         message1: "地址：新校门出门直走，往广益中学方向上行100米",
                         message2: ""
                     },
                     {
-                        mainimg:require("../../assets/kuaidi/中通（静苑）品骏.jpg"),
+                        mainimg:require("../../assets/kuaidi/10.jpg"),
                         textimg: require("../../assets/kuaidi/中通、品骏快递.png"),
                         message1: "地址：老校门对面，大茶杯旁边上行",
                         message2: ""

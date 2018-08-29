@@ -2,7 +2,7 @@
     <div class="qingdan">
         <div class="content">
             <img src="../../assets/qingdan/报到时间.png" alt="你猜我去哪了">
-            <div class="content-container">本科新生2018年9月14、15日报道</div>
+            <div class="content-container">本科新生2018年9月13、14日报道</div>
         </div>
         <div class="content">
             <img src="../../assets/qingdan/报到地点.png" alt="你猜我去哪了">

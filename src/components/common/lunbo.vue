@@ -33,23 +33,7 @@
     export default {
         props:{
             imglist: {
-                type: Array,
-                default: function () {
-                    return [
-                        {
-                            imgsrc: require("../../assets/lunbo-test1.png"),
-                        },
-                        {
-                            imgsrc: require("../../assets/lunbo-test2.png"),
-                        },
-                        {
-                            imgsrc: require("../../assets/lunbo-test3.png"),
-                        },
-                        {
-                            imgsrc: require("../../assets/lunbo-test2.png"),
-                        }
-                    ]
-                }
+                type: Array
             }
         },
         data () {

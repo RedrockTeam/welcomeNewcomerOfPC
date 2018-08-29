@@ -5,8 +5,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta itemprop="name" content="走，到重邮追梦去 | 2018迎新网上线啦！">
+	<meta itemprop="description" content="@2018小鲜肉：你想要的，我们都有！">
+	<meta itemprop="image" content="https://s1.ax1x.com/2018/08/26/Pqpx2Q.png">
 	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
-	<title>走，到重邮追梦去！</title>
+	<title>走，到重邮追梦去 | 2018迎新网上线啦！</title>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?9219f9bf9cdbbab110c59cbaf1a7c331";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 	<style>
 		body {
 			margin: 0;
@@ -127,7 +139,7 @@
 		.plane {
 			width: 160px;
 			height: 85px;
-			background: url('./plane.png') no-repeat;
+			background: url('<%= BASE_URL %>plane.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			animation: planefly 5s;
@@ -138,7 +150,7 @@
 		.hongyanfont {
 			width: 511px;
 			height: 63px;
-			background: url('./hongyanfont.png') no-repeat;
+			background: url('<%= BASE_URL %>hongyanfont.png') no-repeat;
 			background-size: 100% 100%;
 			margin: 0 auto;
 			margin-bottom: 50px;
@@ -147,7 +159,7 @@
 		.loadingcloud1 {
 			width: 420px;
 			height: 140px;
-			background: url('./loadingcloud1.png') no-repeat;
+			background: url('<%= BASE_URL %>loadingcloud1.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			left: 25%;
@@ -160,7 +172,7 @@
 		.loadingcloud2 {
 			width: 420px;
 			height: 200px;
-			background: url('./loadingcloud2.png') no-repeat;
+			background: url('<%= BASE_URL %>loadingcloud2.png') no-repeat;
 			background-size: 100% 100%;
 			position: absolute;
 			left: 8%;
@@ -191,6 +203,31 @@
 
 	<div id="app"></div>
 	<!-- built files will be auto injected -->
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://wx.idsbllp.cn/wx-api/share.js"></script>
+    <script>
+    WXSHARE.config({ debug: false });
+    WXSHARE.ready(function() {
+        var option = {
+            title: "走，到重邮追梦去 | 2018迎新网上线啦！",
+            link: "http://wx.yyeke.com/nodejs/welcome2018/",
+            imgUrl: 'https://s1.ax1x.com/2018/08/26/Pqpx2Q.png',
+            desc: '@2018小鲜肉：你想要的，我们都有！',
+            type: '',
+            success: function() {
+                console.log('分享成功');
+            },
+            cancel: function() {
+                console.log('取消分享');
+            },
+        };
+        wx.onMenuShareTimeline(option);
+        wx.onMenuShareAppMessage(option);
+        wx.onMenuShareQQ(option);
+        wx.onMenuShareWeibo(option);
+        wx.onMenuShareQZone(option);
+    });
+    </script>
 </body>
 
 </html>

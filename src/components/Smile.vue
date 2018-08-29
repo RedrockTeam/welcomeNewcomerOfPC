@@ -12,7 +12,7 @@
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/huodongshijian.png"></div>
-                <p>即日起至2018年9月14日</p>
+                <p>即将启动，敬请期待</p>
             </div>
             <div class="tips">
                 <div class="title"><img src="../assets/cangyufangshi.png"></div>

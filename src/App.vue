@@ -41,12 +41,7 @@ export default {
         return {
             progress: 0,
             error: false,
-            timer: null,
-            carouselList: [
-                {src: require('./assets/dom1.jpg'), content: '第一张'},
-                {src: require('./assets/dom2.jpg'), content: '第二张'},
-                {src: require('./assets/dom3.jpg'), content: '第三张'}
-            ]
+            timer: null
         }
     },
     methods: {
@@ -74,7 +69,7 @@ export default {
             }, 200)
         }
     },
-    created() {
+    mounted() {
         setTimeout(() => {
             document.body.removeChild(document.querySelector('.loadinganimation'))
             document.getElementById('app').style.display = 'block'

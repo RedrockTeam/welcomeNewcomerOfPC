@@ -13,8 +13,8 @@ export default {
         return {
             video3: [
                 {
-                    type: "video/ogg",
-                    src: "http://www.w3school.com.cn/i/movie.ogg",
+                    type: "video/mp4",
+                    src: require('../../assets/xiaoshipin.mp4'),
                 }
             ]
         }

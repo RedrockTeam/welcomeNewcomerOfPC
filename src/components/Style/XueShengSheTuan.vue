@@ -31,13 +31,6 @@
             <div class="title"><img src="../../assets/sxianjin.png"></div>
             <div class="container">
                 <div class="content">机器人协会</div>
-                <div class="content">电子协会</div>
-                <div class="content">爱心社</div>
-                <div class="content">科技论文讲习社</div>
-                <div class="content">曲艺社</div>
-                <div class="content">百闻茶道社</div>
-                <div class="content">CF对外交流协会</div>
-                <div class="content">移动互联网创新中心</div>
             </div>
         </div>
         <div class="shetuan">
@@ -48,19 +41,6 @@
                 <div class="content">象棋协会</div>
                 <div class="content">物联网协会</div>
                 <div class="content">桌游协会航模协会</div>
-            </div>
-        </div>
-        <div class="shetuan">
-            <div class="title"><img src="../../assets/sxianjin.png"></div>
-            <div class="container">
-                <div class="content">机器人协会</div>
-                <div class="content">电子协会</div>
-                <div class="content">爱心社</div>
-                <div class="content">科技论文讲习社</div>
-                <div class="content">曲艺社</div>
-                <div class="content">百闻茶道社</div>
-                <div class="content">CF对外交流协会</div>
-                <div class="content">移动互联网创新中心</div>
             </div>
         </div>
         <div class="shetuan">

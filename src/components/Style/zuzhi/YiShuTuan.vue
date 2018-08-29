@@ -1,6 +1,6 @@
 <template>
     <div class="bumen">
-        <div class="title"><img src="../../assets/xyishu.png"></div>
+        <div class="title"><img src="../../../assets/xyishu.png"></div>
         <div class="content">重庆邮电大学大学生艺术团是在校团委直接指导管理下的学生艺术团体，肩负组织学校重大文艺活动，代表学校对外联谊，演出和参加省市文艺大赛的重任。秉承“服务同学，锻炼自我”的宗旨，以丰富校园文化生活，陶冶情操，加强与其他院校艺术交流与沟通，为校宣传争光，活跃人文气氛等为前提，要求每个成员在艺术实践中以高标准、严要求的态度约束自己。 大学生艺术团由管乐团、合唱团、舞蹈团、民乐团、话剧团、综合部组成。主要承担着我校各项大型演出任务，组织编排各项文艺节目，为有文艺特长的同学搭建良好的交流和展示平台，每个分团都有固定的训练时间和专业指导老师。近年来，大学生艺术团一次次圆满完成学校交给的各项文艺演出任务，并锻炼和培养了一批批艺术人才。为我校大学生文艺素质的培养，树立了一面旗帜。</div>
         <div class="tuan">
             <div class="name">【民乐团】</div>
@@ -31,13 +31,11 @@
 
 <style lang="less" scoped>
     .bumen {
-        width: 620px;
-        height: 710px;
+        width: 89.4%;
         padding-left: 50px;
         padding-right: 60px;
         padding-top: 30px;
         padding-bottom: 30px;
-        overflow-y: scroll;
     }
     .title {
         margin-bottom: 15px;
@@ -52,20 +50,5 @@
         font-size: 18px;
         margin-top: 25px;
         margin-bottom: 15px;
-    }
-
-
-    //
-    ::-webkit-scrollbar {
-        width: 30px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: solid 1.5px #33157b;
-        background: url('../../assets/scroll.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    ::-webkit-scrollbar-track {
-        background: #c4f3f0;
-        border: solid 3.5px #33157b;
     }
 </style>

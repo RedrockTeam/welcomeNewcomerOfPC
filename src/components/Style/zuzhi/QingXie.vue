@@ -1,6 +1,6 @@
 <template>
     <div class="bumen">
-        <div class="title"><img src="../../assets/xzhiyuan.png"></div>
+        <div class="title"><img src="../../../assets/xzhiyuan.png"></div>
         <div class="content">重庆邮电大学青年志愿者协会是校团委直属管辖的七大学生组织之一，是富有志愿精神，乐于志愿活动的大学生志愿者的聚集地。青协致力于营造良好志愿氛围，组织统筹校内外各类志愿活动：组织开展全校“三下乡”社会实践活动、“12.5国际志愿者日”志愿周系列活动、“3•5学雷锋月”系列活动、“重庆邮电大学优秀志愿项目评选”、“班级志愿考核”、“天天系列”活动、“周末课堂”志愿活动等相关工作。青年志愿者协会始终秉承“奉献、友爱、互助、进步”的志愿者精神，为陌生人提供方便，为弱势群体奉献爱心，为校园、为社会注入正能量。</div>
         <div class="tuan">
             <div class="name">【综合管理部】</div>
@@ -23,13 +23,11 @@
 
 <style lang="less" scoped>
     .bumen {
-        width: 620px;
-        height: 710px;
+        width: 89.4%;
         padding-left: 50px;
         padding-right: 60px;
         padding-top: 30px;
         padding-bottom: 30px;
-        overflow-y: scroll;
     }
     .title {
         margin-bottom: 15px;
@@ -46,18 +44,4 @@
         margin-bottom: 15px;
     }
 
-
-    //
-    ::-webkit-scrollbar {
-        width: 30px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: solid 1.5px #33157b;
-        background: url('../../assets/scroll.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    ::-webkit-scrollbar-track {
-        background: #c4f3f0;
-        border: solid 3.5px #33157b;
-    }
 </style>

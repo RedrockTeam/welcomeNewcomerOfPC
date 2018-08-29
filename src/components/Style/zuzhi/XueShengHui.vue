@@ -1,6 +1,6 @@
 <template>
     <div class="bumen">
-        <div class="title"><img src="../../assets/xxuesheng.png"></div>
+        <div class="title"><img src="../../../assets/xxuesheng.png"></div>
         <div class="content">重庆邮电大学学生会是由校党委、市学联领导，由校团委具体指导的群众性组织。重庆邮电大学学生会以“全心全意为同学服务”为宗旨，充分发挥同学们的主人翁精神，加强学风建设，营造浓厚的读书氛围；以提高学生综合素质、推进校园文化建设为目标，创建了一批深受同学们喜爱的科技文化活动；积极营造校园爱心氛围；结合校园实际，积极加强大学生法制观念，维护大学生合法权益；开展文体活动，丰富校园文化生活；利用现有资源，打造网络交流平台，通过编撰刊物，展示理论成果。</div>
         <div class="tuan">
             <div class="name">【综合部】</div>
@@ -39,13 +39,11 @@
 
 <style lang="less" scoped>
     .bumen {
-        width: 620px;
-        height: 710px;
+        width: 89.4%;
         padding-left: 50px;
         padding-right: 60px;
         padding-top: 30px;
         padding-bottom: 30px;
-        overflow-y: scroll;
     }
     .title {
         margin-bottom: 15px;
@@ -60,20 +58,5 @@
         font-size: 18px;
         margin-top: 25px;
         margin-bottom: 15px;
-    }
-
-
-    //
-    ::-webkit-scrollbar {
-        width: 30px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: solid 1.5px #33157b;
-        background: url('../../assets/scroll.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    ::-webkit-scrollbar-track {
-        background: #c4f3f0;
-        border: solid 3.5px #33157b;
     }
 </style>

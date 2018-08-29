@@ -1,6 +1,6 @@
 <template>
     <div class="bumen">
-        <div class="title"><img src="../../assets/xshetuan.png"></div>
+        <div class="title"><img src="../../../assets/xshetuan.png"></div>
         <div class="content">社团联合会在校团委的直接指导下，管理社团工作、服务社团发展的学生组织，旗下管辖着涵盖文学学术、实践服务、艺术文化、爱好兴趣、体育运动等功能丰富、类型兼备的各类学生社团组织。目前，能否建设好高校的社团已经成为一个高校是否具有活力和文化氛围的重要标志之一。学生社团遍布全国高校校园的各个角落，扮演着丰富校园文化生活、提升校园文化品位、引领校园文化时尚的重要角色。</div>
         <div class="tuan">
             <div class="name">【主席团】</div>
@@ -27,13 +27,12 @@
 
 <style lang="less" scoped>
     .bumen {
-        width: 620px;
-        height: 710px;
-        padding-left: 50px;
-        padding-right: 60px;
+        width: 89.4%;
+        // padding-left: 50px;
+        // padding-right: 60px;
         padding-top: 30px;
         padding-bottom: 30px;
-        overflow-y: scroll;
+        // overflow-y: scroll;
     }
     .title {
         margin-bottom: 15px;
@@ -50,18 +49,4 @@
         margin-bottom: 15px;
     }
 
-
-    //
-    ::-webkit-scrollbar {
-        width: 30px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: solid 1.5px #33157b;
-        background: url('../../assets/scroll.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    ::-webkit-scrollbar-track {
-        background: #c4f3f0;
-        border: solid 3.5px #33157b;
-    }
 </style>

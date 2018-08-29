@@ -1,6 +1,6 @@
 <template>
     <div class="bumen">
-        <div class="title"><img src="../../assets/xkeji.png"></div>
+        <div class="title"><img src="../../../assets/xkeji.png"></div>
         <div class="tuan">
             <div class="name">【综合部】</div>
             <div class="content">综合部是学生科联的枢纽中心。它是连接团委、主席团和科联各个部门、干事之间的纽带，起到上传下达的作用，并以办公室的日常管理为工作重点。其主要负责制定、完善、推广科联制度；负责科联对外联络和洽谈；负责科联各部门内部协调；负责组织科联干部干事成立大会、素质拓展、科联交享悦、科联杯、干部干事培训和考核、人才互荐交流、总结晚会等活动；负责与各学院的学生科创组织保持紧密联系，开展交流活动；负责与兄弟高校的学生科创组织进行交流合作。</div>
@@ -30,13 +30,9 @@
 
 <style lang="less" scoped>
     .bumen {
-        width: 620px;
-        height: 710px;
-        padding-left: 50px;
-        padding-right: 60px;
+        width: 89.4%;
         padding-top: 30px;
         padding-bottom: 30px;
-        overflow-y: scroll;
     }
     .title {
         margin-bottom: 15px;
@@ -51,20 +47,5 @@
         font-size: 18px;
         margin-top: 25px;
         margin-bottom: 15px;
-    }
-
-
-    //
-    ::-webkit-scrollbar {
-        width: 30px;
-    }
-    ::-webkit-scrollbar-thumb {
-        border: solid 1.5px #33157b;
-        background: url('../../assets/scroll.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    ::-webkit-scrollbar-track {
-        background: #c4f3f0;
-        border: solid 3.5px #33157b;
     }
 </style>
